@@ -1,0 +1,15 @@
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\bin\Debug\TwoWayTest.exe.config
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\bin\Debug\TwoWayTest.exe
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\bin\Debug\TwoWayTest.pdb
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\MainWindow.g.cs
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\App.g.cs
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest_MarkupCompile.cache
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest_MarkupCompile.lref
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\MainWindow.baml
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest.g.resources
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest.Properties.Resources.resources
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest.csproj.GenerateResource.cache
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest.exe
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest.pdb
+C:\Users\DanielSimonsen\Documents\Skole\Hovedforløb 2\GUI Programmering\Databinding\TwoWayTest\obj\Debug\TwoWayTest.csprojAssemblyReference.cache

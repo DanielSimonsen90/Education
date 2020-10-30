@@ -1,0 +1,12 @@
+C:\Users\DanielSimonsen\source\repos\ByteConversion\ByteConversion\bin\Debug\ByteConversion.exe.config
+C:\Users\DanielSimonsen\source\repos\ByteConversion\ByteConversion\bin\Debug\ByteConversion.exe
+C:\Users\DanielSimonsen\source\repos\ByteConversion\ByteConversion\bin\Debug\ByteConversion.pdb
+C:\Users\DanielSimonsen\source\repos\ByteConversion\ByteConversion\obj\Debug\ByteConversion.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\ByteConversion\ByteConversion\obj\Debug\ByteConversion.exe
+C:\Users\DanielSimonsen\source\repos\ByteConversion\ByteConversion\obj\Debug\ByteConversion.pdb
+C:\Users\DanielSimonsen\source\repos\H1\ByteConversion\ByteConversion\bin\Debug\ByteConversion.exe.config
+C:\Users\DanielSimonsen\source\repos\H1\ByteConversion\ByteConversion\bin\Debug\ByteConversion.exe
+C:\Users\DanielSimonsen\source\repos\H1\ByteConversion\ByteConversion\bin\Debug\ByteConversion.pdb
+C:\Users\DanielSimonsen\source\repos\H1\ByteConversion\ByteConversion\obj\Debug\ByteConversion.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\H1\ByteConversion\ByteConversion\obj\Debug\ByteConversion.exe
+C:\Users\DanielSimonsen\source\repos\H1\ByteConversion\ByteConversion\obj\Debug\ByteConversion.pdb

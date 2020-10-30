@@ -1,0 +1,6 @@
+C:\Users\DanielSimonsen\source\repos\h1EZ\h1EZ\bin\Debug\h1EZ.exe.config
+C:\Users\DanielSimonsen\source\repos\h1EZ\h1EZ\bin\Debug\h1EZ.exe
+C:\Users\DanielSimonsen\source\repos\h1EZ\h1EZ\bin\Debug\h1EZ.pdb
+C:\Users\DanielSimonsen\source\repos\h1EZ\h1EZ\obj\Debug\h1EZ.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\h1EZ\h1EZ\obj\Debug\h1EZ.exe
+C:\Users\DanielSimonsen\source\repos\h1EZ\h1EZ\obj\Debug\h1EZ.pdb

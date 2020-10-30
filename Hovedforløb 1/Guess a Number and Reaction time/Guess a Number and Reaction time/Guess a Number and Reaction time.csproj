@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Guess_a_Number_and_Reaction_time</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DanhoLibrary">
+      <HintPath>..\..\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.0\DanhoLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

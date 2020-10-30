@@ -1,0 +1,9 @@
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\bin\Debug\Storage.exe.config
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\bin\Debug\Storage.exe
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\bin\Debug\Storage.pdb
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\bin\Debug\DanhoLibrary.dll
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\bin\Debug\DanhoLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\obj\Debug\Storage.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\obj\Debug\Storage.csproj.CopyComplete
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\obj\Debug\Storage.exe
+C:\Users\DanielSimonsen\source\repos\H1\Storage\Storage\obj\Debug\Storage.pdb

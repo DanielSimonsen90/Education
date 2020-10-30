@@ -1,0 +1,9 @@
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\bin\Debug\DBLager.exe.config
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\bin\Debug\DBLager.exe
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\bin\Debug\DBLager.pdb
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\bin\Debug\DanhoLibrary.dll
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\bin\Debug\DanhoLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\obj\Debug\DBLager.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\obj\Debug\DBLager.csproj.CopyComplete
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\obj\Debug\DBLager.exe
+C:\Users\DanielSimonsen\source\repos\H1\DBLager\DBLager\obj\Debug\DBLager.pdb

@@ -1,0 +1,14 @@
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\Byggemandbob.exe
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\Byggemandbob.deps.json
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\Byggemandbob.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\Byggemandbob.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\Byggemandbob.dll
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\Byggemandbob.pdb
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\obj\Debug\netcoreapp3.1\Byggemandbob.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\obj\Debug\netcoreapp3.1\Byggemandbob.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\obj\Debug\netcoreapp3.1\Byggemandbob.dll
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\obj\Debug\netcoreapp3.1\Byggemandbob.pdb
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\obj\Debug\netcoreapp3.1\Byggemandbob.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\DanhoLibrary.dll
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\bin\Debug\netcoreapp3.1\DanhoLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\Byggemandbob\Byggemandbob\obj\Debug\netcoreapp3.1\Byggemandbob.csproj.CopyComplete
