@@ -1,0 +1,9 @@
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\bin\Debug\Personel.exe.config
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\bin\Debug\Personel.exe
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\bin\Debug\Personel.pdb
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\obj\Debug\Personel.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\obj\Debug\Personel.exe
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\obj\Debug\Personel.pdb
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\bin\Debug\DanhoLibrary.dll
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\bin\Debug\DanhoLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\Personel\Personel\obj\Debug\Personel.csproj.CopyComplete

@@ -1,0 +1,6 @@
+C:\Users\DanielSimonsen\source\repos\Distance\Distance\bin\Debug\Distance.exe.config
+C:\Users\DanielSimonsen\source\repos\Distance\Distance\bin\Debug\Distance.exe
+C:\Users\DanielSimonsen\source\repos\Distance\Distance\bin\Debug\Distance.pdb
+C:\Users\DanielSimonsen\source\repos\Distance\Distance\obj\Debug\Distance.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\Distance\Distance\obj\Debug\Distance.exe
+C:\Users\DanielSimonsen\source\repos\Distance\Distance\obj\Debug\Distance.pdb
