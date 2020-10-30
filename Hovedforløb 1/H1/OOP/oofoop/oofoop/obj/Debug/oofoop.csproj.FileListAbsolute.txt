@@ -1,6 +1,0 @@
-C:\Users\DanielSimonsen\source\repos\oofoop\oofoop\bin\Debug\oofoop.exe.config
-C:\Users\DanielSimonsen\source\repos\oofoop\oofoop\bin\Debug\oofoop.exe
-C:\Users\DanielSimonsen\source\repos\oofoop\oofoop\bin\Debug\oofoop.pdb
-C:\Users\DanielSimonsen\source\repos\oofoop\oofoop\obj\Debug\oofoop.csprojAssemblyReference.cache
-C:\Users\DanielSimonsen\source\repos\oofoop\oofoop\obj\Debug\oofoop.exe
-C:\Users\DanielSimonsen\source\repos\oofoop\oofoop\obj\Debug\oofoop.pdb

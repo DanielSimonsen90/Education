@@ -1,6 +1,0 @@
-C:\Users\DanielSimonsen\source\repos\awesomeboi\awesomeboi\bin\Debug\awesomeboi.exe.config
-C:\Users\DanielSimonsen\source\repos\awesomeboi\awesomeboi\bin\Debug\awesomeboi.exe
-C:\Users\DanielSimonsen\source\repos\awesomeboi\awesomeboi\bin\Debug\awesomeboi.pdb
-C:\Users\DanielSimonsen\source\repos\awesomeboi\awesomeboi\obj\Debug\awesomeboi.csprojAssemblyReference.cache
-C:\Users\DanielSimonsen\source\repos\awesomeboi\awesomeboi\obj\Debug\awesomeboi.exe
-C:\Users\DanielSimonsen\source\repos\awesomeboi\awesomeboi\obj\Debug\awesomeboi.pdb
