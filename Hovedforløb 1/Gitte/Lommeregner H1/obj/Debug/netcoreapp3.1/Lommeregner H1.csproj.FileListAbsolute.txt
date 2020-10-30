@@ -1,0 +1,18 @@
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\bin\Debug\netcoreapp3.1\Lommeregner H1.exe
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\bin\Debug\netcoreapp3.1\Lommeregner H1.deps.json
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\bin\Debug\netcoreapp3.1\Lommeregner H1.runtimeconfig.json
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\bin\Debug\netcoreapp3.1\Lommeregner H1.runtimeconfig.dev.json
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\bin\Debug\netcoreapp3.1\Lommeregner H1.dll
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\bin\Debug\netcoreapp3.1\Lommeregner H1.pdb
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.csprojAssemblyReference.cache
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.AssemblyInfoInputs.cache
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.AssemblyInfo.cs
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.dll
+C:\Users\NikolaiGrønborgJense\Desktop\H1\Versionsstyring\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.pdb
+
+C:\Users\DanielSimonsen\Desktop\Hiea\Test\Lommeregner H1\bin\Debug\netcoreapp3.1\Lommeregner H1.exe
+C:\Users\DanielSimonsen\Desktop\Hiea\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\Desktop\Hiea\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\Desktop\Hiea\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.AssemblyInfo.cs
+C:\Users\DanielSimonsen\Desktop\Hiea\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.dll
+C:\Users\DanielSimonsen\Desktop\Hiea\Test\Lommeregner H1\obj\Debug\netcoreapp3.1\Lommeregner H1.pdb

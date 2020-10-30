@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj",
+        "projectName": "Lommeregner H1",
+        "projectPath": "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\obj\\",
+    "C:\\Users\\NikolaiGrønborgJense\\Desktop\\H1\\Versionsstyring\\Test\\Lommeregner H1\\Lommeregner H1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\NikolaiGrønborgJense\\Desktop\\H1\\Versionsstyring\\Test\\Lommeregner H1\\Lommeregner H1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\NikolaiGrønborgJense\\Desktop\\H1\\Versionsstyring\\Test\\Lommeregner H1\\Lommeregner H1.csproj",
+        "projectName": "Lommeregner H1",
+        "projectPath": "C:\\Users\\NikolaiGrønborgJense\\Desktop\\H1\\Versionsstyring\\Test\\Lommeregner H1\\Lommeregner H1.csproj",
+        "packagesPath": "C:\\Users\\NikolaiGrønborgJense\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\NikolaiGrønborgJense\\Desktop\\H1\\Versionsstyring\\Test\\Lommeregner H1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

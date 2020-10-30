@@ -1,0 +1,15 @@
+Hvordan holder vi struktur i vores filer?
+
+lave classes til forskellige funktioner.
+
+
+
+hvad skal ligge i commit messages?
+
+Hvad der er blevet ændret, med mindre at det er et ligegyldigt commit.
+
+
+
+Hvad er grunden til at vi vil branche?
+
+For at holde struktur over versioner.

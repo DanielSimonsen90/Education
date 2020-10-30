@@ -1,0 +1,18 @@
+Formålet med dokumentation :
+
+Så andre og dig selv kan læse din kode.
+Skrive kommentare med hvorfor og hvordan.
+
+
+
+Hvordan vi vil beskrive et program : 
+
+Vi skriver kommentare, laver classes, giver vores metoder/variable navne der giver mening og laver regions.
+
+
+Hvilke værktøjer vil vi bruge : 
+
+Regions
+kommentare
+regions
+
