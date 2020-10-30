@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>[NOT CONNECTED] - TicTacToe</title>
+    <style>
+        /*#region General*/
+        body {
+            background: #333;
+            color: white;
+        }
+
+        h3 {
+            padding: 0 0 1% 0;
+        }
+
+        input {
+            width: 140px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+        /*#endregion*/
+
+        /*#region Connect Panel*/
+        .IP {
+            display: inline;
+        }
+
+        .ConnectPanel {
+            background: #222;
+            border: solid;
+            border-color: black;
+            padding: 1% 1% 1% 1%;
+            margin-bottom: 10%;
+            margin-right: 100%;
+        }
+        /*#endregion*/
+
+        /*#region Game Panel*/
+        .GamePanel {
+            height: 20%;
+            width: 50%;
+            position: absolute;
+            margin-top: 2%;
+        }
+
+        .GameButton {
+            background: #444;
+            width: 33%;
+            height: 100%;
+            font-size: 69px;
+            color: #888;
+        }
+
+            .GameButton:hover {
+                background: #888;
+                color: #ccc;
+            }
+
+        .Disabled {
+            background: #222;
+        }
+
+            .Disabled:hover {
+                cursor: not-allowed;
+                background: #111;
+                color: #333;
+            }
+
+        #PlayerX {
+            color: red;
+        }
+
+        #PlayerO {
+            color: blue;
+        }
+        /*#endregion*/
+
+        /*#region Log Panel*/
+        .LogPanel {
+            margin-left: 55%;
+        }
+        /*#endregion*/
+    </style>
+</head>
+<body>
+    <h1>TicTacToe Game</h1>
+    <h3>Client by Daniel Simonsen</h3>
+
+    <span class="ConnectPanel">
+        <input type="text" name="IP" placeholder="192.168.1.1:5000" />
+
+        <button onclick="connectButtonPressed()">Connect</button>
+        <button onclick="game.reset()">Request Reset</button>
+        <button onclick="disconnectButtonPressed()">Disconnect</button>
+    </span>
+    <span class="GamePanel">
+        <script>
+            for (var x = 0; x < 3; x++)
+                for (var y = 0; y < 3; y++)
+                    document.write(
+                        `<button class="GameButton Disabled" name="${x},${y}" onclick="game.onButtonClick('${x},${y}')">•</button>`
+                    );
+        </script>
+    </span>
+    <span class="LogPanel"><textarea id="log" readonly="readonly" rows="45" cols="69"></textarea></span>
+</body>
+</html>
+
+<script>
+    var Connection = {
+        ws: null,
+        /**Sends a message to the server
+         * @param { 'PLACE' | 'RESET' } command
+         * @param {string} args*/ sendMessage(command, args) {
+            this.ws.send(`${command} ${args}`);
+            log('Client => Server', `${command} ${args}`);
+        }
+    }
+    const game = {
+        board: [
+            [document.getElementsByName('0,0'), document.getElementsByName('0,1'), document.getElementsByName('0,2')],
+            [document.getElementsByName('1,0'), document.getElementsByName('2,1'), document.getElementsByName('1,2')],
+            [document.getElementsByName('2,0'), document.getElementsByName('1,1'), document.getElementsByName('2,2')]
+        ],
+        turn: 'X',
+
+        winCheck() {
+            throw new Error('Not Implemented');
+        },
+        reset() {
+            log('Game', 'Resetting game...');
+            updateButtons(true);
+            Connection.sendMessage('RESET', '');
+        },
+        /**Updates a buttonName
+         * @param {string} buttonName*/ onOpponentClick(buttonName) {
+            this.handleButtonClick(buttonName, `${buttonName} was selected: `);
+        },
+        /**Occurs when gameButton is clicked
+         * @param {string} buttonName*/ onButtonClick(buttonName) {
+            this.handleButtonClick(buttonName, `${buttonName} was clicked: `);
+
+            for (var x = 0; x < this.board.length; x++)
+                for (var y = 0; y < this.board[x].length; y++)
+                    if (this.board[x][y][0].tagName == document.getElementsByName(buttonName)[0])
+                        Connection.sendMessage('PLACE', `${x} ${y}`);
+        },
+        /**Ran by onOpponentClick & onButtonClick
+         * @param {string} buttonName @param {string} logMessage*/ handleButtonClick(buttonName, logMessage) {
+            var button = document.getElementsByName(buttonName)[0];
+            if (button.classList.contains('Disabled'))
+                return log('Internal', logMessage + `Contains .Disabled, returned.`);
+
+            button.setAttribute('class', 'GameButton Disabled');
+            button.setAttribute('id', `Player${this.turn}`);
+            button.textContent = this.turn;
+            log('Internal', logMessage + `Added #disabled, set value to ${this.turn}.`);
+        },
+
+        boardToString() {
+            var value = '';
+            for (var x = 0; x < game.board.length; x++)
+                for (var y = 0; y < game.board[x].length; y++) {
+                    var button = game.board[x][y][0];
+                    value += button.textContent != '' ? button.textContent : '_';
+                }
+            return value;
+        },
+        /**Sends a message to the server
+         * @param {'START' | 'BOARD' | 'COLOR' | 'MSG' | 'TURN' | 'WINNER' } command
+         * @param {string} args*/ handleRecievedMessage(command, args) {
+            switch (command) {
+                case 'START': return this.reset();
+                case 'BOARD': return this.cmdBoard(args);
+                case 'COLOR': return this.cmdColor(args);
+                case 'MSG': return this.cmdMsg(args);
+                case 'TURN': return this.cmdTurn(args);
+                case 'WINNER': return this.cmdWinner(args);
+                default: return log('ERROR', `Unable to turn "${command}" into a valid command!`);
+            }
+        },
+        /**Handles 'BOARD' command
+         * @param {string} newBoard*/ cmdBoard(newValue) {
+            var newBoard = [];
+            for (var x = 0; x < game.board.length; x++)
+                for (var y = 0; y < game.board[x].length; y++)
+                    newBoard[x].push(newValue[i]);
+
+            for (var x = 0; x < this.board.length; x++)
+                for (var y = 0; y < this.board[x].length; y++)
+                    if (this.board[x][y] != newBoard[x][y])
+                        this.onButtonClick(`${x},${y}`);
+
+        },
+        /**Handles 'COLOR' command
+         * @param {string} args*/ cmdColor(args) {
+            this.turn = args;
+        },
+        /**Handles 'MSG' command
+         * @param {string} args*/ cmdMsg(args) {
+            log('Server', args);
+        },
+        /**Handles 'TURN' command
+         * @param {string} args*/ cmdTurn(args) {
+            this.turn = args;
+        },
+        /**Handles 'WINNER' command
+         * @param {string} args*/ cmdWinner(args) {
+            updateButtons(false);
+            log('Game', `WINNER IS ${args}!`);
+        }
+    }
+    function connectButtonPressed() {
+
+        try {
+            const IP = document.getElementsByName("IP")[0].value;
+            Connection.ws = new WebSocket(`ws://${IP}/`);
+            Connection.ws.onopen = function () {
+                log('Connection', `Successfully connected to ${IP}.`);
+                document.title = `[CONNECTED] - TicTacToe`;
+                updateButtons(true);
+            }
+            Connection.ws.onclose = function () {
+                log('Connection', `Successfully disconneceed from ${IP}`);
+                document.title = `[NOT CONNECTED] - TicTacToe`;
+                updateButtons(false);
+            }
+            Connection.ws.onerror = function (event) { log('ERROR', event); }
+            Connection.ws.onmessage = function (event) {
+                const message = event.data;
+                log("Server", message);
+                game.handleRecievedMessage(message.shift(), message);
+            }
+        } catch (error) { log('ERROR', error); }
+    }
+    function disconnectButtonPressed() { this.ws.close(); }
+    /**Updates buttons with .Disabled, depending on true/false
+     * @param {boolean} enabled*/ function updateButtons(enabled) {
+        for (var x = 0; x < game.board.length; x++)
+            for (var y = 0; y < game.board[x].length; y++) {
+                var button = game.board[x][y][0];
+                if (enabled) {
+                    button.classList.remove('Disabled');
+                    button.textContent = '•';
+                    button.removeAttribute('id');
+                }
+                else button.classList.add('Disabled');
+            }
+    }
+    /**Sends a message to log
+     * @param {'Connection' | 'Client => Server' | 'ERROR' | 'Game' | 'Internal' | 'Server'} caller @param {string} message*/ function log(caller, message) {
+        const logMessage = `${new Date(Date.now()).toLocaleTimeString()} | [${caller}] ${message}`;
+        console.log(logMessage);
+        if (caller != 'Internal') document.getElementById("log").value += logMessage + '\n';
+
+        if (caller == 'ERROR') alert(logMessage);
+        else if (message == 'RESET ') {
+            console.log('\n------------------------\n');
+            document.getElementById("log").value += `\n------------------------\n\n`;
+        }
+    }
+</script>

@@ -1,0 +1,52 @@
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\MainWindow.g.cs
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\App.g.cs
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI_MarkupCompile.cache
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI_MarkupCompile.lref
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\bin\Debug\ABCGUI.exe.config
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\bin\Debug\ABCGUI.exe
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\bin\Debug\ABCGUI.pdb
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\MainWindow.baml
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.g.resources
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.Properties.Resources.resources
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.csproj.GenerateResource.cache
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.csproj.CopyComplete
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.exe
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.pdb
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\StartMenu.g.cs
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\StartMenu.baml
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\PanelTest.g.cs
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ucPokemonSlot.g.cs
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\PanelTest.baml
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ucPokemonSlot.baml
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.csprojAssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\StartMenu.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\PanelTest.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\UCPokemonSlot.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\App.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI_MarkupCompile.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI_MarkupCompile.lref
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\MainWindow.baml
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\StartMenu.baml
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\PanelTest.baml
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\UCPokemonSlot.baml
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.g.resources
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.Properties.Resources.resources
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.csproj.GenerateResource.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\bin\Debug\ABCGUI.exe.config
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\bin\Debug\ABCGUI.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\bin\Debug\ABCGUI.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\bin\Debug\ABCLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\bin\Debug\DanhoLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCGUI\obj\Debug\ABCGUI.exe
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\bin\Debug\ABCLibrary.dll
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\bin\Debug\DanhoLibrary.dll
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\bin\Debug\ABCLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\bin\Debug\DanhoLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCGUI\obj\Debug\ABCGUI.csprojAssemblyReference.cache

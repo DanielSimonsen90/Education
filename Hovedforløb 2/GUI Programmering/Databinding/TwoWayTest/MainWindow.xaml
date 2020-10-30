@@ -1,0 +1,44 @@
+﻿<Window x:Class="TwoWayTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TwoWayTest"
+        mc:Ignorable="d"
+        Title="TwoWayTest" Height="269.999" Width="272.676">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="124" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27" />
+            <RowDefinition Height="27" />
+            <RowDefinition Height="27" />
+            <RowDefinition Height="27" />
+            <RowDefinition Height="27" />
+            <RowDefinition Height="32*" />
+        </Grid.RowDefinitions>
+
+        <TextBox Text="{Binding Fornavn}" HorizontalAlignment="Stretch" Margin="55,2,10,2" 
+             Name="tbFornavn" Grid.Row="0" VerticalAlignment="Stretch" Grid.ColumnSpan="2" />
+        <TextBox Text="{Binding Efternavn}" HorizontalAlignment="Stretch" Margin="55,2,10,2" 
+             Name="tbEfterNavn" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="2" />
+        <TextBox Text="{Binding Formue}" HorizontalAlignment="Stretch" Margin="55,2,10,2" 
+             Name="tbFormue" VerticalAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+        <TextBlock  Grid.Row="0" Height="23" HorizontalAlignment="Left" Name="textBlock1" Text="Fornavn"
+             VerticalAlignment="Center" Margin="0,2" Width="42" />
+        <TextBlock Grid.Row="1" Height="23" HorizontalAlignment="Left" Name="textBlock2" Text="Efternavn" 
+             VerticalAlignment="Center" Margin="0,2" Width="50" />
+        <TextBlock Grid.Row="2" Height="23" HorizontalAlignment="Left" Name="textBlock3" Text="Formue" 
+             VerticalAlignment="Center" Margin="0,2" Width="40" />
+
+        <Button Content="Vis data" Grid.Row="3" Click="btnVisData_Click" Grid.ColumnSpan="2" />
+        <Button Content="Opdatér Formue" Grid.Row="4" Click="btnOpdaterFormue_Click" Grid.ColumnSpan="2"/>
+
+        <DataGrid Name="DataGridThing" AutoGenerateColumns="True" ItemsSource="{Binding}" IsReadOnly="True"
+                  Grid.ColumnSpan="3" Grid.Row="5" HorizontalAlignment="Stretch"/>
+    </Grid>
+</Window>

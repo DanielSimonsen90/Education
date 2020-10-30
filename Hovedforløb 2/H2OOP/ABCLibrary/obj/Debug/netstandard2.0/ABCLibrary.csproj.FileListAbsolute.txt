@@ -1,0 +1,24 @@
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\bin\Debug\netstandard2.0\ABCLibrary.deps.json
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\bin\Debug\netstandard2.0\ABCLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\bin\Debug\netstandard2.0\ABCLibrary.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\bin\Debug\netstandard2.0\DanhoLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\bin\Debug\netstandard2.0\DanhoLibrary.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.AssemblyInfoInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.AssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\H2OOPV2\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\bin\Debug\netstandard2.0\ABCLibrary.deps.json
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\bin\Debug\netstandard2.0\ABCLibrary.dll
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\bin\Debug\netstandard2.0\ABCLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\bin\Debug\netstandard2.0\DanhoLibrary.dll
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\bin\Debug\netstandard2.0\DanhoLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.csproj.CopyComplete
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.dll
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\H2OOP\ABCLibrary\obj\Debug\netstandard2.0\ABCLibrary.csprojAssemblyReference.cache

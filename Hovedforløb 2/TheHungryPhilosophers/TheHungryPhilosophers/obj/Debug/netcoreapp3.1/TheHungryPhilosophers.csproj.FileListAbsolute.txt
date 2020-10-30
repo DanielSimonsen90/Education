@@ -1,0 +1,11 @@
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\bin\Debug\netcoreapp3.1\TheHungryPhilosophers.exe
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\bin\Debug\netcoreapp3.1\TheHungryPhilosophers.deps.json
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\bin\Debug\netcoreapp3.1\TheHungryPhilosophers.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\bin\Debug\netcoreapp3.1\TheHungryPhilosophers.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\bin\Debug\netcoreapp3.1\TheHungryPhilosophers.dll
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\bin\Debug\netcoreapp3.1\TheHungryPhilosophers.pdb
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\obj\Debug\netcoreapp3.1\TheHungryPhilosophers.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\obj\Debug\netcoreapp3.1\TheHungryPhilosophers.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\obj\Debug\netcoreapp3.1\TheHungryPhilosophers.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\obj\Debug\netcoreapp3.1\TheHungryPhilosophers.dll
+C:\Users\DanielSimonsen\source\repos\TheHungryPhilosophers\TheHungryPhilosophers\obj\Debug\netcoreapp3.1\TheHungryPhilosophers.pdb

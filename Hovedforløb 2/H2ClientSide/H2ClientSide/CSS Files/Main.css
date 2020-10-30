@@ -1,0 +1,127 @@
+﻿:root {
+    --dark1: #222;
+    --dark2: #333;
+    --dark3: #555;
+    --lightgray: #888;
+}
+
+/*#region body*/
+body { background-color: var(--dark1); color: white; }
+body h1, h2, h3 { text-align: center; }
+/*#endregion*/
+
+/*#region Navigation*/
+.NavBar {
+    border: solid;
+    border-color: black;
+    width: 100%;
+    height: 69px;
+}
+.NavBar img {
+    height: 69px;
+    background-color: #0A0A0A;
+    border-right: solid;
+    transition: 0.5s;
+    border-right-color: black;
+}
+.NavBar img:hover {
+    background-color: var(--dark3);
+    transition: 0.25s;
+}
+
+.NavBarContent {
+    position: absolute;
+    top: 7px;
+}
+.NavBarContent a {
+    position: relative;
+    top: 14px;
+    margin-left: 12px;
+    font-size: 42px;
+    border: solid;
+    border-color: black;
+    color: var(--dark2);
+    text-decoration: none;
+    background-color: #111;
+    padding: 4px;
+    transition: 0.25s;
+}
+.NavBarContent a:hover {
+    font-size: 50px;
+    color: white;
+    text-decoration: underline;
+    padding: 8px;
+    transition: 0.25s;
+}
+/*#endregion*/
+
+/*#region Calculator Container*/
+.CalculatorContainer {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-color: black;
+    padding: 1px;
+}
+
+/*#region Display*/
+.Display {
+    background-color: var(--dark2);
+    color: white;
+    width: 98%;
+    font-size: 32px;
+}
+::-webkit-input-placeholder {
+    color: var(--lightgray);
+}
+/*#endregion*/
+
+/*#region Buttons*/
+button:hover {
+    background-color: #444;
+    color: white;
+    transition: 0.1s;
+}
+
+.NumberButton, .OperatorButton, .MiscButton{
+    background-color: var(--dark2);
+    color: #bbb;
+    font-size: 100px;
+}
+
+.NumberButton {
+    width: 33%;
+}
+
+.OperatorButton {
+    height: 1%;
+    width: 100%;
+    font-size: 356.2%;
+}
+
+.MiscButton {
+    font-size: 48px;
+}
+
+[name=btn0] {
+    font-size: 50px;
+    width: 99%;
+}
+/*#endregion*/
+
+/*#region Button Containers*/
+.NumberButtonContainer {
+    width: 66%;
+    display: inline-block;
+}
+.OperatorButtonContainer {
+    display: inline-block;
+    width: 34%;
+    height: 10%;
+}
+.MiscButtonContainer {
+
+}
+/*#endregion*/
+/*#endregion*/

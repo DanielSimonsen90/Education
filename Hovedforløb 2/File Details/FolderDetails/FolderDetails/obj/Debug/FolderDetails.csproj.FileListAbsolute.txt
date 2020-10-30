@@ -1,0 +1,74 @@
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe.config
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.pdb
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.g.cs
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\App.g.cs
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.cache
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.lref
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.baml
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.g.resources
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.Properties.Resources.resources
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.GenerateResource.cache
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.exe
+C:\Users\DanielSimonsen\source\repos\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.pdb
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe.config
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.pdb
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csprojAssemblyReference.cache
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.g.cs
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\App.g.cs
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.cache
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.lref
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.baml
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.g.resources
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.Properties.Resources.resources
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.GenerateResource.cache
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.exe
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe.config
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csprojAssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\App.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.lref
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.baml
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.g.resources
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.Properties.Resources.resources
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.GenerateResource.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.pdb
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe.config
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.pdb
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csprojAssemblyReference.cache
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.g.cs
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\App.g.cs
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.cache
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.lref
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.baml
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.g.resources
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.Properties.Resources.resources
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.GenerateResource.cache
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.exe
+E:\Program Files (x86)\Microsoft Visual Studio\Projects\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.pdb
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe.config
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.exe
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\bin\Debug\FolderDetails.pdb
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csprojAssemblyReference.cache
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.g.cs
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\App.g.cs
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.cache
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails_MarkupCompile.lref
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\MainWindow.baml
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.g.resources
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.Properties.Resources.resources
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.GenerateResource.cache
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.csproj.CoreCompileInputs.cache
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.exe
+D:\Github\H2\3MandsGruppe\FolderDetails_Gruppe1\FolderDetails\FolderDetails\obj\Debug\FolderDetails.pdb

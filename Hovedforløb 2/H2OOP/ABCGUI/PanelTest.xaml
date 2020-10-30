@@ -1,0 +1,84 @@
+﻿<Window x:Class="ABCGUI.StartMenuWithPanels"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ABCGUI"
+        mc:Ignorable="d"
+        Title="Pokémon Rip-Off [By: Simonsen Techs]" Height="388" Width="800">
+    <DockPanel x:Name="Main">
+        <TextBlock Name="txtblckTitle" 
+            HorizontalAlignment="Center" VerticalAlignment="Top" 
+            Height="61" Width="772" 
+            FontSize="42" TextAlignment="Center" FontWeight="Bold" 
+            TextWrapping="Wrap" Text="Simonsen Techs' Pokémon Game" 
+            DockPanel.Dock="Top"
+        />
+        <StackPanel x:Name="MarginLeft" Width="7" DockPanel.Dock="Left"/>
+        <StackPanel x:Name="MarginRight" Width="7" DockPanel.Dock="Right"/>
+        <StackPanel x:Name="SeperatorButtons" Height="7" DockPanel.Dock="Bottom"/>
+        <DockPanel x:Name="Slot123" DockPanel.Dock="Top">
+            <Border x:Name="Slot1"
+            BorderBrush="Black" BorderThickness="1" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="118" Width="254"
+            DockPanel.Dock="Left">
+
+            </Border>
+            <StackPanel x:Name="Breather1And2" Width="7" DockPanel.Dock="Left"/>
+            <Border x:Name="Slot2"
+            BorderBrush="Black" BorderThickness="1" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="118" Width="254"
+            DockPanel.Dock="Left">
+            </Border>
+            <StackPanel x:Name="Breather2And3" Width="7" DockPanel.Dock="Left"/>
+            <Border x:Name="Slot3"
+            BorderBrush="Black" BorderThickness="1" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="118" Width="253"
+            DockPanel.Dock="Left">
+            </Border>
+        </DockPanel>
+        <StackPanel x:Name="SeperatorSlot123Slot456" Height="7" DockPanel.Dock="Top"/>
+        <DockPanel x:Name="Slot456" DockPanel.Dock="Top">
+            <Border x:Name="Slot4"
+            BorderBrush="Black" BorderThickness="1" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="118" Width="254"
+            DockPanel.Dock="Left">
+            </Border>
+            <StackPanel x:Name="Breather4And5" Width="7" DockPanel.Dock="Left"/>
+            <Border x:Name="Slot5"
+            BorderBrush="Black" BorderThickness="1" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="118" Width="254"
+            DockPanel.Dock="Left">
+            </Border>
+            <StackPanel x:Name="Breather5And6" Width="7" DockPanel.Dock="Left"/>
+            <Border x:Name="Slot6"
+            BorderBrush="Black" BorderThickness="1" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="118" Width="254"
+            DockPanel.Dock="Left">
+            </Border>
+        </DockPanel>
+        <StackPanel x:Name="SeperatorSlot456Buttons" Height="7" DockPanel.Dock="Top"/>
+        <DockPanel x:Name="Buttons" DockPanel.Dock="Bottom">
+            <Button Content="Go on Adventure! (Add Pokémon)" 
+            VerticalAlignment="Bottom" 
+            Width="254" Height="34"
+            DockPanel.Dock="Left"/>
+            <StackPanel x:Name="BreatherAddUpdate" Width="7" DockPanel.Dock="Left"/>
+            <Button Content="Update Held Item" 
+            VerticalAlignment="Bottom" 
+            Width="254" Height="34"
+            DockPanel.Dock="Left"/>
+            <StackPanel x:Name="BreatherUpdateDelete" Width="7" DockPanel.Dock="Left"/>
+            <Button Content="Release a Team Member" 
+            VerticalAlignment="Bottom" 
+            Width="254" Height="34" 
+            DockPanel.Dock="Left"/>
+        </DockPanel>
+    </DockPanel>
+</Window>

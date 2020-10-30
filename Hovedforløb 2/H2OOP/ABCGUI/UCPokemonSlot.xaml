@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="ABCGUI.UCPokemonSlot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ABCGUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="400">
+    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <DockPanel>
+            <DockPanel Name="NameLevel" DockPanel.Dock="Top">
+                <Label Content="{Binding Name}" FontSize="32" DockPanel.Dock="Left"/>
+                <Label Content="{Binding Level}" FontSize="28" DockPanel.Dock="Right"/>
+            </DockPanel>
+            <DockPanel>
+                <Label Content="{Binding Types[0]}" FontSize="22" DockPanel.Dock="Right"/>
+                <Label Content="{Binding Types[1]}" FontSize="22" DockPanel.Dock="Right"/>
+            </DockPanel>
+            <Label Content="{Binding HeldItem}" FontSize="24"/>
+        </DockPanel>
+    </Border>
+</UserControl>

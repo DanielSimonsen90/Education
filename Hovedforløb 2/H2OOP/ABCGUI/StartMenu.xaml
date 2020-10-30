@@ -1,0 +1,71 @@
+﻿<Window x:Class="ABCGUI.StartPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ABCGUI"
+        mc:Ignorable="d"
+        Title="Simonsen Techs' Pokémon Game: Introduction" Height="401" Width="365">
+    <DockPanel 
+        Height="370" Width="365" 
+        HorizontalAlignment="Left" VerticalAlignment="Top" 
+        LastChildFill="False" Margin="0,0,0,0">
+        <StackPanel x:Name="MarginLeft" Width="28" DockPanel.Dock="Left"/>
+        <StackPanel x:Name="MarginRight" Width="28" DockPanel.Dock="Right"/>
+        <StackPanel x:Name="BreatherName" Height="14" DockPanel.Dock="Top"/>
+        <Label x:Name="NameLabel"
+            Content="What is your name?" 
+            FontSize="30"
+            FontWeight="Bold" 
+            DockPanel.Dock="Top" 
+            HorizontalAlignment="Center"
+        />
+        <TextBox x:Name="txtblckTrainerName" 
+            FontSize="20"
+            TextAlignment="Center" 
+                 HorizontalAlignment="Center"
+            DockPanel.Dock="Top"
+            GotFocus="TextBox_Click" Height="43" Width="288">
+            Enter your name here
+        </TextBox>
+        <StackPanel x:Name="BreatherNameStarter" Height="14" DockPanel.Dock="Top"/>
+        <Label Content="Choose a starter" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top"
+            FontSize="30"
+            FontWeight="Bold" 
+            DockPanel.Dock="Top"
+        />
+        <RadioButton x:Name="StarterOne" 
+            Content="StarterOne" FontSize="20" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="28" Width="298" 
+            DockPanel.Dock="Top"
+            Click="StarterButton_Click"
+        />
+        <RadioButton x:Name="StarterTwo" 
+            Content="StarterTwo" FontSize="20"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="28" Width="298" 
+            DockPanel.Dock="Top"
+            Click="StarterButton_Click"
+        />
+        <RadioButton x:Name="StarterThree" 
+            Content="StarterThree" FontSize="20"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Height="28" Width="298" 
+            DockPanel.Dock="Top"
+            Click="StarterButton_Click"
+        />
+        <StackPanel x:Name="BreatherStarterButton" Height="14" DockPanel.Dock="Top"/>
+        <!-- Free space - put something if needed yesyes-->
+        <StackPanel x:Name="BreatherButton" Height="14" DockPanel.Dock="Bottom" />
+        <Button Content="Submit Character" 
+            FontSize="20" FontWeight="Bold"  
+            HorizontalAlignment="Center" 
+            Width="288" Height="50"
+            DockPanel.Dock="Bottom"
+            Click="SubmitButton_Click"
+        />
+    </DockPanel>
+</Window>

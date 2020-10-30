@@ -1,0 +1,4 @@
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\WpfControlLibrary\obj\Debug\WpfControlLibrary.csprojAssemblyReference.cache
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\WpfControlLibrary\obj\Debug\UserControl1.g.cs
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\WpfControlLibrary\obj\Debug\WpfControlLibrary_MarkupCompile.cache
+D:\Program Files (x86)\Microsoft Visual Studio\Projects\H2\FolderDetails_Gruppe1\FolderDetails\WpfControlLibrary\obj\Debug\WpfControlLibrary_MarkupCompile.lref

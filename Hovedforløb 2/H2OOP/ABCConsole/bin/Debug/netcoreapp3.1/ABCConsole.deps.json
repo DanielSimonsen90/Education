@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ABCConsole/1.0.0": {
+        "dependencies": {
+          "ABCLibrary": "1.0.0",
+          "DanhoLibrary": "1.0.0.0"
+        },
+        "runtime": {
+          "ABCConsole.dll": {}
+        }
+      },
+      "ABCLibrary/1.0.0": {
+        "runtime": {
+          "ABCLibrary.dll": {}
+        }
+      },
+      "DanhoLibrary/1.0.0.0": {
+        "runtime": {
+          "DanhoLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ABCConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ABCLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DanhoLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
