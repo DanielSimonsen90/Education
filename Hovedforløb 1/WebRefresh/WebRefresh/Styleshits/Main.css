@@ -1,0 +1,124 @@
+﻿/*#region Body*/
+body { background-color: #1b1b1b; color: white; }
+
+content h1 { text-align: center; font-size: 6em; }
+/*#endregion*/
+
+/*#region Header*/
+.header {
+    /*General*/
+    background-color: #191919;
+    color: white;
+    text-align: center;
+
+    /*Box*/
+    border: solid;
+    border-color: #272727;
+    margin-right: 4px;
+    padding: 5px;
+}
+
+.header a {
+    /*General*/
+    text-decoration: none; 
+    font-size: 42px;
+    color: white;
+    margin-left: 50px;
+
+    /*Animation*/
+    transition: 0.5s;
+}
+
+.header a:hover { color: #ff6a00; font-size: 50px; transition: 0.3s; }
+
+.HeaderLogo { width: 40px; height: 40px; position: absolute; left: 48px;}
+
+.VisitPage { color: #ff6a00; font-size: 50px; }
+/*#endregion*/
+
+/*#region Sidebar*/
+.Sidebar{
+    /*Position of Box*/
+    position: fixed;
+    left: 12px;
+
+    /*Box*/
+    border-style: solid;
+    border-color: black;
+    background-color: #111;
+
+    /*Padding*/
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 32px;
+
+    /*Box content*/
+    font-size: 16px;
+}
+
+.Sidebar a { text-decoration: solid; color: #fff; transition: 0.2s; }
+.Sidebar a:hover { text-decoration: underline; color: #999; transition: 0.05s; font-size: 18px; }
+
+.Sidebar ul{ margin-top: 0; margin-bottom: 0; padding-left: 20px; }
+
+/*#region Site definitions*/
+#OmMig { width: 128px; height: 256px; }
+#Interesser { width: 172px; height: 264px; }
+/*#endregion*/
+/*#endregion*/
+
+/*#region NavSpeech*/
+/*#region General*/
+#NavSpeech {
+    /*Box*/
+    border: solid;
+    border-color: #474747;
+    margin: 0 auto;
+    width: 750px;
+}
+
+#NavSpeech h2, p { text-align: center; }
+/*#endregion*/
+
+/*#region UserPresentation*/
+.UserPresentation { padding-left: 16px; padding-right: 16px; }
+
+.UserPresentation p { text-align: left; }
+
+/*#region Anchors*/
+.UserPresentation a { text-decoration: dotted; color: #71cfff; transition: 0.2s; }
+.UserPresentation a:hover { color: #306581; transition: 0.09s; }
+
+.UserPresentation h4 a { color: white; } 
+.UserPresentation h4 a:hover { color: #aaa; }
+
+.Dictionary a { color: #aaa; }
+.Dictionary a:hover { color: #bbb }
+/*#endregion*/
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region Images*/
+.DiscordEmote { height: 24px; width: 24px; }
+
+/*#endregion*/
+
+/*#region Footer*/
+footer { 
+    /*Text*/
+    text-align: center; 
+    font-size: 20px;
+    
+    /*Position*/
+    margin-top: 50px;
+    position: static;
+    bottom: 0px;
+    width: 99%;
+}
+footer a 
+{ color: white; text-decoration: none; transition: 0.5s }
+footer a:hover 
+{ color: #aaa; transition: 0.3s; font-size: 22px; }
+/*#endregion*/
