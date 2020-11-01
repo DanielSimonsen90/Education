@@ -13,7 +13,7 @@ namespace ABCLibrary
         {
             Stage++;
             if (Stages[Stage] != "Hatched") return;
-
+            
             OnEggHatch(this);
             Console.BackgroundColor = ConsoleColor.DarkGray;
             HatchTimer.Stop();
