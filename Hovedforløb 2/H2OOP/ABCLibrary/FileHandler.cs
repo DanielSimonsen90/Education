@@ -40,7 +40,7 @@ namespace ABCLibrary
                     case 1: memberTeam[mbmr] = new Egg(props[0]); break;
                     case 3: memberTeam[mbmr] = new Pokémon(props[0], int.Parse(props[2]), props[1].Split('/')); break;
                     case 4: memberTeam[mbmr] = new Pokémon(props[0], int.Parse(props[2]), props[1].Split('/')) { HatchedFrom = new Egg(props[4]) }; break;
-                    default: throw new Exception("Ran default switch in FileHandler.GetFileContent() using " + props.ToBigBoiString(true));
+                    default: throw new Exception("Ran default switch in FileHandler.GetFileContent() using " + props.Join(","));
                 }
             }
             return memberTeam;

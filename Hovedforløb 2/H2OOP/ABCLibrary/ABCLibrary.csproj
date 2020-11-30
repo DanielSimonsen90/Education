@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Reference Include="DanhoLibrary">
-      <HintPath>..\..\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.0\DanhoLibrary.dll</HintPath>
+      <HintPath>..\..\..\..\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.0\DanhoLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
 

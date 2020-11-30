@@ -1,1 +1,1 @@
-Bulbasaur,Grass/Poison,10,
+Charmander,Fire,11,

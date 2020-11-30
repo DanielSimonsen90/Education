@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0ooW7AxhYdOxyBW9C3uH+ssCoyHTxWoKNyDylJsNwjHu1EX3CrXkXn2Vl6BZ8Tm9x+WokVgYPaQZ7gRtAWauDA==",
+  "dgSpecHash": "ih1zR4SmV69jxPG1k1WkyrOuGq9/ZSAAQRuJy5HXI/DEJoSOhQ5S4WtfwFJQxXo3bqoa6Z4jHwUgJnEMPvyg5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 2\\H2OOP\\ABCLibrary\\ABCLibrary.csproj",
+  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 2\\H2OOP\\ABCLibrary\\ABCLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -33,3 +33,21 @@ C:\Users\DanielSimonsen\source\repos\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\AB
 C:\Users\DanielSimonsen\source\repos\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.dll
 C:\Users\DanielSimonsen\source\repos\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.pdb
 C:\Users\DanielSimonsen\source\repos\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.genruntimeconfig.cache
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.dll
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.pdb
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCConsole.exe
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCConsole.deps.json
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCConsole.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCConsole.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCConsole.dll
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCConsole.pdb
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCLibrary.dll
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\DanhoLibrary.dll
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\ABCLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\bin\Debug\netcoreapp3.1\DanhoLibrary.pdb
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.csproj.CopyComplete
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 2\H2OOP\ABCConsole\obj\Debug\netcoreapp3.1\ABCConsole.genruntimeconfig.cache
