@@ -6,10 +6,22 @@ namespace ORM
     {
         static Item()
         {
-            Number(TABLE_NAME, "id", orm => (orm as Item).ID);
-            Text(TABLE_NAME, "title", orm => (orm as Item).Title);
-            Number(TABLE_NAME, "cost", orm => (orm as Item).Cost);
-            Text(TABLE_NAME, "description", orm => (orm as Item).Description);
+            Int(TABLE_NAME, "id", 
+                orm => (orm as Item).ID, 
+                (orm, value) => orm.ID = int.Parse(value.ToString()));
+
+            Text(TABLE_NAME, "title", 
+                orm => (orm as Item).Title, 
+                (orm, value) => (orm as Item).Title = value);
+
+            Float(TABLE_NAME, "cost", 
+                orm => (orm as Item).Cost, 
+                (orm, value) => (orm as Item).Cost = value);
+
+            Text(TABLE_NAME, "description", 
+                orm => (orm as Item).Description, 
+                (orm, value) => (orm as Item).Description = value);
+
             PrimaryKey(TABLE_NAME, "id");
         }
 

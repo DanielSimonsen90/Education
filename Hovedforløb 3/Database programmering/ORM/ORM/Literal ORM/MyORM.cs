@@ -1,35 +1,45 @@
-﻿using DanhoLibrary.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Data.SqlClient;
 using System.Text;
-using System.Threading.Tasks;
 using static ORM.Literal_ORM.Types;
 
 namespace ORM.Literal_ORM
 {
-    public abstract class MyORM
+    public abstract partial class MyORM : ICRUD
     {
         public Dictionary<string, Field> this[string tableName] => TableCheck(tableName);
-
-        private static readonly Dictionary<string, Dictionary<string, Field>> tables = new Dictionary<string, Dictionary<string, Field>>();
-        private static Dictionary<string, Field> TableCheck(string tableName)
-        {
-            if (!tables.ContainsKey(tableName))
-                tables[tableName] = new Dictionary<string, Field>();
-            return tables[tableName];
-        }
-
-        private static readonly Dictionary<string, Field> primaryKeys = new Dictionary<string, Field>();
-
-        protected static void Number(string tableName, string propertyName, Func<MyORM, float> getter) => TableCheck(tableName)[propertyName] = new Number(getter);
-        protected static void Text(string tableName, string propertyName, Func<MyORM, string> getter) => TableCheck(tableName)[propertyName] = new Text(getter);
-        protected static void PrimaryKey(string tableName, string propertyName) => primaryKeys[tableName] = TableCheck(tableName)[propertyName];
 
         public int ID { get; set; } = 0;
         public abstract string TableName { get; }
 
-        public void Insert()
+        public ICRUD CreateTable()
+        {
+            //Table exists
+            try
+            {
+                if (ORMDB.Query($"SELECT * FROM {TableName}")[0] == null) throw new Exception("No table found");
+                return this;
+            }
+            catch (Exception) { }
+
+            Field primaryKey = primaryKeys[TableName];
+            string pkName = string.Empty;
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var kvp in this[TableName])
+            {
+                if (kvp.Value.Equals(primaryKey)) pkName = kvp.Key;
+                sb.Append($", {kvp.Key} {kvp.Value.SQLType} {(kvp.Value.Equals(primaryKey) ? "IDENTITY(1, 1)" : "")}");
+            }
+
+            string columns = sb.ToString().Substring(2);
+
+            ORMDB.Execute($"CREATE TABLE {TableName} ({columns}, PRIMARY KEY ({pkName}))");
+            return this;
+        }
+        public ICRUD Insert()
         {
             StringBuilder fields = new StringBuilder(),
                 values = new StringBuilder();
@@ -43,15 +53,20 @@ namespace ORM.Literal_ORM
                 values.Append($", {kvp.Value.GetSQLValue(this)}");
             }
 
-
-            string sql = $@"INSERT INTO {TableName} ({fields.ToString().Substring(2)}) VALUES ({values.ToString().Substring(2)})";
-            Console.WriteLine(sql);
+            ORMDB.Execute($"INSERT INTO {TableName} ({fields.ToString().Substring(2)}) VALUES ({values.ToString().Substring(2)})");
+            return this;
         }
-        public void Set()
+        public ICRUD Select(int primaryKey)
         {
-            throw new NotImplementedException();
+            List<object> result = ORMDB.Query($"SELECT * FROM {TableName} WHERE {GetPrimaryKey().Key} = {primaryKey}");
+            MyORM lookingFor = result.Find(i => (i as MyORM).ID == primaryKey) as MyORM;
+
+            var keys = this[TableName];
+            foreach (var kvp in keys)
+                this[TableName][kvp.Key].SetValue(this, this[TableName][kvp.Key].GetSQLValue(lookingFor));
+            return this;
         }
-        public void Update()
+        public ICRUD Update()
         {
             Field primaryKey = primaryKeys[TableName];
             string pkName = string.Empty;
@@ -60,33 +75,27 @@ namespace ORM.Literal_ORM
             StringBuilder sb = new StringBuilder();
 
             foreach (var kvp in this[TableName])
-            {
-                if (kvp.Value.Equals(primaryKey))
-                {
-                    pkName = kvp.Key;
-                    continue;
-                }
+                if (kvp.Value.Equals(primaryKey)) pkName = kvp.Key;
+                else sb.Append($", {kvp.Key} = {kvp.Value.GetSQLValue(this)}");
 
-                sb.Append($", {kvp.Key} = {kvp.Value.GetSQLValue(this)}");
-            }
-
-            string sql = $@"UPDATE {TableName} SET {sb.ToString().Substring(2)} WHERE {pkName} = {pkValue}";
-            Console.WriteLine(sql);
+            ORMDB.Execute($"UPDATE {TableName} SET {sb.ToString().Substring(2)} WHERE {pkName} = {pkValue}");
+            return this;
         }
-        public void Delete()
+        public ICRUD Delete()
         {
-            Field pk = primaryKeys[TableName];
+            var kvp = GetPrimaryKey();
+            ORMDB.Execute($"DELETE FROM {TableName} WHERE {kvp.Key} = {kvp.Value.GetSQLValue(this)}");
+            return this;
+        }
 
-            string pkName = string.Empty;
+        private KeyValuePair<string, Field> GetPrimaryKey()
+        {
+            Field primaryKey = primaryKeys[TableName];
+
             foreach (var kvp in this[TableName])
-            {
-                if (!kvp.Value.Equals(pk)) continue;
-                pkName = kvp.Key;
-                break;
-            }
-
-            string sql = $"DELETE FROM {TableName} WHERE {pkName} = {pk.GetSQLValue(this)}";
-            Console.WriteLine(sql);
+                if (kvp.Value.Equals(primaryKey))
+                    return kvp;
+            return new KeyValuePair<string, Field>();
         }
     }
 }

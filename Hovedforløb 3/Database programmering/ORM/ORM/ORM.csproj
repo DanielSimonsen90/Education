@@ -48,7 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Item.cs" />
+    <Compile Include="Literal ORM\ICRUD.cs" />
     <Compile Include="Literal ORM\MyORM.cs" />
+    <Compile Include="Literal ORM\ORMDB.cs" />
+    <Compile Include="Literal ORM\StaticOrm.cs" />
     <Compile Include="Literal ORM\Types.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
