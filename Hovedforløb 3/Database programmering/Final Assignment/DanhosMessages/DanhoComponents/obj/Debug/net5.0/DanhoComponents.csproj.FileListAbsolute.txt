@@ -1,0 +1,12 @@
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\bin\Debug\net5.0\DanhoComponents.deps.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\bin\Debug\net5.0\DanhoComponents.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\bin\Debug\net5.0\ref\DanhoComponents.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\bin\Debug\net5.0\DanhoComponents.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\DanhoComponents.csprojAssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\DanhoComponents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\DanhoComponents.AssemblyInfoInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\DanhoComponents.AssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\DanhoComponents.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\DanhoComponents.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\ref\DanhoComponents.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\net5.0\DanhoComponents.pdb
