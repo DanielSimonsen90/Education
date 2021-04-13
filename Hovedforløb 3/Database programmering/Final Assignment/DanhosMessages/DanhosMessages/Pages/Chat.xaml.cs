@@ -1,20 +1,9 @@
 ﻿using DanhoComponents;
 using DanhosMessages.Components.Errors;
 using DanhosMessages.Components.UserControls;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace DanhosMessages.Pages
 {
@@ -30,8 +19,7 @@ namespace DanhosMessages.Pages
         {
             InitializeComponent();
             Window = window;
-            //TODO: Find user from username
-            //User = username;
+            User = window.DBAccess.Users.GetUser(u => u.Name == username);
             LoadMessages();
         }
 
@@ -39,24 +27,25 @@ namespace DanhosMessages.Pages
         {
             try
             {
-                AddMessageToMessageContainer();
+                Message message = AddMessageToMessageContainer();
                 ClearUserInput();
+                Window.DBAccess.Messages.AddMessage(message);
             }
             catch (InvalidMessageException error) { MessageBox.Show(error.Message, "Invalid Message", MessageBoxButton.OK); }
+
         }
-        private void AddMessageToMessageContainer()
+        private Message AddMessageToMessageContainer()
         {
             string messageContent = MessageContent.Text;
 
             if (User == null) throw new InvalidMessageException("You are not logged in!");
             else if (string.IsNullOrEmpty(messageContent)) throw new InvalidMessageException("Please write something to send!");
 
-            MessageContainer.Children.Add(new UCMessage(new Message(User, messageContent)));
+            Message message = new(User, messageContent);
+            MessageContainer.Children.Add(new UCMessage(message));
+            return message;
         }
-        private void ClearUserInput()
-        {
-            MessageContent.Text = string.Empty;
-        }
+        private void ClearUserInput() => MessageContent.Text = string.Empty;
 
         private void Log_Out_Click(object sender, RoutedEventArgs e)
         {
@@ -70,8 +59,7 @@ namespace DanhosMessages.Pages
         private void LoadMessages()
         {
             int chatID = ChatIDs.SelectedIndex;
-            //TODO: Load messages from chatID
-            List<Message> messages = new();
+            List<Message> messages = Window.DBAccess.Chats.GetChat(chatID).Messages as List<Message>;
             if (messages.Count == 0) return;
 
             MessageContainer.Children.Clear();

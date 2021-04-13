@@ -3,14 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DanhoComponents
 {
-    public class User : IID
+    public class User : HasID
     {
         [Key]
-        public int ID { get; set; }
+        public override int ID { get; set; }
         [Required]
         public string Name { get; set; }
         public ICollection<Chat> Chats { get; set; }
 
+        public User() {}
         public User(string name)
         {
             Name = name;

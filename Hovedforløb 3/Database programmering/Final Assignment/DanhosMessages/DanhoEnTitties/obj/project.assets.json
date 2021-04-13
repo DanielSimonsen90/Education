@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DanhoComponents/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/DanhoComponents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DanhoComponents.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DanhoComponents/1.0.0": {
+      "type": "project",
+      "path": "../DanhoComponents/DanhoComponents.csproj",
+      "msbuildProject": "../DanhoComponents/DanhoComponents.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "DanhoComponents >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoEnTitties\\DanhoEnTitties.csproj",
+      "projectName": "DanhoEnTitties",
+      "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoEnTitties\\DanhoEnTitties.csproj",
+      "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoEnTitties\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj": {
+              "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project DanhoComponents is not compatible with netcoreapp3.1 (.NETCoreApp,Version=v3.1). Project DanhoComponents supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "DanhoComponents",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

@@ -9,9 +9,11 @@
       "DanhosMessages/1.0.0": {
         "dependencies": {
           "DanhoComponents": "1.0.0",
+          "DanhosEntitties": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
-          "Microsoft.EntityFrameworkCore.Tools": "5.0.5"
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.5",
+          "Database": "1.0.0.0"
         },
         "runtime": {
           "DanhosMessages.dll": {}
@@ -1078,6 +1080,32 @@
         "runtime": {
           "DanhoComponents.dll": {}
         }
+      },
+      "DanhosEntitties/1.0.0": {
+        "dependencies": {
+          "DanhoComponents": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5"
+        },
+        "runtime": {
+          "DanhosEntitties.dll": {}
+        }
+      },
+      "Database/1.0.0.0": {
+        "runtime": {
+          "Database.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Common/1.0.0.0": {
+        "runtime": {
+          "Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1817,6 +1845,21 @@
     },
     "DanhoComponents/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DanhosEntitties/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Database/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

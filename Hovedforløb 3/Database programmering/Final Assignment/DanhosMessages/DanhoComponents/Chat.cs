@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DanhoComponents
 {
-    public class Chat : IID
+    public class Chat : HasID
     {
         [Key]
-        public int ID { get; set; }
+        public override int ID { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
         public virtual ICollection<User> Users { get; set; }
 

@@ -2,6 +2,7 @@
 using DanhosMessages.Components;
 using System.Windows;
 using DanhosMessages.Components.Errors;
+using DanhoComponents;
 
 namespace DanhosMessages.Pages
 {
@@ -30,10 +31,17 @@ namespace DanhosMessages.Pages
         }
         private bool ValidateLogin(string username)
         {
+            //No username provided
             if (string.IsNullOrEmpty(username)) throw new InvalidUsernameException("Please provide a username!");
-            //TODO: Check if login is in DB
+            
+            //Find a user with that name
+            User user = Window.DBAccess.Users.GetUser(u => u.Name == username);
 
-            return true;
+            //If none was found, create a user with that name
+            user ??= Window.DBAccess.Users.AddUser(new User(username));
+
+            //Expected to return true; either with new or old user
+            return user != null;
         }
     }
 }

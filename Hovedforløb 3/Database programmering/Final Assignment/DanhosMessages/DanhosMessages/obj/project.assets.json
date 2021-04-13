@@ -1612,12 +1612,27 @@
       },
       "DanhoComponents/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
           "bin/placeholder/DanhoComponents.dll": {}
         },
         "runtime": {
           "bin/placeholder/DanhoComponents.dll": {}
+        }
+      },
+      "DanhosEntitties/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DanhoComponents": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.14"
+        },
+        "compile": {
+          "bin/placeholder/DanhosEntitties.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DanhosEntitties.dll": {}
         }
       }
     }
@@ -6121,11 +6136,17 @@
       "type": "project",
       "path": "../DanhoComponents/DanhoComponents.csproj",
       "msbuildProject": "../DanhoComponents/DanhoComponents.csproj"
+    },
+    "DanhosEntitties/1.0.0": {
+      "type": "project",
+      "path": "../DanhosEntitties/DanhosEntitties.csproj",
+      "msbuildProject": "../DanhosEntitties/DanhosEntitties.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "DanhoComponents >= 1.0.0",
+      "DanhosEntitties >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.5"
@@ -6160,6 +6181,9 @@
           "projectReferences": {
             "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj": {
               "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj"
+            },
+            "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj": {
+              "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj"
             }
           }
         }

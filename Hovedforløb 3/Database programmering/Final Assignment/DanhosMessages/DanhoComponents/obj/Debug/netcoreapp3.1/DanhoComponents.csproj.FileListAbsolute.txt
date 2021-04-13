@@ -1,0 +1,8 @@
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\bin\Debug\netcoreapp3.1\DanhoComponents.deps.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\bin\Debug\netcoreapp3.1\DanhoComponents.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\bin\Debug\netcoreapp3.1\DanhoComponents.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\netcoreapp3.1\DanhoComponents.AssemblyInfoInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\netcoreapp3.1\DanhoComponents.AssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\netcoreapp3.1\DanhoComponents.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\netcoreapp3.1\DanhoComponents.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoComponents\obj\Debug\netcoreapp3.1\DanhoComponents.pdb

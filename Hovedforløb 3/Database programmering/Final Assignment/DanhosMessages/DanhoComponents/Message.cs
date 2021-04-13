@@ -2,10 +2,10 @@
 
 namespace DanhoComponents
 {
-    public class Message : IID
+    public class Message : HasID
     {
         [Key]
-        public int ID { get; set; }
+        public override int ID { get; set; }
         [Key]
         public int SenderID { get; set; }
         [Required]

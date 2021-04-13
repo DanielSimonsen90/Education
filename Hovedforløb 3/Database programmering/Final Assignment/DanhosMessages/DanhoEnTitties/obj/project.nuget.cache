@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "9xiD0HWa19a/rpMfkm2FJoOXviVKQ3x5KPhJG5+LP1tUk4hML+77utR4QRt7QfDczK5W71S1COQG+o+7jNKWnw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoEnTitties\\DanhoEnTitties.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project DanhoComponents is not compatible with netcoreapp3.1 (.NETCoreApp,Version=v3.1). Project DanhoComponents supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "DanhoComponents",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

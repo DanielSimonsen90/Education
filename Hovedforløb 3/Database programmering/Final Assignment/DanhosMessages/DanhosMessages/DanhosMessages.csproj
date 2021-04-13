@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DanhoComponents\DanhoComponents.csproj" />
+    <ProjectReference Include="..\DanhosEntitties\DanhosEntitties.csproj" />
   </ItemGroup>
 
   <ItemGroup>
