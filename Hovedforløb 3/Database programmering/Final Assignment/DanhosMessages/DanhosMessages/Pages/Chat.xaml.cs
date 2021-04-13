@@ -32,6 +32,7 @@ namespace DanhosMessages.Pages
             Window = window;
             //TODO: Find user from username
             //User = username;
+            LoadMessages();
         }
 
         private void Message_Send_Click(object sender, RoutedEventArgs e)
@@ -63,6 +64,18 @@ namespace DanhosMessages.Pages
 
             if (userResponse == MessageBoxResult.Yes)
                 Window.Content = new Login(Window);
+        }
+
+        private void ChatIDs_SelectionChanged(object sender, SelectionChangedEventArgs e) => LoadMessages();
+        private void LoadMessages()
+        {
+            int chatID = ChatIDs.SelectedIndex;
+            //TODO: Load messages from chatID
+            List<Message> messages = new();
+            if (messages.Count == 0) return;
+
+            MessageContainer.Children.Clear();
+            messages.ForEach(m => MessageContainer.Children.Add(new UCMessage(m)));
         }
     }
 }

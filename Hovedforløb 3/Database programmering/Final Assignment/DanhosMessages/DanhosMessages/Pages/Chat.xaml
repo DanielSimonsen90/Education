@@ -14,21 +14,36 @@
             <RowDefinition Height="2*" />
             <RowDefinition Height="50" />
         </Grid.RowDefinitions>
+
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90" />
                 <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="100" />
             </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0">Chat ID:</TextBlock>
+                <ListBox x:Name="ChatIDs" Grid.Column="1" SelectedIndex="0" SelectionChanged="ChatIDs_SelectionChanged"></ListBox>
+            </Grid>
             
-            <TextBlock Grid.Column="0">You are messaging as: Unknown</TextBlock>
-            <Button Grid.Column="1" Click="Log_Out_Click">Log out</Button>
+            <TextBlock Grid.Column="1">You are messaging as: Unknown</TextBlock>
+            <Button Grid.Column="2" Click="Log_Out_Click">Log out</Button>
         </Grid>
+
         <StackPanel Grid.Row="1" x:Name="MessageContainer" />
+
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="100" />
             </Grid.ColumnDefinitions>
+            
             <TextBox Grid.Column="0" x:Name="MessageContent" FontSize="22">Template message</TextBox>
             <Button Grid.Column="1" FontSize="22" Click="Message_Send_Click">Send</Button>
         </Grid>

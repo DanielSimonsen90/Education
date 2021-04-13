@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace DanhoComponents
 {
     public class Chat : IID
     {
+        [Key]
         public int ID { get; set; }
-        public List<Message> Messages { get; set; }
-        public List<User> Users { get; set; }
+        public virtual ICollection<Message> Messages { get; set; }
+        public virtual ICollection<User> Users { get; set; }
 
-        public Message SendMessage(string content)
+        public Chat()
         {
-            throw new NotImplementedException();
+            Messages = new HashSet<Message>();
+            Users = new HashSet<User>();
         }
     }
 }

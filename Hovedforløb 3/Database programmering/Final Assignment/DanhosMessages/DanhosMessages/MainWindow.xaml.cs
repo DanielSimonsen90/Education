@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DanhosMessages.Pages;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using DanhosMessages.Pages;
 
 namespace DanhosMessages
 {
@@ -21,9 +8,12 @@ namespace DanhosMessages
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ProgramContext Context { get; set; } = new ProgramContext("(localdb)\\MSSQLLocalDB");
         public MainWindow()
         {
             InitializeComponent();
+            var context = new ProgramContext("(localdb)\\MSSQLLocalDB");
+            
             MainFrame.Content = new Login(this);
         }
     }

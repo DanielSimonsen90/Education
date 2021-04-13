@@ -1,4 +1,6 @@
-﻿namespace DanhoComponents
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DanhoComponents
 {
     interface IID
     {
