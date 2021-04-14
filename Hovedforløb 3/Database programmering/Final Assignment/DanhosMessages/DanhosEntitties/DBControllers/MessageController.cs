@@ -1,4 +1,4 @@
-﻿using DanhoComponents;
+﻿using DanhosEntitties.Components;
 using DanhosEntitties.DBControllers.Interfaces;
 using System;
 using System.Collections.Generic;

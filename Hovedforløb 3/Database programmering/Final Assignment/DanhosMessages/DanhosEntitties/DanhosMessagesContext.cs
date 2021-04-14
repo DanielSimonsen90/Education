@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using DanhoComponents;
+using DanhosEntitties.Entities.Components;
 
 namespace DanhosEntitties
 {
@@ -9,7 +9,7 @@ namespace DanhosEntitties
         public DbSet<Message> Messages { get; set; }
         public DbSet<Chat> Chats { get; set; }
 
-        private static string ConnectionString { get; set; }
+        private string ConnectionString { get; set; }
 
         public DanhosMessagesContext(string dataSource, string dbName = "H3DBProgFinal")
         {

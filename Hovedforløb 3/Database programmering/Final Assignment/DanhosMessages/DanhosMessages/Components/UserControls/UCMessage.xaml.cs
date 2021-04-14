@@ -1,4 +1,4 @@
-﻿using DanhoComponents;
+﻿using DanhosMessages.Entitties.Components;
 using System.Windows.Controls;
 
 namespace DanhosMessages.Components.UserControls
@@ -11,7 +11,7 @@ namespace DanhosMessages.Components.UserControls
         public UCMessage(Message message)
         {
             InitializeComponent();
-            this.Username.Text = string.Empty; //TODO: Get username from message.ID
+            this.Username.Text = message.Sender.Name;
             this.MessageContent.Text = message.Content;
         }
     }

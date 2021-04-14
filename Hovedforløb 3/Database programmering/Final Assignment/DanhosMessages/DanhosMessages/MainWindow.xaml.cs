@@ -1,4 +1,4 @@
-﻿using DanhosEntitties;
+﻿using DanhosMessages.Entitties;
 using DanhosMessages.Pages;
 using System.Windows;
 
@@ -9,16 +9,16 @@ namespace DanhosMessages
     /// </summary>
     public partial class MainWindow : Window
     {
-        public DanhosMessagesContext Context { get; set; }
-        public DBAccess DBAccess { get; set; }
+        //public DanhosMessagesContext Context { get; set; }
+        //public DBAccess DBAccess { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
-            Context = new DanhosMessagesContext("(localdb)\\MSSQLLocalDB");
-            DBAccess = new DBAccess(Context);
+            //Context = new DanhosMessagesContext("(localdb)\\MSSQLLocalDB");
+            //DBAccess = new DBAccess(DanhosMessagesContext.Context);
             
-            MainFrame.Content = new Login(this);
+            MainFrame.Content = new LoginPage(this);
         }
     }
 }

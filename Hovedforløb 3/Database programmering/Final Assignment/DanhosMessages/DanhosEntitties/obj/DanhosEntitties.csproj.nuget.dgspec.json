@@ -4,14 +4,14 @@
     "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj": {
+    "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj",
-        "projectName": "DanhoComponents",
-        "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj",
+        "projectName": "DanhosEntitties",
+        "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj",
         "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\obj\\",
+        "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,66 +39,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj",
-        "projectName": "DanhosEntitties",
-        "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\DanhosEntitties.csproj",
-        "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosEntitties\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj": {
-                "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.14, )"
             },

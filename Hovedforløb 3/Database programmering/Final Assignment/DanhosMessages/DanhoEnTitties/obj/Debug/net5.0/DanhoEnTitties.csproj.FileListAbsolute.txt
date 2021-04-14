@@ -1,5 +1,0 @@
-C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoEnTitties\obj\Debug\net5.0\DanhoEnTitties.csprojAssemblyReference.cache
-C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoEnTitties\obj\Debug\net5.0\DanhoEnTitties.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoEnTitties\obj\Debug\net5.0\DanhoEnTitties.AssemblyInfoInputs.cache
-C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoEnTitties\obj\Debug\net5.0\DanhoEnTitties.AssemblyInfo.cs
-C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhoEnTitties\obj\Debug\net5.0\DanhoEnTitties.csproj.CoreCompileInputs.cache

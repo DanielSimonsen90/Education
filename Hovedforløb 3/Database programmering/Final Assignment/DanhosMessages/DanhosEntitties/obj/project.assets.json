@@ -1495,16 +1495,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "DanhoComponents/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/DanhoComponents.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DanhoComponents.dll": {}
-        }
       }
     }
   },
@@ -5722,17 +5712,12 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "DanhoComponents/1.0.0": {
-      "type": "project",
-      "path": "../DanhoComponents/DanhoComponents.csproj",
-      "msbuildProject": "../DanhoComponents/DanhoComponents.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DanhoComponents >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.14",
+      "Microsoft.EntityFrameworkCore.Design >= 3.1.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.14",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.14"
     ]
@@ -5763,11 +5748,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj": {
-              "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhoComponents\\DanhoComponents.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5781,6 +5762,12 @@
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.14, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.14, )"
           },
