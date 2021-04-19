@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DanhoLibrary">
+      <HintPath>..\..\..\..\..\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.1\DanhoLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
