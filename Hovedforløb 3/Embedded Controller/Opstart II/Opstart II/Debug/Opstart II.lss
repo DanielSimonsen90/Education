@@ -1,0 +1,206 @@
+
+Opstart II.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000188  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000134  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000188  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000001b8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  000001f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000007a8  00000000  00000000  00000214  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000066f  00000000  00000000  000009bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002cb  00000000  00000000  0000102b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  000012f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003b7  00000000  00000000  0000131c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000120  00000000  00000000  000016d3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  000017f3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+   8:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+   c:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  10:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  14:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  18:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  1c:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  20:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  24:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  28:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  2c:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  30:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  34:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  38:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  3c:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  40:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  44:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  48:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  4c:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  50:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  54:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  58:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  5c:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  60:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+  64:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d4 e0       	ldi	r29, 0x04	; 4
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+  74:	0e 94 40 00 	call	0x80	; 0x80 <main>
+  78:	0c 94 98 00 	jmp	0x130	; 0x130 <_exit>
+
+0000007c <__bad_interrupt>:
+  7c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000080 <main>:
+#define ON(color) PORTD |= (1<<color)
+#define OFF(color) PORTD &= ~(1<<color)
+
+int main(void)
+{
+	DDRD |= (1 << DDD0); //Enable pin 0 as output
+  80:	8a b1       	in	r24, 0x0a	; 10
+  82:	81 60       	ori	r24, 0x01	; 1
+  84:	8a b9       	out	0x0a, r24	; 10
+	DDRD |= (1 << DDD1); //Enable pin 1 as output
+  86:	8a b1       	in	r24, 0x0a	; 10
+  88:	82 60       	ori	r24, 0x02	; 2
+  8a:	8a b9       	out	0x0a, r24	; 10
+	DDRD |= (1 << DDD2); //Enable pin 2 as output
+  8c:	8a b1       	in	r24, 0x0a	; 10
+  8e:	84 60       	ori	r24, 0x04	; 4
+  90:	8a b9       	out	0x0a, r24	; 10
+	DDRD &= ~(1 << DDD4); //Enable pin 4 as input
+  92:	8a b1       	in	r24, 0x0a	; 10
+  94:	8f 7e       	andi	r24, 0xEF	; 239
+  96:	8a b9       	out	0x0a, r24	; 10
+    
+	while (1) 
+    {
+		//If button was pressed
+		if (PIND & (1<<BUTTON)) {
+  98:	4c 9b       	sbis	0x09, 4	; 9
+  9a:	40 c0       	rjmp	.+128    	; 0x11c <main+0x9c>
+			OFF(GREEN);
+  9c:	8b b1       	in	r24, 0x0b	; 11
+  9e:	8b 7f       	andi	r24, 0xFB	; 251
+  a0:	8b b9       	out	0x0b, r24	; 11
+			ON(YELLOW);
+  a2:	8b b1       	in	r24, 0x0b	; 11
+  a4:	82 60       	ori	r24, 0x02	; 2
+  a6:	8b b9       	out	0x0b, r24	; 11
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  a8:	2f ef       	ldi	r18, 0xFF	; 255
+  aa:	8d e2       	ldi	r24, 0x2D	; 45
+  ac:	92 e2       	ldi	r25, 0x22	; 34
+  ae:	21 50       	subi	r18, 0x01	; 1
+  b0:	80 40       	sbci	r24, 0x00	; 0
+  b2:	90 40       	sbci	r25, 0x00	; 0
+  b4:	e1 f7       	brne	.-8      	; 0xae <main+0x2e>
+  b6:	00 c0       	rjmp	.+0      	; 0xb8 <main+0x38>
+  b8:	00 00       	nop
+			_delay_ms(7 * TIME);
+			OFF(YELLOW);
+  ba:	8b b1       	in	r24, 0x0b	; 11
+  bc:	8d 7f       	andi	r24, 0xFD	; 253
+  be:	8b b9       	out	0x0b, r24	; 11
+			OFF(GREEN);
+  c0:	8b b1       	in	r24, 0x0b	; 11
+  c2:	8b 7f       	andi	r24, 0xFB	; 251
+  c4:	8b b9       	out	0x0b, r24	; 11
+			ON(RED);
+  c6:	8b b1       	in	r24, 0x0b	; 11
+  c8:	81 60       	ori	r24, 0x01	; 1
+  ca:	8b b9       	out	0x0b, r24	; 11
+  cc:	2f ef       	ldi	r18, 0xFF	; 255
+  ce:	83 ed       	ldi	r24, 0xD3	; 211
+  d0:	90 e3       	ldi	r25, 0x30	; 48
+  d2:	21 50       	subi	r18, 0x01	; 1
+  d4:	80 40       	sbci	r24, 0x00	; 0
+  d6:	90 40       	sbci	r25, 0x00	; 0
+  d8:	e1 f7       	brne	.-8      	; 0xd2 <main+0x52>
+  da:	00 c0       	rjmp	.+0      	; 0xdc <main+0x5c>
+  dc:	00 00       	nop
+			_delay_ms(10 * TIME);
+			ON(YELLOW);
+  de:	8b b1       	in	r24, 0x0b	; 11
+  e0:	82 60       	ori	r24, 0x02	; 2
+  e2:	8b b9       	out	0x0b, r24	; 11
+  e4:	2f ef       	ldi	r18, 0xFF	; 255
+  e6:	89 e6       	ldi	r24, 0x69	; 105
+  e8:	98 e1       	ldi	r25, 0x18	; 24
+  ea:	21 50       	subi	r18, 0x01	; 1
+  ec:	80 40       	sbci	r24, 0x00	; 0
+  ee:	90 40       	sbci	r25, 0x00	; 0
+  f0:	e1 f7       	brne	.-8      	; 0xea <main+0x6a>
+  f2:	00 c0       	rjmp	.+0      	; 0xf4 <main+0x74>
+  f4:	00 00       	nop
+			_delay_ms(5 * TIME);
+			OFF(RED);
+  f6:	8b b1       	in	r24, 0x0b	; 11
+  f8:	8e 7f       	andi	r24, 0xFE	; 254
+  fa:	8b b9       	out	0x0b, r24	; 11
+			OFF(YELLOW);
+  fc:	8b b1       	in	r24, 0x0b	; 11
+  fe:	8d 7f       	andi	r24, 0xFD	; 253
+ 100:	8b b9       	out	0x0b, r24	; 11
+			ON(GREEN);
+ 102:	8b b1       	in	r24, 0x0b	; 11
+ 104:	84 60       	ori	r24, 0x04	; 4
+ 106:	8b b9       	out	0x0b, r24	; 11
+ 108:	2f ef       	ldi	r18, 0xFF	; 255
+ 10a:	8b e7       	ldi	r24, 0x7B	; 123
+ 10c:	92 e9       	ldi	r25, 0x92	; 146
+ 10e:	21 50       	subi	r18, 0x01	; 1
+ 110:	80 40       	sbci	r24, 0x00	; 0
+ 112:	90 40       	sbci	r25, 0x00	; 0
+ 114:	e1 f7       	brne	.-8      	; 0x10e <main+0x8e>
+ 116:	00 c0       	rjmp	.+0      	; 0x118 <main+0x98>
+ 118:	00 00       	nop
+ 11a:	be cf       	rjmp	.-132    	; 0x98 <main+0x18>
+			_delay_ms(30 * TIME);
+		}
+		else {
+			OFF(RED);
+ 11c:	8b b1       	in	r24, 0x0b	; 11
+ 11e:	8e 7f       	andi	r24, 0xFE	; 254
+ 120:	8b b9       	out	0x0b, r24	; 11
+			OFF(YELLOW);
+ 122:	8b b1       	in	r24, 0x0b	; 11
+ 124:	8d 7f       	andi	r24, 0xFD	; 253
+ 126:	8b b9       	out	0x0b, r24	; 11
+			ON(GREEN);
+ 128:	8b b1       	in	r24, 0x0b	; 11
+ 12a:	84 60       	ori	r24, 0x04	; 4
+ 12c:	8b b9       	out	0x0b, r24	; 11
+ 12e:	b4 cf       	rjmp	.-152    	; 0x98 <main+0x18>
+
+00000130 <_exit>:
+ 130:	f8 94       	cli
+
+00000132 <__stop_program>:
+ 132:	ff cf       	rjmp	.-2      	; 0x132 <__stop_program>
