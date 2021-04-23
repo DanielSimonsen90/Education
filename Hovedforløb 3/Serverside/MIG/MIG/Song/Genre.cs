@@ -1,4 +1,6 @@
-﻿namespace MIG.Song
+﻿using MIG.DataStuff;
+
+namespace MIG.Song
 {
     public class Genre
     {
@@ -8,9 +10,9 @@
         public Synths Synths { get; set; }
         public Instruments Instruments { get; set; }
 
-        public Genre(string title, int bpmMin, int bpmMax, Drums drums, Synths synths, Instruments instruments)
+        public Genre(Names.Genres title, int bpmMin, int bpmMax, Drums drums, Synths synths, Instruments instruments)
         {
-            Title = title;
+            Title = title.ToString();
             BPM = new(bpmMin, bpmMax);
             Drums = drums;
             Synths = synths;

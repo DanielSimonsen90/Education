@@ -17,5 +17,13 @@ namespace MIG.Song
             Horns ? "Horns" : null,
             Strings ? "Strings" : null
         }.Filter((v, i, arr) => v != null) as List<string>;
+
+        public Instruments(bool piano, bool guitar, bool horns, bool strings)
+        {
+            Piano = piano;
+            Guitar = guitar;
+            Horns = horns;
+            Strings = strings;
+        }
     }
 }

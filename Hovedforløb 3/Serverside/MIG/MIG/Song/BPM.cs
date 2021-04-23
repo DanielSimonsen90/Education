@@ -1,4 +1,6 @@
 ﻿using DanhoLibrary;
+using MIG.Exceptions;
+
 namespace MIG.Song
 {
     public class BPM

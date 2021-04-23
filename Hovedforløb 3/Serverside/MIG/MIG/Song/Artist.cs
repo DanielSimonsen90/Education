@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MIG.Artist
+namespace MIG.Song
 {
     public class Artist
     {
         public string Name { get; set; }
-        List<Track> Releases { get; set; }
-        List<Track> Remixes { get; set; }
-        List<Track> AllTracks
+        public List<Track> Releases { get; set; }
+        public List<Track> Remixes { get; set; }
+        public List<Track> AllTracks
         {
             get
             {
@@ -35,6 +35,13 @@ namespace MIG.Artist
                 return temp;
             }
         }
+
+        public Artist(string name, Track[] releases)
+        {
+            Name = name;
+            Releases = releases.ToList();
+        }
+        public Artist(string name, Track[] releases, Track[] remixes) : this(name, releases) => Remixes = remixes.ToList();
 
         public Track GetTrack(Genre genre) => RandomFromQuery((t, i, arr) => t.Title == genre.Title);
         public Track GetTrack(string title) => RandomFromQuery((t, i, arr) => t.Title.Contains(title));
