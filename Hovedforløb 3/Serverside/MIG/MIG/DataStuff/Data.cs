@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using MIG.Helpers;
-using MIG.Song;
+﻿using MIG.Song;
+using System.Collections.Generic;
 
 namespace MIG.DataStuff
 {
@@ -9,24 +8,155 @@ namespace MIG.DataStuff
         /// <summary>
         /// Playlist of genres from Spotify
         /// </summary>
-        public static Category Playlist = new Category("Spotify Playlist")
+        public static Category Playlist { get;  } = new Category("Spotify Playlist")
         {
             SubCategories = new List<Category>()
             {
                 new Category("Everything Mixed")
+                {
+                    SubCategories = new List<Category>()
                     {
+                        new Category("Lofi HipHop")
+                        {
+                            Genres = new List<Genre>()
+                            {
+                                #region Calm Lofi
+                                new Genre
+                                (
+                                    Genres.CalmLofi,
+                                    70, 100,
+                                    new Drums(KickOptions.Lofi, ClapOptions.Main, HihatOptions.Lofi, OpenHatOptions.Acoustic, SnareOptions.Lofi),
+                                    new Synths(false, false, false, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                                #region FeelsDepressedMan
+                                new Genre
+                                (
+                                    Genres.FeelsDepressedMan,
+                                    70, 100,
+                                    new Drums(KickOptions.Lofi, ClapOptions.Main, HihatOptions.Lofi, OpenHatOptions.Acoustic, SnareOptions.Lofi),
+                                    new Synths(false, false, false, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                            }
+                        },
+                        new Category("Rock Metal, something with guitar")
+                        {
+                            Genres = new List<Genre>()
+                            {
+                                #region Emo
+                                new Genre
+                                (
+                                    Genres.Emo,
+                                    80, 180,
+                                    new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
+                                    new Synths(true, false, false, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                                #region Old
+                                new Genre
+                                (
+                                    Genres.Old,
+                                    80, 180,
+                                    new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
+                                    new Synths(false, false, false, false),
+                                    new Instruments(false, true, false, false)
+                                ),
+                                #endregion
+                                #region Goth
+                                new Genre
+                                (
+                                    Genres.Goth,
+                                    80, 180,
+                                    new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
+                                    new Synths(true, false, false, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                                #region Metal I Think
+                                new Genre
+                                (
+                                    Genres.MetalIThink,
+                                    80, 180,
+                                    new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
+                                    new Synths(true, false, false, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                                #region RockIThink
+                                new Genre
+                                (
+                                    Genres.RockIThink,
+                                    80, 180,
+                                    new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
+                                    new Synths(true, false, false, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                                #region WannabeMetal
+                                new Genre
+                                (
+                                    Genres.WannabeMetal,
+                                    80, 180,
+                                    new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
+                                    new Synths(true, false, true, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                                #region Pop-Rock
+                                new Genre
+                                (
+                                    Genres.PopRock,
+                                    80, 180,
+                                    new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
+                                    new Synths(true, false, false, false),
+                                    new Instruments(true, true, false, true)
+                                ),
+                                #endregion
+                            }
+                        },
+                        new Category("Trap/Rap/Hip Hop")
+                        {
+                            Genres = new List<Genre>()
+                            {
+                                #region Da Feels
+                                new Genre
+                                (
+                                    Genres.DaFeels,
+                                    135, 145,
+                                    new Drums(KickOptions.Punchy, ClapOptions.Tight, HihatOptions.Tick, OpenHatOptions.House, SnareOptions.Trap),
+                                    new Synths(true, false, false, true),
+                                    new Instruments(true, false, false, true)
+                                ),
+                                #endregion
+                                #region FeelsCoolMan
+                                new Genre
+                                (
+                                    Genres.FeelsCoolMan,
+                                    135, 145,
+                                    new Drums(KickOptions.Punchy, ClapOptions.Tight, HihatOptions.Tick, OpenHatOptions.House, SnareOptions.Trap),
+                                    new Synths(true, false, false, true),
+                                    new Instruments(true, false, false, true)
+                                ),
+                                #endregion
+                                #region Da Vibe
+                                new Genre
+                                (
+                                    Genres.DaVibe,
+                                    135, 145,
+                                    new Drums(KickOptions.Punchy, ClapOptions.Tight, HihatOptions.Tick, OpenHatOptions.House, SnareOptions.Trap),
+                                    new Synths(true, false, false, true),
+                                    new Instruments(true, false, false, true)
+                                )
+                                #endregion
+                            }
+                        }
+                    },
                         Genres = new List<Genre>()
                         {
-                            #region Lofi
-                            new Genre
-                            (
-                                Genres.LofiHipHop,
-                                70, 100,
-                                new Drums(KickOptions.Lofi, ClapOptions.Main, HihatOptions.Lofi, OpenHatOptions.Acoustic, SnareOptions.Lofi),
-                                new Synths(false, false, false, false),
-                                new Instruments(true, true, false, true)
-                            ),
-                            #endregion
                             #region Acoustic
                             new Genre
                             (
@@ -46,26 +176,6 @@ namespace MIG.DataStuff
                                 new Synths(false, false, false, false),
                                 new Instruments(true, true, false, false)
                             ),
-                            #endregion
-                            #region Rock/Metal
-                            new Genre
-                            (
-                                Genres.RockMetal,
-                                80, 180,
-                                new Drums(KickOptions.Acoustic, ClapOptions.Main, HihatOptions.Acoustic, OpenHatOptions.Acoustic, SnareOptions.Acoustic),
-                                new Synths(false, false, false, false),
-                                new Instruments(true, true, false, true)
-                            ),
-                            #endregion
-                            #region Trap / Rap / Hip Hop
-                            new Genre
-                            (
-                                Genres.Trap,
-                                135, 145,
-                                new Drums(KickOptions.Punchy, ClapOptions.Tight, HihatOptions.Tick, OpenHatOptions.House, SnareOptions.Trap),
-                                new Synths(true, false, false, true),
-                                new Instruments(true, false, false, true)
-                            )
                             #endregion
                         }
                     },
@@ -485,11 +595,11 @@ namespace MIG.DataStuff
                                             #region Trance
                                             new Genre
                                             (
-                                                Genres.Trance, 
+                                                Genres.Trance,
                                                 135, 150,
                                                 new Drums(KickOptions.Clubby, ClapOptions.Main, HihatOptions.Tick, OpenHatOptions.Clubby, SnareOptions.House),
                                                 new Synths(true, true, true, true),
-                                                new Instruments(true, false, false, true)                                                
+                                                new Instruments(true, false, false, true)
                                             ),
                                             #endregion
                                             #region Psytrance
@@ -722,59 +832,71 @@ namespace MIG.DataStuff
                 {
                     new Track("At Night (With GRABBITZ)", "3.40", Genres.FutureBounce, Genres.DeepHouse),
                     new Track("Better With You", "3.12", Genres.ProgressiveDream),
-                    new Track("Escape - Original Mix", "Electro", "Progressive House"),
-                    new Track("Falling", "Future Bounce"),
-                    new Track("How You Love Me", "Progressive Dream"),
-                    new Track("Touch", "Progressive Dream")
+                    new Track("Escape - Original Mix", "4.35", Genres.Electro, Genres.ProgressiveHouse),
+                    new Track("Everything", "3.19", Genres.ProgressiveDream),
+                    new Track("Falling", "3.29", Genres.FutureBounce),
+                    new Track("How You Love Me", "4.58", Genres.ProgressiveDream),
+                    new Track("Touch", "3.26", Genres.ProgressiveDream)
+                }, new Track[]
+                {
+                    new Track("Can't Forget You", "3.24", Genres.Pop),
                 }),
                 new Artist("Aero Chord", new Track[]
                 {
-                    new Track("Boundless", EDMTrap),
-                    new Track("4U", Bounce),
-                    new Track("The Sound", EDMTrap),
-                    new Track("Surface", EDMTrap)
+                    new Track("Boundless", "3.13", Genres.EDMTrap),
+                    new Track("4U", "4.04", Genres.Bounce),
+                    new Track("The Sound", "3.31", Genres.EDMTrap),
+                    new Track("Surface", "4.14", Genres.EDMTrap)
+                }, new Track[]
+                { 
+                    new Track("The Munsta", "3.40", Genres.EDMTrap)
                 }),
                 new Artist("After Forever", new Track[]
                 {
-                    new Track("Discord", RockMetal),
-                    new Track("Come", RockMetal),
-                    new Track("Boundaries Are Open", RockMetal),
-                    new Track("Living Shields", RockMetal),
-                    new Track("Being Everyone", RockMetal),
-                    new Track("Only Everything - Session Version", RockMetal)
+                    new Track("Discord", "4.37", Genres.Goth),
+                    new Track("Energize Me", "3.11", Genres.Goth),
+                    new Track("Come", "5.02", Genres.Goth),
+                    new Track("Boundaries Are Open", "3.45", Genres.Goth),
+                    new Track("Living Shields", "4.13", Genres.Goth),
+                    new Track("Being Everyone", "3.39", Genres.Goth),
+                    new Track("Only Everything - Session Version", "6.36", Genres.Goth)
                 }),
                 new Artist("Ahrix", new Track[]
                 {
-                    new Track("Nova", Dudududu),
-                    new Track("Daydream", Dudududu, ProgDream),
-                    new Track("Euphoria", Dudududu),
-                    new Track("Left Behind", Dudududu),
-                    new Track("A New Start [Bonus Track]", Hardstyle, ProgDream),
-                    new Track("Never Alone", Dudududu),
-                    new Track("The Dreamer", ProgDream),
-                    new Track("Forgiven", Dudududu),
-                    new Track("Courage", Dudududu),
-                    new Track("Dreams", ProgDream),
-                    new Track("Evolving", ProgDream),
-                    new Track("Hope", ProgHouse),
-                    new Track("Moments", ProgDream),
-                    new Track("We Don't Know", ProgDream),
-                    new Track("Pure", Dudududu),
-                    new Track("New Era", ProgDream),
-                    new Track("Raising", Dudududu),
-                    new Track("Reborn", Dudududu),
-                    new Track("Relief", Dudududu),
-                    new Track("Senrenity", Drumstep),
-                    new Track("End of Time", Dudududu)
+                    new Track("A New Start [Bonus Track]", "3.02", Genres.Euphoric, Genres.ProgressiveDream),
+                    new Track("Carpe Deim", "3.42", Genres.Dudududu),
+                    new Track("Courage", "3.22", Genres.Dudududu),
+                    new Track("Daydream", "3.43", Genres.Dudududu, Genres.ProgressiveDream),
+                    new Track("Dreams", "3.23", Genres.ProgressiveDream),
+                    new Track("End of Time", "3.08", Genres.Dudududu),
+                    new Track("Euphoria", "3.18", Genres.Dudududu),
+                    new Track("Evolving", "3.24", Genres.ProgressiveDream),
+                    new Track("Forgiven", "3.07", Genres.Dudududu),
+                    new Track("Hope", "3.16", Genres.ProgressiveHouse),
+                    new Track("Left Behind", "3.08", Genres.Dudududu),
+                    new Track("Moments", "4.08", Genres.ProgressiveDream),
+                    new Track("Never Alone", "3.25", Genres.Dudududu),
+                    new Track("New Era", "3.36", Genres.ProgressiveDream),
+                    new Track("Nova", "4.41", Genres.Dudududu),
+                    new Track("The Dreamer", "3.53", Genres.ProgressiveDream),
+                    new Track("Pure", "3.19", Genres.Dudududu),
+                    new Track("Raising", "3.07", Genres.Dudududu),
+                    new Track("Reborn", "3.41", Genres.Dudududu),
+                    new Track("Relief", "3.37", Genres.Dudududu),
+                    new Track("Senrenity", "3.10", Genres.Drumstep),
+                    new Track("We Don't Know", "3.42", Genres.ProgressiveDream),
                 }, new Track[]
                 {
-                    new Track("Ignite (feat. SEUNGRI)", Dudududu)
+                    new Track("Ignite (feat. SEUNGRI)", "3.37", Genres.Dudududu)
                 }),
                 new Artist("Al Storm", new Track[]
                 {
-                    new Track("Crash (My Body. Your Body) - Original Mix", Hardcore),
-                    new Track("I Created A Monster! IYF & Nobody Remix", Hardcore),
-                    new Track("Cannibalism! - Original Mix", Hardcore)
+                    new Track("Cannibalism! - Original Mix", "4.48", Genres.HappyHardcore),
+                    new Track("Crash (My Body. Your Body) - Original Mix", "4.48", Genres.HappyHardcore),
+                    new Track("Crazy 'Bout Your Love", "5.11", Genres.HappyHardcore),
+                    new Track("I Created A Monster! IYF & Nobody Remix", "5.10", Genres.HappyHardcore),
+                    new Track("Here 3 Invade", "5.53", Genres.HappyHardcore),
+                    new Track("Lose Somebody", "4.45", Genres.HappyHardcore),
                 }),
                 new Artist("Alan Walker", new Track[]
                 {

@@ -6,8 +6,10 @@ namespace MIG.DataStuff
     {
         public enum Genres
         {
-            LofiHipHop, Acoustic, Country, RockMetal, Trap,
-            Pop,
+            CalmLofi, FeelsDepressedMan,
+            Acoustic, Country, 
+            Emo, Old, Goth, MetalIThink, RockIThink, WannabeMetal, PopRock,
+            DaFeels, FeelsCoolMan, DaVibe, 
             BigRoom, SpinninRecords, Bootleg, Bounce, MelbourneBounce,
             Drumstep, DnB,
             Dubstep, MelodicDubstep,
@@ -23,7 +25,8 @@ namespace MIG.DataStuff
             ProgressiveHouse, ProgressiveDream, ProgressivePop, NCS, 
             ElectroHouse, TakingElectroLiteral, 
             Dudududu, MelodicHouse, TropicalHouse,
-            Downtempo, Synthwave
+            Downtempo, Synthwave,
+            Pop,
         }
         public static List<string> BannedWords { get; } = new()
         {
