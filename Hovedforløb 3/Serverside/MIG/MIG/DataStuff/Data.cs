@@ -914,84 +914,109 @@ namespace MIG.DataStuff
                     new Track("Lily", "3.16", Genres.Dudududu),
                     new Track("Sky", Dudududu),
                     new Track("Live Fast - PUBGM", Trap),
-                    new Track("On My Way", TropHouse),
-                    new Track("Sing Me to Sleep", Dudududu),
-                    new Track("Spectre", Dudududu),
-                    new Track("The Spectre", Dudududu),
-                    new Track("End of Time", Dudududu),
-                    new Track("Play", Dudududu)
+                    new Track("On My Way", "3.14", Genres.TropicalHouse),
+                    new Track("Sing Me to Sleep", "3.09", Genres.Dudududu),
+                    new Track("Spectre", "3.51", Genres.Dudududu),
+                    new Track("The Spectre", "3.14", Genres.Dudududu),
+                    new Track("Ghost", "2.58", Genres.FeelsCoolMan),
+                    new Track("End of Time", "3.08", Genres.Dudududu),
+                    new Track("Play", "2.48", Genres.Dudududu),
+                    new Track("Are You Lonely (feat. IsÁK)", "2.37", Genres.Dudududu),
+                    new Track("Space Melody (Edward Artemyev) (feat. Leony)", "3.00", Genres.DeepHouse)
                 }, new Track[]
                 {
-                    new Track("Lonely Together - (feat. Rita Ora)", ProgPop),
-                    new Track("Millionaire", Dudududu),
-                    new Track("Play - Niya & Alan Walker Remix)", Dudududu),
-                    new Track("This Is Me (From \"The Greatest Showman\")", Dudududu),
-                    new Track("Stranger Things (feat. OneRepublic)", Dudududu),
-                    new Track("Sheep (Alan Walker Relift)", EDMTrap, Dudududu)
+                    new Track("TIme", "2.31", Genres.Dudududu),
+                    new Track("Lonely Together - (feat. Rita Ora)", "3.00", Genres.ProgressivePop),
+                    new Track("That's What I Like", "3.16", Genres.Dudududu),
+                    new Track("Millionaire", "3.09", Genres.Dudududu),
+                    new Track("In Your Arms (with X Ambassadors)", "4.09", Genres.Dudududu),
+                    new Track("Play - Niya & Alan Walker Remix)", "2.37", Genres.Dudududu),
+                    new Track("This Is Me (From \"The Greatest Showman\")", "3.36", Genres.Dudududu),
+                    new Track("Stranger Things (feat. OneRepublic)", "2.58", Genres.Dudududu),
+                    new Track("Legends Never Die", "2.47", Genres.Dudududu),
+                    new Track("Move Your Body", "3.38", Genres.Dudududu),
+                    new Track("Sheep (Alan Walker Relift)", "2.36", Genres.EDMTrap, Genres.Dudududu)
                 }),
                 new Artist("Approaching Nirvana", new Track[]
                 {
-                    new Track("Sugar High", Electrio, Electro),
-                    new Track("Bangers & Smashed", ProgHouse),
-                    new Track("305", Dudududu)
+                    new Track("305", "3.47", Genres.Dudududu),
+                    new Track("Bangers & Smashed", "4.53", Genres.ProgressiveHouse),
+                    new Track("Bloom", "5.23", Genres.Drumstep),
+                    new Track("A New Tide", "3.40", Genres.Dudududu),
+                    new Track("Pause for Though", "5.15", Genres.Dudududu),
+                    new Track("Solstice", "3.49", Genres.ProgressiveDream),
+                    new Track("Sugar High", "2.42", Genres.Electrio, Genres.Electro),
                 }),
                 new Artist("Atef", new Track[]
                 {
-                    new Track("Abyss", Dudududu),
-                    new Track("Away", Dudududu),
-                    new Track("Colors", Dudududu),
-                    new Track("Faith", Dudududu),
-                    new Track("Journey", Dudududu),
-                    new Track("Launch", ProgDream, Hardcore),
-                    new Track("Promises", Dudududu),
-                    new Track("Puzzle Rd. 1", Hardcore),
-                    new Track("Spectrum", ProgHouse, Hardcore)
+                    new Track("Abyss", "3.06", Genres.Dudududu),
+                    new Track("Away", "3.08", Genres.Dudududu),
+                    new Track("Colors", "3.15", Genres.Dudududu),
+                    new Track("Faith", "3.42", Genres.Dudududu),
+                    new Track("Follow the Stars", "3.17", Genres.HappyHardcore),
+                    new Track("If Tomorrow Never Comes", "3.56", Genres.ProgressiveHouse),
+                    new Track("Journey", "4.28", Genres.Dudududu),
+                    new Track("Launch", "3.02", Genres.ProgressiveDream, Genres.HappyHardcore),
+                    new Track("Monster", "3.09", Genres.Dudududu),
+                    new Track("Promises", "3.04", Genres.Dudududu),
+                    new Track("Puzzle Rd. 1", "3.15", Genres.HappyHardcore),
+                    new Track("Relive", "3.37", Genres.ProgressiveHouse),
+                    new Track("Spectrum", "5.01", Genres.ProgressiveHouse, Genres.HappyHardcore),
+                    new Track("Wanted To", "2.53", Genres.ProgressiveHouse, Genres.ProgressiveDream),
+                    new Track("Lost", "4.43", Genres.Dudududu)
                 }),
                 new Artist("Avicii", new Track[]
                 {
-                    new Track("Lonely Together (feat. Rita Ora)", ProgPop),
-                    new Track("Without You (feat. Sandro Cavazza)", ProgPop),
-                    new Track("The Days", ProgPop),
-                    new Track("The Nights", ProgPop),
-                    new Track("I Could Be The One [Avicii vs Nicky Romero - Nicktim - Radio Edit", ProgPop),
-                    new Track("Levels - Radio Edit", ProgPop),
-                    new Track("Lonely Together - Acoustic", Acoustic),
-                    new Track("Waiting For Love", ProgPop),
-                    new Track("Taste The Feeling (Avicii Vs. Conrad Sewell)", Pop),
-                    new Track("Wake Me Up - Radio Edit", ProgPop),
-                    new Track("Hey Brother", ProgPop),
-                    new Track("Addicted To You", ProgPop)
+                    new Track("Addicted To You", "2.28", Genres.ProgressivePop),
+                    new Track("The Days", "4.38", Genres.ProgressivePop),
+                    new Track("Hey Brother", "4.15", Genres.ProgressivePop),
+                    new Track("I Could Be The One [Avicii vs Nicky Romero - Nicktim - Radio Edit", "3.28", Genres.ProgressivePop),
+                    new Track("Levels - Radio Edit", "3.20", Genres.ProgressivePop),
+                    new Track("Lonely Together (feat. Rita Ora)", "3.00", Genres.ProgressivePop),
+                    new Track("Lonely Together - Acoustic", "3.02", Genres.Acoustic),
+                    new Track("The Nights", "2.57", Genres.ProgressivePop),
+                    new Track("Taste The Feeling (Avicii Vs. Conrad Sewell)", "3.11", Genres.Pop),
+                    new Track("Waiting For Love", "3.49", Genres.ProgressivePop),
+                    new Track("Wake Me Up - Radio Edit", "4.07", Genres.ProgressivePop),
+                    new Track("Without You (feat. Sandro Cavazza)", "3.02", Genres.ProgressivePop),
                 }),
                 new Artist("BABYMETAL", new Track[]
                 {
-                    new Track("Megitsune", RockMetal),
-                    new Track("Gimme Chocolate!!", RockMetal),
-                    new Track("Distortion", RockMetal),
-                    new Track("Elevator Girl - English Version", RockMetal),
-                    new Track("PA PA YA!!", RockMetal),
-                    new Track("Shine", RockMetal)
+                    new Track("Distortion", "3.05", Genres.MetalIThink),
+                    new Track("Elevator Girl - English Version", "2.45", Genres.MetalIThink),
+                    new Track("Gimme Chocolate!!", "3.53", Genres.MetalIThink),
+                    new Track("line!", "4.11", Genres.MetalIThink),
+                    new Track("Megitsune", "4.09", Genres.MetalIThink),
+                    new Track("PA PA YA!!", "3.55", Genres.MetalIThink),
+                    new Track("Shine", "5.53", Genres.MetalIThink)
                 }),
                 new Artist("Basshunter", new Track[]
                 {
-                    new Track("Don't Walk Away", EuroDance, Dudududu),
-                    new Track("Home", Dudududu),
-                    new Track("DotA - Radio Edit", EuroDance),
-                    new Track("Now You're Gone (feat. DJ Metal Theos Bazzheadz)", EuroDance),
-                    new Track("All I Ever Wanted - Radio Edit", EuroDance),
-                    new Track("I Can Walk On Water", EuroDance),
-                    new Track("Boten Anna - Radio edit", EuroDance),
+                    new Track("All I Ever Wanted - Radio Edit", "2.56", Genres.EuroDance),
+                    new Track("Angels Ain't Listening", "2.50", Genres.Synthwave),
+                    new Track("Boten Anna - Radio edit", "3.27", Genres.EuroDance),
+                    new Track("Don't Walk Away", "3.00", Genres.EuroDance, Genres.Dudududu),
+                    new Track("DotA - Radio Edit", "3.21", Genres.EuroDance),
+                    new Track("I Can Walk On Water", "3.44", Genres.EuroDance),
+                    new Track("Home", "3.03", Genres.Dudududu),
+                    new Track("Now You're Gone (feat. DJ Metal Theos Bazzheadz)", "3.27", Genres.EuroDance),
+                }, new Track[]
+                {
+                    new Track("When You Leave (Numa Numa)", "3.19", Genres.EuroDance)
                 }),
                 new Artist("Bassjackers", new Track[]
                 {
-                    new Track("Derp", Spinnin),
-                    new Track("Savior - Radio Edit", Spinnin),
-                    new Track("Wave Your Hands", Spinnin)
+                    new Track("Derp", "4.39", Genres.SpinninRecords),
+                    new Track("Limitless", "2.54", Genres.SpinninRecords),
+                    new Track("Savior - Radio Edit", "2.50", Genres.SpinninRecords),
+                    new Track("Wave Your Hands", "4.08", Genres.SpinninRecords)
                 }),
                 new Artist("Braken", new Track[]
                 {
-                    new Track("Far Away", MelDubstep),
-                    new Track("Frame of Mind", MelDubstep),
-                    new Track("Flight", Dubstep)
+                    new Track("To the Stars", "3.22", Genres.MelodicDubstep),
+                    new Track("Far Away", "4.30", Genres.MelodicDubstep),
+                    new Track("Flight", "3.39", Genres.Dubstep),
+                    new Track("Frame of Mind", "4.34", Genres.MelodicDubstep),
                 }),
                 new Artist("Brian Tuey", new Track[]
                 {
