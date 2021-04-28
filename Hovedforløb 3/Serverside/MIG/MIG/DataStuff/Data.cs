@@ -1137,6 +1137,8 @@ namespace MIG.DataStuff
                     new Track("Wodka - Radio Edit", "3.49", Genres.Euphoric),
                     new Track("We Made It", "3.21", Genres.Euphoric),
                     new Track("Adrenaline", "3.30", Genres.RawEuphoric),
+                    new Track("EssenceOf Eternity (reverze Anthem 2018)", "5.52", Genres.Euphoric, Genres.RawEuphoric),
+                    new Track("Freedom", "3.36", Genres.Euphoric)
                 }, new Track[]
                 {
                     new Track("Alone, Pt. II", "3.42", Genres.Euphoric),

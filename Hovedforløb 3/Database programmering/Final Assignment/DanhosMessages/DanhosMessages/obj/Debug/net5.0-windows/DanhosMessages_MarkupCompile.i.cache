@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhosMessages\obj\Debug\net5.0-windows\
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhosMessages\obj\Debug\net5.0-windows\
 DanhosMessages
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhosMessages\App.xaml
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Database programmering\Final Assignment\DanhosMessages\DanhosMessages\App.xaml
 4-2108488407
 
 25-1842304425
-216882257698
+216247424716
 Components\UserControls\UCMessage.xaml;MainWindow.xaml;Pages\ChatPage.xaml;Pages\LoginPage.xaml;
 
-False
+True
 
