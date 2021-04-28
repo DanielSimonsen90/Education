@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div>
+    <!-- 
+        <div id ="myVue"> {{ vueContent }} </div>
+        <div id="myVue">
+            <span v-bind:title="title">
+                <p>Hover over me to see pog title yes</p>
+            </span>
+        </div>
+        <div id="myVue">
+            <span v-if="seen">Now you see me!</span>
+        </div>
+        <div id="myVue">
+            <ol>
+                <li v-for="todo in todos">
+                    <b>{{ todo.title }}</b>:
+                    {{ todo.description }}
+                </li>
+            </ol>
+        </div>
+        <div id="myVue">
+            <button v-on:click="giveCompliment">
+                {{ clickMe }}
+            </button>
+        </div>
+        <div id="myVue">
+            <p> {{ copiedMessage }} </p>
+            <input v-model='copiedMessage'>
+        </div>
+    -->
+
+    <div id="login-model" style="display:none;">
+        <div>
+            <p>Enter username</p>
+            <input v-model='username'>
+            <p>Enter password</p>
+            <input v-model='password'>
+            <div>
+                <br />
+                <button v-on:click="validateLogin">Log in</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="vueTest">
+        <login
+            v-on:is-admin='onIsAdmin'
+            v-on:password-incorrect='onPasswordIncorrect'
+        ></login> 
+        
+        <div v-if='isAdmin'>
+            <h1>Welcome dear Administrator!</h1>
+            <h4>Here are a few things you should be considering:</h4>
+            <ul>
+                <li v-for="consider in considerings">
+                    {{ consider }}
+                </li>
+            </ul> 
+        </div>
+        <div v-if="passwordIncorrect && username === 'Admin'">
+            <h5 style="color: red">Your password is incorrect!</h5>
+        </div>
+        <div v-if="passwordIncorrect && username !== 'Admin'">
+            <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/535/068/29d.jpg" />
+        </div>
+    </div> 
+</body>
+
+<script>
+    Vue.component('login', {
+        // props: ['username', 'password'],
+        template: document.getElementById('login-model'),
+        data: () => {
+            return {
+                    username: 'User',
+                    password: '<password>',
+                    isAdmin: false,
+                    passwordIncorrect: false
+                };
+        },
+        methods: {
+            validateLogin() {
+                let { username, password } = this;
+                let passwordIncorrect = false, isAdmin = false;
+
+                if (username === 'Admin' && password === 'vueKindaCool') {
+                    this.$emit('is-admin', true);
+                }
+                else {
+                    this.$emit('password-incorrect');
+                    this.$emit('is-admin', false);
+                }
+            }
+        }
+    });
+
+    /* let app = new Vue({
+        el: '#myVue',
+        data: {
+            vueContent: 'Hello, World!',
+            title: "Whatcha lookin' at?",
+            seen: false,
+            todos: [
+                { 
+                    title: "Vibe on Spotify", 
+                    description: "Otherwise, what's the point of living?" 
+                },
+                { 
+                    title: "Drink lots of water",
+                    description: "Gotta stay hydrated!"
+                },
+                {
+                    title: "Skip this song",
+                    description: "Not the kind of hardstyle I wanna listen to tbh"
+                }
+            ],
+            clickMe: "Click me!",
+            copiedMessage: "Let me copy your message!"
+        },
+        methods: {
+            giveCompliment() {
+                let compliments = [
+                    "You smell nice",
+                    "I love your outfit",
+                    "Dope music taste!",
+                    "Wow! You made this website?",
+                    "Man.. what I would give to live your life"
+                ];
+                this.clickMe = compliments[Math.round(Math.random() * compliments.length)];
+                setTimeout(() => {
+                    this.clickMe = "Click me!"
+                }, 1000);
+            }
+        }
+    }); */
+    let test = new Vue({
+        el: "#vueTest",
+        data: {
+            isAdmin: false,
+            passwordIncorrect: false,
+            considerings: [
+                'why are we still here',
+                'who let the dogs out',
+                'how deep is your love',
+                'where did you come from, where did you go'
+            ]
+        },
+        methods: {
+            onIsAdmin(value) {
+                return this.isAdmin = value;
+            },
+            onPasswordIncorrect() {
+                this.passwordIncorrect = false;
+                setTimeout(() => this.passwordIncorrect = false, 2000);
+                
+            }
+        }
+    })
+</script>
+</html>
