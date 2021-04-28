@@ -27,6 +27,7 @@ namespace MIG.DataStuff
             Dudududu, MelodicHouse, TropicalHouse,
             Downtempo, Synthwave,
             Pop,
+            ClassicEuphoric,
         }
         public static List<string> BannedWords { get; } = new()
         {
