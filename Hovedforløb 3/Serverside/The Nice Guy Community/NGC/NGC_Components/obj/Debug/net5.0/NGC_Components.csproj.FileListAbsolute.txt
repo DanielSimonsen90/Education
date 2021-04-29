@@ -1,0 +1,15 @@
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\bin\Debug\net5.0\NGC_Components.deps.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\bin\Debug\net5.0\NGC_Components.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\bin\Debug\net5.0\NGC_Components.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\bin\Debug\net5.0\NGC_Components.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\bin\Debug\net5.0\ref\NGC_Components.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\bin\Debug\net5.0\NGC_Components.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\ref\NGC_Components.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_Components\obj\Debug\net5.0\NGC_Components.genruntimeconfig.cache

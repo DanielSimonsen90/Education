@@ -5,7 +5,10 @@
 ; Author : dani146d
 ;
 .include "m168def.inc" 
-.def pinMode13 
+.def digitalPin13 = PB5	//Define digitalPin13 as alias for PB5 
+ldi r16, 0x20			//set to 5
+out DDRB, r16			//send value of r16 to DDRB
+out PORTB, r16			//send value of r16 to PORTB
 
 start:
     inc r16

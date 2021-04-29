@@ -1,0 +1,40 @@
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\appsettings.json
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.exe
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.deps.json
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.dll
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\ref\The Nice Guy Community.dll
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.Views.dll
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\bin\Debug\net5.0\The Nice Guy Community.Views.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.RazorAssemblyInfo.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.RazorAssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\staticwebassets\The Nice Guy Community.StaticWebAssets.Manifest.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\staticwebassets\The Nice Guy Community.StaticWebAssets.xml
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\scopedcss\bundle\The Nice Guy Community.styles.css
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.TagHelpers.input.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.TagHelpers.output.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.RazorCoreGenerate.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.RazorTargetAssemblyInfo.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.RazorTargetAssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.Views.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.dll
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\ref\The Nice Guy Community.dll
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.genruntimeconfig.cache
+C:\Users\DanielSimonsen\source\repos\NGC\The Nice Guy Community\obj\Debug\net5.0\The Nice Guy Community.csproj.CopyComplete
