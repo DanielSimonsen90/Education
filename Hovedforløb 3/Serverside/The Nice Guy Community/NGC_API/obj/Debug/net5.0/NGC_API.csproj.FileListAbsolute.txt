@@ -1,0 +1,128 @@
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\appsettings.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_API.exe
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_API.deps.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_API.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_API.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_API.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\ref\NGC_API.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_API.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\staticwebassets\NGC_API.StaticWebAssets.Manifest.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\staticwebassets\NGC_API.StaticWebAssets.xml
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\scopedcss\bundle\NGC_API.styles.css
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.RazorTargetAssemblyInfo.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.csproj.CopyComplete
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\ref\NGC_API.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\obj\Debug\net5.0\NGC_API.genruntimeconfig.cache
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_Components.dll
+C:\Users\DanielSimonsen\source\repos\NGC\NGC_API\bin\Debug\net5.0\NGC_Components.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\appsettings.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_API.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_API.deps.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_API.runtimeconfig.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_API.runtimeconfig.dev.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_API.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\ref\NGC_API.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_API.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\DanhoLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_Components.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\NGC_Components.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\bin\Debug\net5.0\DanhoLibrary.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.csprojAssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.AssemblyInfoInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.AssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\staticwebassets\NGC_API.StaticWebAssets.Manifest.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\staticwebassets\NGC_API.StaticWebAssets.xml
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\scopedcss\bundle\NGC_API.styles.css
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.RazorTargetAssemblyInfo.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\ref\NGC_API.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_API\obj\Debug\net5.0\NGC_API.genruntimeconfig.cache
