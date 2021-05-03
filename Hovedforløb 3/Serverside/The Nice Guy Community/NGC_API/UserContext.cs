@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NGC_API
 {
-    public class UserContext : DbContext
+    public class UserContext : DanhoLibrary.EFController.DanhoDBContext
     {
         public DbSet<Login> Logins { get; set; }
         public DbSet<User> Users { get; set; }

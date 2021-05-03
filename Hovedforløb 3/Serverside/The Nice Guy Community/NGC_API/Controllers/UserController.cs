@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace NGC_API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UserController
     {
-        public UserRepository Repository { get; }
+        private UserRepository Repository { get; }
 
         public UserController() { }
         public UserController(UserRepository userRepos) => Repository = userRepos;

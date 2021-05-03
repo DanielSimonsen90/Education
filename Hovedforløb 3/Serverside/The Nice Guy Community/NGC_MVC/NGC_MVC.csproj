@@ -5,7 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NGC_API\NGC_API.csproj" />
     <ProjectReference Include="..\NGC_Components\NGC_Components.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DanhoLibrary">
+      <HintPath>..\..\..\..\..\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.1\DanhoLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace NGC_API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class LoginController : ControllerBase
     {
-        public LoginRepository Repository { get; }
+        protected LoginRepository Repository { get; }
 
         public LoginController() { }
         public LoginController(LoginRepository loginRepos) => Repository = loginRepos;

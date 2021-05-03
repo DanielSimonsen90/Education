@@ -2,8 +2,9 @@
 using NGC_Components;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using NGC_API;
 using System.Threading.Tasks;
+using NGC_API.Repositories;
 
 namespace NGC_MVC.Controllers
 {
@@ -14,14 +15,22 @@ namespace NGC_MVC.Controllers
             return View();
         }
 
-        public Login CreateLogin(string username, string password)
+        public async Task<Login> CreateLogin(string username, string password)
         {
-            throw new NotImplementedException();
+            User user = new (new Login(username, password));
+            //await Task.WhenAll(
+            //    APIUserController.Post(user),
+            //    APIController.Post(user.Login)
+            //);
+            return user.Login;
         }
-        public bool Login(string username, string password)
+        public async Task<Login> Login(string username, string password)
         {
-            throw new NotImplementedException();
-        }
+            //IList<Login> logins = await APIController.Get();
+            IList<Login> logins = new List<Login>() { new Login("admin", "admin") };
+            if (logins == null || logins.Count == 0) throw new Exception("No logins found!");
 
+            return (logins as List<Login>).Find(l => l.Username == username && l.Password == password);
+        }
     }
 }
