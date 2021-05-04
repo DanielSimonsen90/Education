@@ -1,0 +1,7 @@
+.cart-component-ul {
+    display: table;
+}
+.cart-component-li {
+    display: table-cell;
+    padding: .2%;
+}

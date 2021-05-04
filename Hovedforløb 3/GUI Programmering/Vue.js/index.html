@@ -43,7 +43,7 @@
             <p>Enter username</p>
             <input v-model='username'>
             <p>Enter password</p>
-            <input v-model='password'>
+            <input v-model='password' type="password">
             <div>
                 <br />
                 <button v-on:click="validateLogin">Log in</button>
@@ -53,8 +53,8 @@
     
     <div id="vueTest">
         <login
-            v-on:is-admin='onIsAdmin'
-            v-on:password-incorrect='onPasswordIncorrect'
+            v-on:is-admin='on_is_admin'
+            v-on:password-incorrect='on_password_incorrect'
         ></login> 
         
         <div v-if='isAdmin'>
@@ -155,10 +155,10 @@
             ]
         },
         methods: {
-            onIsAdmin(value) {
+            on_is_admin(value) {
                 return this.isAdmin = value;
             },
-            onPasswordIncorrect() {
+            on_password_incorrect() {
                 this.passwordIncorrect = false;
                 setTimeout(() => this.passwordIncorrect = false, 2000);
                 

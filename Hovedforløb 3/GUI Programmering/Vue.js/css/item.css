@@ -1,0 +1,36 @@
+/*#region item-component*/
+.item-component-container {
+    display: inherit;
+    position: relative;
+    margin: 20%;
+    padding: 2%;
+    border: solid;
+    border-color: #aaa;
+}
+.item-component-container > * {
+    margin: 2%;
+}
+.item-component-container > h3 {
+    padding: 1%;
+    display: inline;
+    position: relative;
+    margin: 0;
+}
+/*#endregion*/
+
+.item-title {
+    left: 0%;
+}
+.item-price {
+    right: 0%;
+}
+
+.item-description {
+    max-width: 80%;
+    position: relative;
+    top: 200%;
+}
+
+/* .item-crud-container {
+    
+} */
