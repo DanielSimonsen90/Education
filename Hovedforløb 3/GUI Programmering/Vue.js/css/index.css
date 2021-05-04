@@ -1,0 +1,18 @@
+:root {
+    --dark: rgb(50, 50, 50);
+    --light: #ccc
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.template { 
+    display: none; 
+}
+
+button {
+    background-color: var(--dark);
+    color: var(--light);
+}
