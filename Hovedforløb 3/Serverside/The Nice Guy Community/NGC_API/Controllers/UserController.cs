@@ -14,8 +14,7 @@ namespace NGC_API.Controllers
     {
         private UserRepository Repository { get; }
 
-        public UserController() { }
-        public UserController(UserRepository userRepos) => Repository = userRepos;
+        public UserController() => Repository = new UserRepository(Program.Context);
 
         [HttpGet]
         public async Task<IList<User>> Get() => await Repository.GetMultiple();

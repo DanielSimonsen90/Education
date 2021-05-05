@@ -12,8 +12,7 @@ namespace NGC_API.Controllers
     {
         protected LoginRepository Repository { get; }
 
-        public LoginController() { }
-        public LoginController(LoginRepository loginRepos) => Repository = loginRepos;
+        public LoginController() => Repository = new LoginRepository(Program.Context);
 
         [HttpGet]
         public Task<IList<Login>> Get() => Repository.GetMultiple();

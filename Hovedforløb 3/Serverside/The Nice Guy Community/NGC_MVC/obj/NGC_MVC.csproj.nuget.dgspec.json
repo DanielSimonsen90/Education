@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj": {}
+    "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj": {
+    "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj",
+        "projectUniqueName": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj",
         "projectName": "NGC_API",
-        "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj",
-        "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\obj\\",
+        "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj",
+        "packagesPath": "C:\\Users\\DanielSimonsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DanielSimonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj": {
-                "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj"
+              "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj": {
+                "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj"
               }
             }
           }
@@ -91,17 +94,20 @@
         }
       }
     },
-    "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj": {
+    "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj",
+        "projectUniqueName": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj",
         "projectName": "NGC_Components",
-        "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj",
-        "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\obj\\",
+        "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj",
+        "packagesPath": "C:\\Users\\DanielSimonsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DanielSimonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -167,17 +173,20 @@
         }
       }
     },
-    "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj": {
+    "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj",
         "projectName": "NGC_MVC",
-        "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj",
-        "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\obj\\",
+        "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj",
+        "packagesPath": "C:\\Users\\DanielSimonsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DanielSimonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -191,11 +200,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj": {
-                "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj"
+              "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj": {
+                "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_API\\NGC_API.csproj"
               },
-              "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj": {
-                "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj"
+              "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj": {
+                "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj"
               }
             }
           }

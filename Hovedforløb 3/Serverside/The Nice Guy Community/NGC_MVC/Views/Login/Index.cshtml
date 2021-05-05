@@ -7,16 +7,10 @@
         <input id="username" name="username" required type="text" placeholder="Username" />
         <input id="password" name="password" required type="password" placeholder="Password" />
         <div id="login-button-container">
-            <button id="login-button-create" onclick="loginCreate">Create Login</button>
+            <button id="login-button-create" onclick="loginCreate()" type="button">Create Login</button>
             <button id="login-button" type="submit">Login</button>
         </div>
     </form>
 </div>
 
-<script>
-    function loginCreate() {
-        //fetch('https://localhost:44327/api/Login')
-        //    .then(response => response.data)
-        //    .then(data => )
-    }
-</script>
+<script src="~/js/login/loginCreate.js"></script>

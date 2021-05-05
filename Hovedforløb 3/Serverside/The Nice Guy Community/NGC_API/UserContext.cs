@@ -14,8 +14,8 @@ namespace NGC_API
         public DbSet<User> Users { get; set; }
 
         private string ConnectionString { get; set; } =
-            //"Data Source=DANIEL-SIMONSEN\\MASTERRUNEUWU;" +
-            "Data Source=(localdb)\\MSSQLLocalDB;" +
+            "Data Source=DANIEL-SIMONSEN\\MASTERRUNEUWU;" +
+            //"Data Source=(localdb)\\MSSQLLocalDB;" +
             "Initial Catalog=H3ServersideNGC;" +
             "Trusted_Connection=true;";
 

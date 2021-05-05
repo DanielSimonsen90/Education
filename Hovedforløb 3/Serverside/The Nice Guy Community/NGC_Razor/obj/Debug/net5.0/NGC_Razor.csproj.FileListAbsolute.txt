@@ -77,3 +77,4 @@ C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Serverside\The Nic
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_Razor\obj\Debug\net5.0\NGC_Razor.pdb
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_Razor\obj\Debug\net5.0\NGC_Razor.genruntimeconfig.cache
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_Razor\obj\Debug\net5.0\NGC_Razor.csproj.CopyComplete
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Serverside\The Nice Guy Community\NGC_Razor\obj\Debug\net5.0\NGC_Razor.csprojAssemblyReference.cache
