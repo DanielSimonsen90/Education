@@ -15,10 +15,10 @@ namespace NGC_API.Controllers
         public LoginController() => Repository = new LoginRepository(Program.Context);
 
         [HttpGet]
-        public Task<IList<Login>> Get() => Repository.GetMultiple();
-
+        public async Task<ActionResult<IList<Login>>> Get() => new ActionResult<IList<Login>>(await Repository.GetMultiple());
+        
         [HttpGet("{id}")]
-        public Task<Login> Get(int id) => Repository.Get(id);
+        public async Task<ActionResult<Login>> Get(int id) => new ActionResult<Login>(await Repository.Get(id));
 
         [HttpPost]
         public Task<Login> Post([FromBody] Login login) => Repository.Add(login);
@@ -27,6 +27,9 @@ namespace NGC_API.Controllers
         public Task<Login> Put([FromBody] Login login) => Repository.Update(login);
 
         [HttpDelete("{id}")]
-        public Task Delete(int id) => Repository.Delete(id);
+        public async Task Delete(int id)
+        {
+            await Repository.Delete(id);
+        }
     }
 }

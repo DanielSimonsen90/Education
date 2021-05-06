@@ -33,7 +33,7 @@ namespace NGC_MVC.Controllers
         private async Task<Login> OnLoginAttempted(string username, string password)
         {
             _logger.LogInformation("Executing OnLoginAttempted", username, password);
-            //string LoginsFromApiURI = "https://localhost:44327/api/Login";
+            string LoginsFromApiURI = "https://localhost:44327/api/Login";
             //string loginsRes = await new HttpClient().GetStringAsync(LoginsFromApiURI);
 
             string loginsRes = await API.Get("Login");
@@ -54,12 +54,13 @@ namespace NGC_MVC.Controllers
             return loginFromLogins;
         }
 
-        public delegate void LoginSuccessful(Login login);
+        public delegate IActionResult LoginSuccessful(Login login);
         public event LoginSuccessful OnLoginSuccessful;
-        private void OnLoginSucceeded(Login login)
+        private IActionResult OnLoginSucceeded(Login login)
         {
             _logger.LogInformation("Executing OnLoginSucceeded", login);
             _logger.LogInformation($"{login.Username} successfully logged in", login);
+            return RedirectToPage("../Home/Index");
         }
 
 
