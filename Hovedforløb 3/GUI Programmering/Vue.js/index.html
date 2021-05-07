@@ -79,14 +79,12 @@
     Vue.component('login', {
         // props: ['username', 'password'],
         template: document.getElementById('login-model'),
-        data: () => {
-            return {
-                    username: 'User',
-                    password: '<password>',
-                    isAdmin: false,
-                    passwordIncorrect: false
-                };
-        },
+        data: () => ({
+            username: 'User',
+            password: '<password>',
+            isAdmin: false,
+            passwordIncorrect: false
+        }),
         methods: {
             validateLogin() {
                 let { username, password } = this;
@@ -161,7 +159,6 @@
             on_password_incorrect() {
                 this.passwordIncorrect = false;
                 setTimeout(() => this.passwordIncorrect = false, 2000);
-                
             }
         }
     })

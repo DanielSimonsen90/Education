@@ -15,109 +15,171 @@
 
 <body>
 <div id="templates">
+    <div id="add-item-component" class="template">
+        <form class="add-item-component-form" @submit="onFormSubmit">
+            <input 
+                id="title" 
+                class="add-item-component-form-item" 
+                name="title" type="text" 
+                placeholder="Name" 
+                v-model="selfTitle"
+            > <br>
+            <input 
+                id="price" 
+                class="add-item-component-form-item" 
+                name="price" 
+                type="number" 
+                placeholder="Price" 
+                v-model="selfPrice"
+            > <br>
+            <input 
+                id="description" 
+                class="add-item-component-form-item" 
+                name="description" 
+                type="text" 
+                placeholder="Description" 
+                v-model="selfDescription"
+            > <br>
+            <button id="submitButton" class="add-item-component-form-submit" name="submitButton" type="submit">Submit</button>
+        </form>
+    </div>
     <div id='item-component' class="template">
         <span class="item-component-container">
             <h3 class="item-title">{{ title }}</h3>
             <h3 class="item-price">{{ setFormatPrice() }}kr</h3>
             <p class="item-description">{{ description }}</p>
             <span class="item-crud-container">
-                <button id="item-crud-button-edit" class="item-crud-button" v-onclick="editclick">Edit</button>
-                <button id="item-crud-button-remove" class="item-crud-button" v-onclick="removeclick">Remove</button>
+                <button id="item-crud-button-edit" class="item-crud-button" @click="onEditClick">Edit</button>
+                <button id="item-crud-button-remove" class="item-crud-button" @click="onRemoveClick">Remove</button>
             </span>
+            <add-item 
+                :title="title"
+                :price="price"
+                :description="description"
+                
+                @submit="onEditSubmit"
+                
+                class="template"
+            />
         </span>  
     </div>
     <div id="cart-component" class="template">
         <ul class="cart-component-ul">
-            <li class="cart-component-li" v-for="item in items">
+            <li class="cart-component-li" v-for="{ title, description, price } in items">
                 <item 
-                    v-bind:title="item.title"
-                    v-bind:description="item.description"
-                    v-bind:price="item.price"
+                    :title="title"
+                    :description="description"
+                    :price="price"
 
-                    v-on:editclick="onEditClick",
-                    v-on:removeclick="onRemoveClick",
+                    @edit="onItemEdit"
+                    @remove="onItemRemove"
 
                     class="cart-component-item"
                 />
             </li>
         </ul>
     </div>  
-    <div id="add-item-component" class="template">
-        <form class="add-item-component-form" onsubmit="onSubmit">
-            <input id="title" class="add-item-component-form-item" name="title" type="text" placeholder="Name" v-bind:title>
-            <input id="price" class="add-item-component-form-item" name="price" type="number" placeholder="Price" v-bind:price>
-            <input id="description" class="add-item-component-form-item" name="description" type="text" placeholder="Description" v-bind:description>
-            <button id="submitButton" class="add-item-component-form-submit" name="submitButton" type="submit">Submit</button>
-        </form>
-    </div>
 </div>
 
 <div id="vueContent">
-    <cart v-bind:items="items" />
-
+    <cart 
+        :items="items" 
+        @item-edit="onItemEdit" 
+        @item-remove="onItemRemove"
+    />
 </div>
 
 </body>
 
 <script>
-class Item {
-    /**@param {string} name
-     * @param {string} description
-     * @param {string} price*/
-    constructor(name, description, price) {
-        this.title = name;
-        this.description = description;
-        this.price = price;
-    }
-}
-
-Vue.component('item', {
-    props: ['title', 'description', 'price'],
-    template: document.getElementById('item-component'),
-    methods: {
-        setFormatPrice() {
-            let result = ""; 
-            let price = this.price.toString().split('').reverse().join(''); //Reverse price string
-            for (let i = price.length - 1; i >= 0; i--) { //Make for-reverse
-                result += price[i]; //Insert number
-                if (i % 3 == 0 && i != 0) //If number is a 3rd
-                    result +='.';   //Insert .
-            }
-            return result; //Return something like '1.000.000'
-        },
-        editclick() { this.$emit('editclick', this); },
-        removeclick() { this.$emit('removeclick', this); }
-    }
-});
-Vue.component('cart', {
-    props: ['items'],
-    template: document.getElementById('cart-component'),
-    methods: {
-        /**@param {Item} item*/
-        onEditClick(item) {
-            let bindings = ['title', 'price', 'description'].map(name => `v-bind:name=${item[name]}`).join(' ');
-            document.write(`<add-item on:submit="onSubmit" ${bindings}/>`);
-
-            let itemIndex = this.items.indexOf(item);
-            this.items[itemIndex] = item;
-        },
-        onRemoveClick(item) {
-            this.items = this.items.filter(i => i != item);
-        },
-        onSubmit(result) {
-            console.log(result);
+    class Item {
+        /**@param {string} name
+         * @param {string} description
+         * @param {string} price*/
+        constructor(name, description, price) {
+            this.title = name;
+            this.description = description;
+            this.price = price;
         }
     }
-});
-Vue.component('add-item', {
-    template: document.getElementById('add-item-component'),
-    props: ['title', 'description', 'price'],
-    methods: {
-        onSubmit(result) { this.$emit('submit', result); }
-    }
-});
 
-const vue = new Vue({
+    Vue.component('add-item', {
+        template: document.getElementById('add-item-component'),
+        props: ['title', 'description', 'price'],
+        data: () => ({
+            selfTitle: "title",
+            selfDescription: "description",
+            selfPrice: 0
+        }),
+        mounted() {
+            this.selfTitle = this.title;
+            this.selfDescription = this.description;
+            this.selfPrice = this.price;
+        },
+        methods: {
+            onFormSubmit({ currentTarget }) {
+                let inputs = [];
+                for (const tag of currentTarget.children)
+                    if (tag.localName == "input")
+                        inputs.push(tag);
+                
+                let item = inputs.reduce((result, current) => {
+                    result[current.name] = current.value;
+                    return result;
+                }, {});
+
+                this.$emit('submit', item);
+            } 
+        }
+    });
+    Vue.component('item', {
+        props: ['title', 'description', 'price'],
+        template: document.getElementById('item-component'),
+        methods: {
+            setFormatPrice() {
+                let result = "";
+                if (!this.price) return "";
+                let price = this.price.toString().split('').reverse().join(''); //Reverse price string
+                for (let i = price.length - 1; i >= 0; i--) { //Make for-reverse
+                    result += price[i]; //Insert number
+                    if (i % 3 == 0 && i != 0) //If number is a 3rd
+                        result +='.';   //Insert .
+                }
+                return result; //Return something like '1.000.000'
+            },
+            onEditClick() { this.$el.lastChild.classList.remove('template'); },
+            onRemoveClick() { this.$emit('remove', this) },
+            /**@param {Item} item*/
+            onEditSubmit(item) {
+                // Vue.set(this.title, "title", title);
+                // this.title = title;
+                // this.description = description;
+                // this.price = price;
+
+                let current = Object.keys(item).reduce((result, current) => {
+                    result[current] = this.$props[current];
+                    return result;
+                }, {})
+
+                this.$emit('edit', current, item);
+            },
+        }
+    });
+    Vue.component('cart', {
+        props: ['items'],
+        template: document.getElementById('cart-component'),
+        methods: {
+            /**@param {Item} current
+             * @param {Item} updated*/
+            onItemEdit(current, updated) { 
+                this.$emit('item-edit', current, updated); 
+            },
+            /**@param {Item} item*/
+            onItemRemove(item) { this.$emit('item-remove', item) },
+        }
+    });
+
+    const vue = new Vue({
     el: "#vueContent",
     data: {
         items: [
@@ -125,6 +187,24 @@ const vue = new Vue({
             new Item('Real working desk', "So far, it hasn't broken down yet so uh", 100),
             new Item("Your bed", "Yes. We have your bed and we require you to pay for it back", 1000000)
         ]
+    },
+    methods: {
+        /**@param {Item} current
+         * @param {Item} updated*/
+        onItemEdit(current, updated) {
+            let item = this.items.find(i => {
+                let props = Object.keys(i);
+                return props
+                    .map(prop => i[prop] === current[prop])
+                    .filter(v => v).length === props.length
+            })
+            let itemIndex = this.items.indexOf(item);
+            this.items[itemIndex] = updated;
+        },
+        /**@param {Item} item*/
+        onItemRemove(item) {
+            this.items = this.items.filter(i => i != item);
+        }
     }
 })
 </script>
