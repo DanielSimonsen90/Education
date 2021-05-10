@@ -16,3 +16,8 @@ button {
     background-color: var(--dark);
     color: var(--light);
 }
+
+input {
+    color: var(--light);
+    background-color: var(--dark);
+}
