@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NGC_Razor.Models.View_Models
+namespace CortosoUniversity.Models.View_Models
 {
     public class StudentVM
     {

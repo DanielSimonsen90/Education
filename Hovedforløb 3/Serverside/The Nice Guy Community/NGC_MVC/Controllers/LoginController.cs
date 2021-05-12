@@ -8,6 +8,7 @@ using NGC_API.Repositories;
 using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using NGC_Components.Exceptions;
+using Newtonsoft.Json;
 
 namespace NGC_MVC.Controllers
 {
@@ -33,11 +34,9 @@ namespace NGC_MVC.Controllers
         private async Task<Login> OnLoginAttempted(string username, string password)
         {
             _logger.LogInformation("Executing OnLoginAttempted", username, password);
-            string LoginsFromApiURI = "https://localhost:44327/api/Login";
-            //string loginsRes = await new HttpClient().GetStringAsync(LoginsFromApiURI);
-
-            string loginsRes = await API.Get("Login");
-            IList<Login> logins = TempLogins;
+            
+            IList<Login> logins = await API.Get<IList<Login>>("Login");
+            //IList<Login> logins = TempLogins;
             _logger.LogInformation("Fetched logins from Database", logins);
 
             if (logins == null || logins.Count == 0) throw new Exception("No logins found!");
@@ -45,8 +44,15 @@ namespace NGC_MVC.Controllers
 
             Login loginFromLogins = (logins as List<Login>).Find(l => l.Username == username && l.Password == password);
             _logger.LogInformation("Looking for parameter credentials in logins list", loginFromLogins, username, password, logins);
-            //string loginRes = await Helper.GetData(44327, $"Logins/{loginFromLogins.ID}");
-            //_logger.LogInformation("Fetched User from database", login, loginFromLogins);
+            
+            if (loginFromLogins == null)
+            {
+                _logger.LogInformation("Login not recognized. Exiting...");
+                return null;
+            }
+
+            Login login = await API.Get<Login>($"Login/{loginFromLogins.ID}");
+            _logger.LogInformation("Fetched User from database", login, loginFromLogins);
 
             _logger.LogInformation(loginFromLogins != null ? "Login exists - emitting OnLoginSuccessful" : "Login didn't exist - exiting");
             if (loginFromLogins != null)
@@ -60,15 +66,16 @@ namespace NGC_MVC.Controllers
         {
             _logger.LogInformation("Executing OnLoginSucceeded", login);
             _logger.LogInformation($"{login.Username} successfully logged in", login);
-            return RedirectToPage("../Home/Index");
+            return RedirectToPage("../Home");
         }
 
 
         public async Task<Login> CreateLogin(string username, string password)
         {
             _logger.LogInformation("Executing CreateLogin", username, password);
-            if (username == null || username == string.Empty) throw new InvalidLoginException("Username was not defined");
-            else if (password == null || password == string.Empty) throw new InvalidLoginException("Password was not defined");
+
+            if (string.IsNullOrEmpty(username)) throw new InvalidLoginException("Username was not defined");
+            else if (string.IsNullOrEmpty(password)) throw new InvalidLoginException("Password was not defined");
             _logger.LogInformation("Login credentials passed");
 
             User user = new (new Login(username, password));

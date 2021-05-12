@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using NGC_Razor.Models.View_Models;
+using CortosoUniversity.Models.View_Models;
+using CortosoUniversity.Data;
 
-namespace NGC_Razor.Pages
+namespace CortosoUniversity.Pages
 {
     public class AboutModel : PageModel
     {

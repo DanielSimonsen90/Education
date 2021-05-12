@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace NGC_Razor.Models
+namespace CortosoUniversity.Models
 {
     public enum Grade { TWELVE, TEN, SEVEN, FOUR, TWO, ZERO, NEGATIVE_THREE }
 
