@@ -1,10 +1,10 @@
-﻿using NGC_Razor.Models;
+﻿using CortosoUniversity.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NGC_Razor.Data
+namespace CortosoUniversity.Data
 {
     public static class DbInitializer
     {

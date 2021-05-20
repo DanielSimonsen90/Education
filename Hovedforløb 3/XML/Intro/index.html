@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Testing</title>
+    <style>
+        .xmlElement {
+            position: relative;
+            left: 20px;
+        }
+        .default {
+            position: relative;
+        }
+        .data {
+            position: relative;
+            left: -20px;
+        }
+    </style>
+</head>
+<body style="display: grid; place-items: center;">
+    <div style="display: flex; align-items: center;">
+        <label>
+            XML File
+            <input type="file" id="inputFile" accept="xml"> 
+        </label>
+        <button onclick="onSubmit()">Load</button>
+    </div>
+
+    <br />
+    <div id="data" class="default">
+        <p>
+            Your file data will appear here.
+        </p>
+    </div>
+</body>
+
+<script src="test.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/DanielSimonsen90/DanhoLibraryJS@latest/dist/index.js"></script>
+
+</html>

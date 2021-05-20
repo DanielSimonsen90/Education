@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -8,29 +9,19 @@ namespace NGC_Components
 {
     public class APIController
     {
-        public HttpClient Client { get; }
+        public WebClient Client { get; }
+        public int Port { get; }
+        public string GetPath(string fromApi) => $"https://localhost:{Port}/api/{fromApi}";
 
         public APIController(int port = 44327)
         {
-            HttpClientHandler handler = new()
-            {
-                ClientCertificateOptions = ClientCertificateOption.Manual,
-                ServerCertificateCustomValidationCallback = (message, cert, cetChain, policyErr) => true
-            };
-            Client = new HttpClient(handler) 
-            {
-                BaseAddress = new Uri($"https://localhost:{port}/api/")
-            };
+            Port = port;
+            Client = new WebClient();
         }
-        public async Task<string> Get(string path)
+        public async Task<Model> Get<Model>(string path)
         {
-            HttpResponseMessage res = await Client.GetAsync(path, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-            if (!res.IsSuccessStatusCode) throw new Exception("Response unsuccessfull");
-
-            string data = await res.Content.ReadAsStringAsync();
-            return data;
-            //return await new HttpClient().GetStringAsync(url);
-
+            string data = await Client.DownloadStringTaskAsync(GetPath(path));
+            return JsonConvert.DeserializeObject<Model>(data);
         }
     }
 }

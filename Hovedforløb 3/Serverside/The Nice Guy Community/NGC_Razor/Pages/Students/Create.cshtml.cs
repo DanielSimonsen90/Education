@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using NGC_Razor.Models;
+using NGC_Razor.Models.View_Models;
 
 namespace NGC_Razor.Pages.Students
 {
@@ -24,22 +25,23 @@ namespace NGC_Razor.Pages.Students
         }
 
         [BindProperty]
-        public Student Student { get; set; }
+        public StudentVM StudentVM { get; set; }
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-            Student empty = new();
-            bool updated = await TryUpdateModelAsync(empty, "student", 
-                s => s.FirstMidName, 
-                s => s.LastName, 
-                s => s.EnrollmentDate
-            );
+            //Student empty = new();
+            //bool updated = await TryUpdateModelAsync(empty, "student", 
+            //    s => s.FirstMidName, 
+            //    s => s.LastName, 
+            //    s => s.EnrollmentDate
+            //);
 
-            if (!ModelState.IsValid || !updated)
+            if (!ModelState.IsValid /*|| !updated*/)
                 return Page();
-            
-            _context.Students.Add(Student);
+
+            var entry = _context.Add(new Student());
+            entry.CurrentValues.SetValues(StudentVM);
             await _context.SaveChangesAsync();
             return RedirectToPage("./Index");
 

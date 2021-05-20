@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.w3schools.com"
+    xmlns="https://www.w3schools.com"
+    elementFormDefault="qualified"
+>
+
+<xs:element name="name">
+    <xs:complexType>
+    <xs:restriction base="xs:integer">
+        <xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+    </xs:restriction>
+    </xs:complexType>
+</xs:element>
+<xs:element name="price">
+  <xs:complexType>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="product">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="price"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="category">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" ref="product"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="store">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" ref="category"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
