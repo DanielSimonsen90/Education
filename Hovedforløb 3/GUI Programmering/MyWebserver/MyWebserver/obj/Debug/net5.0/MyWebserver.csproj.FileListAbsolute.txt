@@ -17,3 +17,22 @@ C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\GUI Programmering\
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\DanhoLibrary.dll
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\DanhoLibrary.pdb
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\MyWebserver.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\MyWebserver.deps.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\MyWebserver.runtimeconfig.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\MyWebserver.runtimeconfig.dev.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\MyWebserver.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\ref\MyWebserver.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\MyWebserver.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\DanhoLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\bin\Debug\net5.0\DanhoLibrary.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.csprojAssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.AssemblyInfoInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.AssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\ref\MyWebserver.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\GUI Programmering\MyWebserver\MyWebserver\obj\Debug\net5.0\MyWebserver.genruntimeconfig.cache

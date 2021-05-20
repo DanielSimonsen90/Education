@@ -7,21 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="DanhoLibrary">
-      <HintPath>..\..\..\..\..\..\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.0\DanhoLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Database">
-      <HintPath>..\..\..\..\..\..\SKP\Misc Projects\Round 3\LoginSystemDB\Database\bin\Debug\Database.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DanhoLibrary">
+      <HintPath>..\..\..\..\..\..\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.1\DanhoLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
