@@ -8,3 +8,13 @@ C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Database programme
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.csproj.CopyComplete
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.exe
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\bin\Debug\ORM.exe.config
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\bin\Debug\ORM.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\bin\Debug\ORM.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\bin\Debug\DanhoLibrary.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\bin\Debug\DanhoLibrary.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.csprojAssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Education\Hovedforløb 3\Database programmering\ORM\ORM\obj\Debug\ORM.pdb

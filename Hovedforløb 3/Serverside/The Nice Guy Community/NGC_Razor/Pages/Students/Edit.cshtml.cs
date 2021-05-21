@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CortosoUniversity.Data;
+using CortosoUniversity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using NGC_Razor.Models;
 
-namespace NGC_Razor.Pages.Students
+namespace CortosoUniversity.Pages.Students
 {
     public class EditModel : PageModel
     {

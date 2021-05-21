@@ -85,7 +85,7 @@ namespace DanhosMessages.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DanhosMessages;V1.0.0.0;component/pages/chatpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DanhosMessages;component/pages/chatpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\ChatPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

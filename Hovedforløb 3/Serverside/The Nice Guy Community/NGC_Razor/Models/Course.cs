@@ -8,7 +8,7 @@ namespace CortosoUniversity.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Display(Name = "Number")]
-        public int CourseID { get; set; }
+        public int ID { get; set; }
 
         [StringLength(50, MinimumLength = 3)]
         public string Title { get; set; }

@@ -6,9 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using NGC_Razor.Models;
+using CortosoUniversity.Models;
+using CortosoUniversity.Data;
 
-namespace NGC_Razor.Pages.Students
+namespace CortosoUniversity.Pages.Students
 {
     public class DeleteModel : PageModel
     {

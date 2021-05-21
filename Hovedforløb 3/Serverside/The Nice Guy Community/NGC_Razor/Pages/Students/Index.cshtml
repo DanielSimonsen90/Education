@@ -1,5 +1,5 @@
 ﻿@page
-@model NGC_Razor.Pages.Students.IndexModel
+@model CortosoUniversity.Pages.Students.IndexModel
 
 @{
     ViewData["Title"] = "Students";
@@ -48,15 +48,9 @@
         @foreach (var item in Model.Students)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FirstMidName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.EnrollmentDate)
-                </td>
+                <td>@Html.DisplayFor(modelItem => item.FirstMidName)</td>
+                <td>@Html.DisplayFor(modelItem => item.LastName)</td>
+                <td>@Html.DisplayFor(modelItem => item.EnrollmentDate)</td>
                 <td>
                     <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                     <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |

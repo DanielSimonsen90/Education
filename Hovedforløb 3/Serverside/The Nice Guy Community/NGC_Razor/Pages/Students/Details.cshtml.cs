@@ -5,14 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using NGC_Razor.Models;
+using CortosoUniversity.Models;
+using CortosoUniversity.Data;
 
-namespace NGC_Razor.Pages.Students
+namespace CortosoUniversity.Pages.Students
 {
     public class DetailsModel : PageModel
     {
         private readonly SchoolContext _context;
-        public Dictionary<Grade?, int> Grades = new Dictionary<Grade?, int>(new List<KeyValuePair<Grade?, int>>()
+        public Dictionary<Grade?, int> Grades = new(new List<KeyValuePair<Grade?, int>>()
         {
             new KeyValuePair<Grade?, int>(Grade.TWELVE, 12),
             new KeyValuePair<Grade?, int>(Grade.TEN, 10),

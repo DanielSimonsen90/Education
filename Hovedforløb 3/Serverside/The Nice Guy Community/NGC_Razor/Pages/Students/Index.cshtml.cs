@@ -8,9 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using NGC_Razor.Models;
+using CortosoUniversity.Models;
+using CortosoUniversity.Data;
 
-namespace NGC_Razor.Pages.Students
+namespace CortosoUniversity.Pages.Students
 {
     public class IndexModel : PageModel
     {

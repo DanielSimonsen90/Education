@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CortosoUniversity.Data;
+using CortosoUniversity.Models;
+using CortosoUniversity.Models.View_Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using NGC_Razor.Models;
-using NGC_Razor.Models.View_Models;
 
-namespace NGC_Razor.Pages.Students
+namespace CortosoUniversity.Pages.Students
 {
     public class CreateModel : PageModel
     {

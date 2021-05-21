@@ -3,13 +3,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using NGC_Razor.Data;
+using CortosoUniversity.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NGC_Razor
+namespace CortosoUniversity
 {
     public class Program
     {
@@ -30,7 +30,7 @@ namespace NGC_Razor
             {
                 var context = services.GetRequiredService<SchoolContext>();
                 context.Database.EnsureCreated();
-                DbInitializer.Initialize(context);
+                new DbInitializer(context).Initialize();
             }
             catch (Exception ex)
             {

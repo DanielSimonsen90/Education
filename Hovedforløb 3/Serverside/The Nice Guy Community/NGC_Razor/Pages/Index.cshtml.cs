@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NGC_Razor.Pages
+namespace CortosoUniversity.Pages
 {
     public class IndexModel : PageModel
     {
