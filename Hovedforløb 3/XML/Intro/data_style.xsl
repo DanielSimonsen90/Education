@@ -3,9 +3,6 @@
 <xsl:template match="/">
 
 <html>
-    <head>
-        <script src="test.js"></script>
-    </head>
     <body>
         <h1>Products</h1>
         <button id="sorter">Now sorting by: name</button>
@@ -32,15 +29,7 @@
             </xsl:for-each>
         </table>
     </body>
-    <script>
-    (() => {
-        //cool scripts go here bro
-        setSortingButton();
-     })();
-    </script>
 </html>
 
 </xsl:template>
 </xsl:stylesheet>
-
-<!-- https://www.w3schools.com/xml/schema_intro.asp -->

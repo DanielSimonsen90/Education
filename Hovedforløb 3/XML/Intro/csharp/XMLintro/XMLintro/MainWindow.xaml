@@ -1,0 +1,36 @@
+﻿<Window x:Class="XMLintro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XMLintro"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Tag="xml">No file loaded</TextBlock>
+        <TextBlock TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Tag="xsl">No file loaded</TextBlock>
+        <TextBlock TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3" Tag="xsd">No file loaded</TextBlock>
+        
+        <Button Grid.Column="2" Grid.Row="1" Click="FileLoadClick" Tag="xml">Load XML file</Button>
+        <Button Grid.Column="2" Grid.Row="2" Click="FileLoadClick" Tag="xsl">Load XSL file</Button>
+        <Button Grid.Column="2" Grid.Row="3" Click="FileLoadClick" Tag="xsd">Load XSD file</Button>
+        
+        <Button Grid.ColumnSpan="2" Grid.Column="1"  Grid.Row="5" Click="Transform" IsEnabled="False" x:Name="btnTransform">Transform</Button>
+    </Grid>
+</Window>
