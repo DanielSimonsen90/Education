@@ -51,14 +51,14 @@ namespace XMLintro
 
             foreach (string uri in data)
             {
-                string[] split = uri.Split('\\');
-                string file = split.Last();
+                string file = GetFileName(uri);
                 files.Add(file);
 
                 string extension = file.Split('.')[1];
 
                 Files.Set(extension, uri);
-                TextBlocks[extension].Text = file;
+                try { TextBlocks[extension].Text = file; }
+                catch (KeyNotFoundException) { MessageBox.Show($"Filetype \"{extension}\" is not supported!", "Filetype not supported!"); }
             }
 
             UpdateTransformButton();
@@ -67,7 +67,7 @@ namespace XMLintro
             files.ForEach(file => sb.Append(file + "\n"));
 
             e.Handled = true;
-            MessageBox.Show($"Following file{(files.Count > 1 ? "s" : "")} added:\n{sb}");
+            //MessageBox.Show($"Following file{(files.Count > 1 ? "s" : "")} added:\n{sb}", "Files added");
         }
         private void FileLoadClick(object sender, RoutedEventArgs e)
         {
@@ -113,41 +113,49 @@ namespace XMLintro
         {
             // Enable XSLT debugging. 
             XslCompiledTransform xslt = new XslCompiledTransform(true);
+            string xmlPath = Files["xml"];
 
             // Compile the style sheet.
             xslt.Load(Files["xsl"]);
 
+            Validate(xmlPath);
+            string xmlFile = GetFileName(xmlPath);
+
             SaveFileDialog dlg = new SaveFileDialog()
             {
-                DefaultExt = $".xml",
-                Filter = $"XML Files (*.xml)|*.xml| HTML Files (*.html)|*.html",
-                FileName = "result.xml"
+                DefaultExt = $".html",
+                Filter = $"XML Files (*.xml)|*.xml|" + 
+                          "HTML Files (*.html)|*.html|" +
+                          "Text Files (*.txt)|*.txt",
+                FileName = $"{xmlFile.Split('.').First()}_validated.html"
             };
 
             bool? result = dlg.ShowDialog();
-            if (!result.HasValue)
+            if (result != true)
             {
-                MessageBox.Show("Unable to get result! Please try again.", "Transformation Error");
+                MessageBox.Show("You have cancelled the transformation.", "Transformation Cancelled");
                 return;
             }
 
             // Execute the XSLT transform.
             FileStream outputStream = new FileStream(dlg.FileName, FileMode.Create); // Bemærk at Create overskriver!
-            xslt.Transform(Files["xml"], null, outputStream);
+            xslt.Transform(xmlPath, null, outputStream);
             outputStream.Close();
 
-            Validate(dlg);
+            MessageBox.Show($"Your XML Document, \"{GetFileName(xmlFile)}\", was successfully validated as \"{GetFileName(dlg.FileName)}\".", "Validation Successful");
 
-            Process.Start(Files["xml"]);
+            Process.Start(dlg.FileName);
         }
-        private void Validate(SaveFileDialog outputFile)
+        private string GetFileName(string uri) => uri.Split('\\').Last();
+        private void Validate(string validationFile)
         {
             XmlSchemaSet schema = new XmlSchemaSet();
             try { schema.Add("", Files["xsd"]); }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
-            XmlReader reader = XmlReader.Create(outputFile.FileName);
+            XmlReader reader = XmlReader.Create(validationFile);
             XDocument doc = XDocument.Load(reader);
+            
             doc.Validate(schema, new ValidationEventHandler((sender, e) =>
             {
                 XmlSeverityType type = XmlSeverityType.Warning;
