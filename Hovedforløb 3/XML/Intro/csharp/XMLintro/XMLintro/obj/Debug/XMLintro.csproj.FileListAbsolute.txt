@@ -16,3 +16,20 @@ C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\XML\Intro\csharp\X
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\bin\Debug\DanhoLibrary.dll
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\bin\Debug\DanhoLibrary.pdb
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\bin\Debug\XMLintro.exe.config
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\bin\Debug\XMLintro.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\bin\Debug\XMLintro.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\bin\Debug\DanhoLibrary.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.csproj.AssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\App.g.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro_MarkupCompile.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro_MarkupCompile.lref
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\MainWindow.baml
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.g.resources
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.Properties.Resources.resources
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.csproj.GenerateResource.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.csproj.CopyComplete
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\XML\Intro\csharp\XMLintro\XMLintro\obj\Debug\XMLintro.pdb

@@ -81,7 +81,7 @@ namespace XMLintro
             };
 
             // Display OpenFileDialog by calling ShowDialog method 
-            string fileResult = string.Empty, 
+            string fileResult = string.Empty,
                 text = "No file loaded";
 
             if (dlg.ShowDialog() == true)
@@ -131,27 +131,28 @@ namespace XMLintro
                 return;
             }
 
+            string outputFileName = dlg.FileName;
+
             // Execute the XSLT transform.
-            FileStream outputStream = new FileStream(dlg.FileName, FileMode.Create); // Bemærk at Create overskriver!
+            FileStream outputStream = new FileStream(outputFileName, FileMode.Create); // Bemærk at Create overskriver!
             xslt.Transform(Files["xml"], null, outputStream);
             outputStream.Close();
 
-            Validate(dlg);
+            Validate(outputFileName);
 
-            Process.Start(Files["xml"]);
+            Process.Start(outputFileName);
         }
-        private void Validate(SaveFileDialog outputFile)
+        private void Validate(string outputFileName)
         {
             XmlSchemaSet schema = new XmlSchemaSet();
             try { schema.Add("", Files["xsd"]); }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
-            XmlReader reader = XmlReader.Create(outputFile.FileName);
+            XmlReader reader = XmlReader.Create(outputFileName);
             XDocument doc = XDocument.Load(reader);
             doc.Validate(schema, new ValidationEventHandler((sender, e) =>
             {
-                XmlSeverityType type = XmlSeverityType.Warning;
-                if (Enum.TryParse<XmlSeverityType>("Error", out type))
+                if (Enum.TryParse("Error", out XmlSeverityType type))
                 {
                     if (type == XmlSeverityType.Error)
                     {
@@ -164,3 +165,4 @@ namespace XMLintro
         }
     }
 }
+
