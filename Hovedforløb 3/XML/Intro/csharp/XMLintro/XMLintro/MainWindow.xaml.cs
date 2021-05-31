@@ -149,13 +149,13 @@ namespace XMLintro
             Process.Start(outputFileName);
         }
         private string GetFileName(string uri) => uri.Split('\\').Last();
-        private void Validate(string outputFileName)
+        private void Validate(string xmlFile)
         {
             XmlSchemaSet schema = new XmlSchemaSet();
             try { schema.Add("", Files["xsd"]); }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
-            XmlReader reader = XmlReader.Create(outputFileName);
+            XmlReader reader = XmlReader.Create(xmlFile);
             XDocument doc = XDocument.Load(reader);
             
             doc.Validate(schema, new ValidationEventHandler((sender, e) =>
@@ -173,4 +173,3 @@ namespace XMLintro
         }
     }
 }
-
