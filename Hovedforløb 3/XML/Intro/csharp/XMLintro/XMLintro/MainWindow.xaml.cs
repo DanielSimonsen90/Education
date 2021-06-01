@@ -124,8 +124,8 @@ namespace XMLintro
             SaveFileDialog dlg = new SaveFileDialog()
             {
                 DefaultExt = $".html",
-                Filter = $"XML Files (*.xml)|*.xml|" + 
-                          "HTML Files (*.html)|*.html|" +
+                Filter =  "HTML Files (*.html)|*.html|" +
+                          "XML Files (*.xml)|*.xml|" + 
                           "Text Files (*.txt)|*.txt",
                 FileName = $"{xmlFile.Split('.').First()}_validated.html"
             };

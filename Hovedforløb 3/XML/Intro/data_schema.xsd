@@ -1,33 +1,107 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-<xs:element name="name" type="xs:string"></xs:element>
-<xs:element name="price" type="xs:double"></xs:element>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="price" type="xs:double"/>
 
-<xs:element name="product">
-  <xs:complexType>
+  <xs:element name="product">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="price"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="category">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="product"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="categories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="category"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="employment-date" type="xs:date"/>
+
+  <xs:complexType name="employee">
     <xs:sequence>
       <xs:element ref="name"/>
-      <xs:element ref="price"/>
+      <xs:element ref="employment-date"/>
     </xs:sequence>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+    <xs:attribute name="eotm" type="xs:boolean" use="optional"/>
   </xs:complexType>
-</xs:element>
 
-<xs:element name="category">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" ref="product"/>
-    </xs:sequence>
-    <xs:attribute name="name" type="xs:string" use="required"/>
-  </xs:complexType>
-</xs:element>
+  <xs:element name="manager">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="employee"/>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
 
-<xs:element name="store">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" ref="category"/>
-    </xs:sequence>
-  </xs:complexType>
-</xs:element>
+  <xs:element name="stock-manager">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="employee" />
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="stock-managers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="2" ref="stock-manager"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="cashier">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="employee">
+          <!--<xs:sequence>
+          
+        </xs:sequence>-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="cashiers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="3" ref="cashier"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="employees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="manager"/>
+        <xs:element ref="stock-managers"/>
+        <xs:element ref="cashiers"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="store">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="categories"/>
+        <xs:element ref="employees"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 
 </xs:schema>

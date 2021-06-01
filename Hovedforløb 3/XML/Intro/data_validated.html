@@ -1,34 +1,133 @@
 ﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+body > div {
+  border: 1px solid black;
+  display: inline-block;
+  float: left;
+  padding: 2%;
+  margin: .5%;
+}
+td {
+  text-align: center;
+}
+.category {
+  border: 1px solid gray;
+  padding: 1%;
+}
+        </style>
+  </head>
   <body>
-    <h1>Products</h1><button id="sorter">Now sorting by: name</button><table>
-      <tr>
-        <th>Name</th>
-        <th>Price</th>
-      </tr>
-      <tr style="text-align: center;">
-        <td>Apple</td>
-        <td>2</td>
-      </tr>
-      <tr style="text-align: center;">
-        <td>Banana</td>
-        <td>2</td>
-      </tr>
-      <tr style="text-align: center;">
-        <td>Chocolate</td>
-        <td>25</td>
-      </tr>
-      <tr style="text-align: center;">
-        <td>Orange</td>
-        <td>5</td>
-      </tr>
-      <tr style="text-align: center;">
-        <td>Strawberry</td>
-        <td>30</td>
-      </tr>
-      <tr style="text-align: center;">
-        <td>Vanilla</td>
-        <td>35</td>
-      </tr>
-    </table>
+    <div>
+      <h1>Products</h1>
+      <div>
+        <div class="category">
+          <h3>
+                  Category:
+                  Fruit</h3>
+          <div>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Apple</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Banana</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Orange</td>
+                <td>5</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="category">
+          <h3>
+                  Category:
+                  Ice Cream</h3>
+          <div>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Chocolate</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Strawberry</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Vanilla</td>
+                <td>35</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1>Employees</h1>
+      <div>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Rank</th>
+            <th>Employment Date</th>
+            <th>Additional Note</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>Daniel Simonsen</td>
+            <td>Manager</td>
+            <td>2018-12-05</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Nikolai Grønborg Jensen</td>
+            <td>Stock Manager</td>
+            <td>2020-02-20</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Emma Nielsen</td>
+            <td>Stock Manager</td>
+            <td>2018-09-15</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lasse Lund Madsen</td>
+            <td>Cashier</td>
+            <td>2020-03-08</td>
+            <td>Employee of the Month</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Maria Hedegaard Carlsen</td>
+            <td>Cashier</td>
+            <td>2019-12-18</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Thomas Abildgaard Skelly</td>
+            <td>Cashier</td>
+            <td>2018-12-05</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>

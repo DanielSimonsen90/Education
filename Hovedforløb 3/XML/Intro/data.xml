@@ -2,32 +2,64 @@
 <?xml-stylesheet type="text/xsl" href="data_style.xsl"?>
 
 <store>
+  <categories>
     <category name="Fruit">
-        <product>
-            <name>Apple</name>
-            <price>2</price>
-        </product>
-        <product>
-            <name>Banana</name>
-            <price>2</price>
-        </product>
-        <product>
-            <name>Orange</name>
-            <price>5</price>
-        </product>
+      <product>
+        <name>Apple</name>
+        <price>2</price>
+      </product>
+      <product>
+        <name>Banana</name>
+        <price>2</price>
+      </product>
+      <product>
+        <name>Orange</name>
+        <price>5</price>
+      </product>
     </category>
     <category name="Ice Cream">
-        <product>
-            <name>Chocolate</name>
-            <price>25</price>
-        </product>
-        <product>
-            <name>Strawberry</name>
-            <price>30</price>
-        </product>
-        <product>
-            <name>Vanilla</name>
-            <price>35</price>
-        </product>
+      <product>
+        <name>Chocolate</name>
+        <price>25</price>
+      </product>
+      <product>
+        <name>Strawberry</name>
+        <price>30</price>
+      </product>
+      <product>
+        <name>Vanilla</name>
+        <price>35</price>
+      </product>
     </category>
+  </categories>
+  <employees>
+    <manager id="0">
+      <name>Daniel Simonsen</name>
+      <employment-date>2018-12-05</employment-date>
+    </manager>
+    <stock-managers>
+      <stock-manager id="1">
+        <name>Nikolai Grønborg Jensen</name>
+        <employment-date>2020-02-20</employment-date>
+      </stock-manager>
+      <stock-manager id="2">
+        <name>Emma Nielsen</name>
+        <employment-date>2018-09-15</employment-date>
+      </stock-manager>
+    </stock-managers>
+    <cashiers>
+      <cashier id="3" eotm="true">
+        <name>Lasse Lund Madsen</name>
+        <employment-date>2020-03-08</employment-date>
+      </cashier>
+      <cashier id="4">
+        <name>Maria Hedegaard Carlsen</name>
+        <employment-date>2019-12-18</employment-date>
+      </cashier>
+      <cashier id="5">
+        <name>Thomas Abildgaard Skelly</name>
+        <employment-date>2018-12-05</employment-date>
+      </cashier>
+    </cashiers>
+  </employees>
 </store>
