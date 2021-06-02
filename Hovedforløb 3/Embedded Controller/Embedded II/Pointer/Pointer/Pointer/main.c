@@ -8,7 +8,8 @@
 #include <avr/io.h>
 #include "UART.h"
 
-void clear() {
+void clear() 
+{
 	for (int i = 0; i < 20; i++)
 	{
 		printf("\n");
@@ -17,15 +18,24 @@ void clear() {
 
 int main(void)
 {
+
+	
+	RS232Init();    // Init UART
+	clear();		// Clear hercules log
+	
+	opgave2();
+
+	while (1);
+}
+
+void opgave1() 
+{
 	/*
-	&i_ptr: i_ptr's addresse
-	i_ptr: Den addresse i_ptr peger på
-	*i_ptr: Indeholdet på i_ptr
+		&i_ptr: i_ptr's addresse
+		i_ptr: Den addresse i_ptr peger på
+		*i_ptr: Indeholdet på i_ptr
 	*/
-	
-	RS232Init();               // Init UART
-	clear();
-	
+
 	int *i_ptr;		// int pointer
 	char *c_ptr;	// char pointer
 	int tal = 0XCC33;
@@ -38,7 +48,48 @@ int main(void)
 	
 	printf("\nint *i_ptr\n\tAddresse: %x, \n\tAddressen der bliver peget på: %x, \n\tIndholdet af addressen der bliver peget på: %x \n\n", &i_ptr, i_ptr, *i_ptr);
 	printf("\nchar *c_ptr\n\tAddresse: %x, \n\tAddressen der bliver peget på: %x, \n\tIndholdet af addressen der bliver peget på: %x \n\n", &c_ptr, c_ptr, *c_ptr);
-
-	while (1);
 }
 
+void opgave2() 
+{
+	int tal1 = 17;
+	int tal2 = 25;
+	int resultat = 0;
+	
+	
+	// Kalder Plus funktionen og kopierer automatisk de to variabler over på stakken.
+	resultat = Plus(tal1, tal2);	
+	
+	// viser at tal1 og tal2 stadig er de samme;
+	printf("tal 1 = %d, tal2 = %d. Resultatet af Plus = %d\n", tal1, tal2, resultat);
+	
+	// Kalder pPlus funktionen og kopierer automatisk adresserne på de to variabler                
+    // over på stakken.
+	resultat = ptrPlus(&tal1, &tal2);		
+	
+	// viser at tal1 og tal2 blev modificeret i ptrPlus funktionen.
+	printf("tal 1 = %d, tal2 = %d. Resultatet af pPlus = %d\n", tal1, tal2, resultat);
+}
+int Plus(int tal1, int tal2)
+{
+	// Bytter om på de to variabler (Kopierne)
+	int tmp = tal1;
+	tal1 = tal2;
+	tal2 = tmp;
+	
+	tmp = tal1 + tal2;
+	
+	return tmp;
+}
+
+int ptrPlus(int *tal1, int *tal2)
+{
+	// Bytter om på de to variabler der peges til (Originalerne!)
+	int tmp = *tal1;
+	*tal1 = *tal2;
+	*tal2 = tmp;
+	
+	tmp = *tal1 + *tal2;
+	
+	return tmp;
+}
