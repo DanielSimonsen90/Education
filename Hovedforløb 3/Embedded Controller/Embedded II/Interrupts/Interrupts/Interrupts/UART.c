@@ -10,7 +10,6 @@
 
 #include "ProjectDefines.h"
 #include "UART.h"
-//#include "Main.h"
 
 //static FILE mystdInOut = FDEV_SETUP_STREAM(uart_putch, uart_getch, _FDEV_SETUP_RW);
 // Hvis man fortrækker det, kan man også splitte sine streams op i en seperat stream i
@@ -40,7 +39,6 @@ void SetupOutputStreamToUart(void)
 {
 	stdout = &uart_output;
 }
-
 void SetupInputStreamToUart(void)
 {
 	stdin = &uart_input;
@@ -62,20 +60,18 @@ int uart_putch(char ch, FILE* stream)
 
 void Enable_UART_Receive_Interrupt()
 {
-	UCSR0B |= (1 << RXCIE0); // Enable the USART Recieve Complete interrupt (USART_RXC)
+	UCSR0B |= (1 << RXCIE0); // Enable the USART Receive Complete interrupt (USART_RXC)
 }
 
 void Disable_UART_Receive_Interupt()
 {
-	UCSR0B &= ~(1 << RXCIE0); // Disable the USART Recieve Complete interrupt (USART_RXC)
+	UCSR0B &= ~(1 << RXCIE0); // Disable the USART Receive Complete interrupt (USART_RXC)
 }
 
 ISR(USR0_Vect_Num)
 {
-	char ReceivedByte;
-	ReceivedByte = UDR0;
+	char ReceivedByte = UDR0;
 	//ConvertReceivedChar(&ReceivedByte);
-	UDR0 = ReceivedByte; // Echo back the received byte converted to the computer
 	UDR0 = ReceivedByte; // Echo back the received byte converted to the computer
 	sei();
 }

@@ -64,7 +64,6 @@ void Enable_UART_Receive_Interrupt()
 {
 	UCSR0B |= (1 << RXCIE0); // Enable the USART Recieve Complete interrupt (USART_RXC)
 }
-
 void Disable_UART_Receive_Interupt()
 {
 	UCSR0B &= ~(1 << RXCIE0); // Disable the USART Recieve Complete interrupt (USART_RXC)

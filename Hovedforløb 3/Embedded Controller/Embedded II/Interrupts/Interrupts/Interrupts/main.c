@@ -7,6 +7,7 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/delay.h>
 #include "UART.h"
 
 #define setBit(reg, bit) (reg = reg | (1 << bit))
@@ -20,11 +21,12 @@ int main(void)
 	Enable_UART_Receive_Interrupt();
 	sei();
 	
-	//setBit()
+	
 	
 	while (1) 
-    {
-		
-    }
+	{
+		_delay_ms(1000);
+		//call interrupt
+	}
 }
 

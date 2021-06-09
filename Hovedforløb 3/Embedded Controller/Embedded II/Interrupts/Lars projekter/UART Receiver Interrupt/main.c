@@ -30,37 +30,18 @@ int main(void)
 {
 	volatile uint8_t TestVariable;
 	RS232Init();
-	printf("\nh3pd100120 Embedded C styrer !!!\n");
+	printf("\nHello, world\n");
 	
 	Enable_UART_Receive_Interrupt();
 	
 	sei();					// Enable the Global Interrupt Enable flag so that interrupts can be processed
 	
-	
-	/* Replace with your application code */
     while (1) 
     {
-		// Koden herunder har intet med Interrupt at gøre. Koden er 
-		// udelukkende taget med for at vise, at man i et sprog som C 
-		// let kan komme til at "dumme" sig lidt. Se nærmere beskrivelse 
-		// i kommentarerne inde i if blokken.
-		TestVariable = 0;
+		TestVariable = 0; 
+		
 		if (TestVariable == 1)
-		{
-			// I C programmering er det en rigtig god ide at placere konstanten
-			// på venstre side i en sammenlignings operation. 
-			// Dette skyldes, at programlinjen herunder er fuldt ud lovlig I C
-			// if (TestVariable = 1)
-			// I denne linje kode vil TestVariable få tildelt værdien 1
-			// samtidig med, at man "tester" på, om værdien faktisk er 1. Denne
-			// test vil således altid være opfyldt !!! Dog vil vi få en compiler 
-			// warning. Men en warning kan man let overse i farten !!!
-			// Vender man det hele om, vil man få 
-			// en compiler fejl, hvis man glemmer et = tegn som vist i linjen herunder.
-			// if (1 = TestVariable)
-			// Og her er vi faktisk rigtig glade for at få en compiler fejl, da en
-			// sådan fejl bliver afsløret efter 3 sekunder og ikke efter 3 måneder !!!
-			
+		{	
 			TestVariable = 2;
 		}
     }
