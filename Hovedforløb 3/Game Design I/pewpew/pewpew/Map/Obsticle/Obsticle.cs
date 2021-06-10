@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pewpew
 {
-    class Obsticle : IObsticle
+    public class Obsticle : IObsticle
     {
     }
 }

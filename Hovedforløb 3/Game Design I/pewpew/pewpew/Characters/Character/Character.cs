@@ -7,7 +7,6 @@ namespace pewpew.Characters
     public abstract class Character : ICharacter
     {
         #region Properties 
-
         public Sprite Sprite => SpriteDirections[CurrentDirection];
         public Dictionary<Directions, Sprite> SpriteDirections { get; } = new Dictionary<Directions, Sprite>();
 
@@ -40,8 +39,6 @@ namespace pewpew.Characters
         #endregion 
 
         public virtual Directions CurrentDirection { get; protected set; } = Directions.RIGHT;
-
-
         #endregion
 
         public Character(int health, int damage)
@@ -62,39 +59,34 @@ namespace pewpew.Characters
         {
             Move.Invoke(this, direction);
 
-            if (direction == Directions.JUMP)
-            {
-                var falling = new ThreadStart(() =>
-                {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        Move.Invoke(this, Directions.FALL);
-                        Thread.Sleep(10);
-                    }
-                });
-                var jumping = new ThreadStart(() =>
-                {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        Move.Invoke(this, direction);
-                        Thread.Sleep(15);
-                    }
-                });
-            }
+            if (direction == Directions.JUMP) 
+                Jump(() => Fall());
         }
-        protected virtual void OnMoved(ICharacter character, Directions direction)
+        protected virtual void OnMoved(ICharacter character, Directions direction) => CurrentDirection = direction;
+
+        protected virtual ThreadStart Fall() => new(() =>
         {
-            CurrentDirection = direction;
-        }
+            for (int i = 0; i < 10; i++)
+            {
+                Move.Invoke(this, Directions.FALL);
+                Thread.Sleep(10);
+            }
+        });
+        protected virtual ThreadStart Jump(ThreadStart fall) => new(() =>
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Move.Invoke(this, Directions.JUMP);
+                Thread.Sleep(15);
+            }
+            fall.Invoke();
+        });
         #endregion
 
         #region Shot Event
         public event ICharacter.ShotHandler Shot;
         public virtual int BeShot(int damage) => Shot.Invoke(damage);
-        protected virtual int OnShot(int damage)
-        {
-            return Health -= damage;
-        }
+        protected virtual int OnShot(int damage) => Health -= damage;
         #endregion
 
         #region Die Event
@@ -112,7 +104,7 @@ namespace pewpew.Characters
                 if (character == this)
                     OnShot(bullet.Damage);
             };
-            
+
             return bullet;
         }
     }

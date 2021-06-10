@@ -4,6 +4,8 @@ namespace pewpew.Characters
 {
     public interface ICharacter : IPositionMe
     {
+        Directions CurrentDirection { get; }
+
         /// <summary>
         /// Handler for <see cref="HealthUpdate"/> event
         /// </summary>
@@ -53,6 +55,8 @@ namespace pewpew.Characters
         /// <param name="direction">Direction bullet should be going</param>
         /// <returns>Bullet that was shot</returns>
         Bullet Shoot(Directions direction);
+        void Die();
+
         /// <summary>
         /// Handler for <see cref="Shot"/> event
         /// </summary>

@@ -14,7 +14,6 @@ namespace pewpew
         protected Range Health { get; set; }
         protected Range Damage { get; set; }
 
-
         public Wave(int enemyCount, int minHealth, int maxHealth, int minDamage, int maxDamage)
         {
             EnemyCount = enemyCount;
@@ -22,18 +21,14 @@ namespace pewpew
             Damage = new Range(minDamage, maxDamage);
         }
 
-        public List<Enemy> Next(Game game)
+        public virtual List<Enemy> Next(Game game, Action<Enemy> afterInitialize)
         {
             var enemies = new List<Enemy>();
 
             for (int i = 0; i < EnemyCount; i++)
             {
                 var enemy = new Enemy(Health.Value, Damage.Value);
-                enemy.HealthUpdate += (ICharacter character, int health) => game.OnEnemyHealthUpdated(character as IEnemy, health);
-                enemy.DamageUpdate += (ICharacter character, int damage) => game.OnEnemyDamageUpdated(character as IEnemy, damage);
-                enemy.Move += (ICharacter character, Directions direction) => game.OnEnemyMoved(character as IEnemy, direction);
-                enemy.Death += (ICharacter character) => game.OnEnemyDeath(character as IEnemy);
-
+                afterInitialize(enemy);
                 enemies.Add(enemy);
             }
 

@@ -1,20 +1,14 @@
 ﻿using pewpew.Characters;
+using pewpew.Items;
 using System.Collections.Generic;
 
 namespace pewpew
 {
     public interface IMap
     {
-        void MovePlayerHorizontal(Player player, int direction);
-        void MovePlayerVertical(Player player, int direction);
-
-        void MoveEnemyHorizontal(Enemy enemy, int direction);
-        void MoveEnemyVertical(Enemy enemy, int direction);
-
-        void Draw(IPositionMe character, int x, int y);
-        void Erase(IPositionMe character);
-
+        //void Draw(IPositionMe character, int x, int y);
+        //void Erase(IPositionMe character);
+        void MoveIPosition<IPosition>(IPosition item, Directions directionType, int direction) where IPosition : IPositionMe;
         List<Enemy> SpawnEnemies(List<Enemy> enemies);
-        //void DrawObsticle();
     }
 }

@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pewpew
 {
     public class GameConsole : IGameConsole
     {
+        #region Properties
         public Position TopLeft => new(1, 1);
         public Position TopRight => new(Console.WindowWidth - 1, 1);
         public Position BottomLeft => new(1, Console.WindowHeight - 3);
         public Position BottomRight => new(Console.WindowWidth - 1, Console.WindowHeight - 3);
         public Position Center => new(TopRight.X - TopLeft.X, BottomRight.Y - TopRight.Y);
+        #endregion
 
         public GameConsole()
         {
@@ -26,12 +24,16 @@ namespace pewpew
             SetPosition(center, text);
         }
 
+        #region SetPosition(pos: GameConsolePositions | Position, text/c?: string/char
+        //No 2nd argument
         public void SetPosition(GameConsolePositions pos) => SetPosition(GetPosition(pos));
         public void SetPosition(Position pos) => Console.SetCursorPosition(pos.X, pos.Y);
-
+        
+        //char support
         public void SetPosition(GameConsolePositions position, char c) => SetPosition(position, c.ToString());
         public void SetPosition(Position pos, char c) => SetPosition(pos, c.ToString());
-
+        
+        //string support
         public void SetPosition(GameConsolePositions position, string text) => SetPosition(GetPosition(position), text);
         public void SetPosition(Position pos, string text)
         {
@@ -48,5 +50,6 @@ namespace pewpew
             GameConsolePositions.Center => Center,
             _ => null,
         };
+        #endregion
     }
 }

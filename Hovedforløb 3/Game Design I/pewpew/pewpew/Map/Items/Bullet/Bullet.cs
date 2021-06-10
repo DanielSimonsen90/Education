@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace pewpew.Items
 {
-    public class Bullet : IBullet, IPositionMe
+    public class Bullet : IBullet
     {
         public ICharacter ShotBy { get; }
         public int Damage { get; }

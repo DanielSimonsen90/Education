@@ -8,19 +8,13 @@ namespace pewpew.Characters
         public string Name { get; }
         public int BulletsShot { get; set; }
 
-        public Player(string name) : base(100, 10)
+        public Player(string name) : base(health: 100, damage: 10)
         {
             Name = name;
             BulletsShot = 0;
 
-            HealthUpdate += (ICharacter character, int health) =>
-            {
-                TestCharacterUpdate(character);
-            };
-            DamageUpdate += (ICharacter character, int damage) =>
-            {
-                TestCharacterUpdate(character);
-            };
+            HealthUpdate += (ICharacter character, int health) => TestCharacterUpdate(character);
+            DamageUpdate += (ICharacter character, int damage) => TestCharacterUpdate(character);
 
             CurrentDirection = Directions.RIGHT;
             SpriteDirections.Add(Directions.RIGHT, new(new List<List<char>>()
@@ -35,12 +29,12 @@ namespace pewpew.Characters
                 new() { '-', '|', '>'  },
                 new() { '/', ' ', '\\' }
             }));
-        }
-
-        private void TestCharacterUpdate(ICharacter character)
-        {
-            if (character == this)
-                PlayerUpdate.Invoke(this);
+            SpriteDirections.Add(Directions.JUMP, new(new List<List<char>>()
+            {
+                new() { '\\', 'o', '/' },
+                new() { ' ', '|', ' '  },
+                new() { '(', ' ', ')'  }
+            }));
         }
 
         public override Bullet Shoot(Directions direction)
@@ -60,5 +54,10 @@ namespace pewpew.Characters
 
         public delegate void PlayerUpdateHandler(Player player);
         public event PlayerUpdateHandler PlayerUpdate;
+        private void TestCharacterUpdate(ICharacter character)
+        {
+            if (character == this)
+                PlayerUpdate.Invoke(this);
+        }
     }
 }

@@ -13,3 +13,4 @@ C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewp
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\ref\pewpew.dll
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.pdb
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.genruntimeconfig.cache
+C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.csprojAssemblyReference.cache

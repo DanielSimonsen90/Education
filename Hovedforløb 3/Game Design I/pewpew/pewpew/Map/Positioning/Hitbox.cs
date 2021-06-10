@@ -13,5 +13,9 @@
             TopLeft = bottomLeft;
             BottomRight = topRight;
         }
+
+        public bool Includes(Position position) =>
+            BottomRight.X > position.X && TopLeft.X < position.X &&
+            BottomRight.Y > position.Y && TopLeft.Y < position.Y;
     }
 }

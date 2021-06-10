@@ -6,7 +6,6 @@
         public Position TopRight { get; }
         public Position BottomLeft { get; }
         public Position BottomRight { get; }
-
         public Position Center { get; }
     }
 }

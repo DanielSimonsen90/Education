@@ -2,7 +2,7 @@
 
 namespace pewpew.Items
 {
-    public interface IBullet
+    public interface IBullet : IPositionMe
     {
         public ICharacter ShotBy { get; }
         public int Damage { get; }
