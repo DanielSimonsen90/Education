@@ -7,7 +7,6 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include <avr/delay.h>
 #include "UART.h"
 
 #define setBit(reg, bit) (reg = reg | (1 << bit))
@@ -19,14 +18,13 @@ int main(void)
 {
 	RS232Init();
 	Enable_UART_Receive_Interrupt();
+	printf("Start of main\n");
+	SetupTimer();
+	printf("End of setup in main\n");
 	sei();
-	
-	
 	
 	while (1) 
 	{
-		_delay_ms(1000);
-		//call interrupt
 	}
 }
 
