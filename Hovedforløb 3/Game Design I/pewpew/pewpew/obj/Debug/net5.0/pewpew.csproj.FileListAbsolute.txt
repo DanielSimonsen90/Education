@@ -14,3 +14,19 @@ C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewp
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.pdb
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.genruntimeconfig.cache
 C:\Users\DanielSimonsen\source\repos\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.csprojAssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\bin\Debug\net5.0\pewpew.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\bin\Debug\net5.0\pewpew.deps.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.dev.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\bin\Debug\net5.0\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\bin\Debug\net5.0\ref\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\bin\Debug\net5.0\pewpew.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.csproj.AssemblyReference.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfoInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\ref\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.genruntimeconfig.cache
