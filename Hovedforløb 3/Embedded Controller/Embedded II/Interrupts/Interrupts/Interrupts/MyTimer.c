@@ -6,6 +6,9 @@
  */ 
 
 #include <avr/interrupt.h>
+#include "MyTimer.h"
+
+uint32_t Counter = 0;
 
 void SetupTimer() {
 	printf("Setting up timer\n");
@@ -32,7 +35,8 @@ void DisableTimer() {
 }
 
 ISR(TIMER1_COMPA_vect) {
-	printf("\n\nInterrupt proceeded\n\n");
+	Counter++;
+	printf("\n%ld", Counter);
 	
 	sei();
 }

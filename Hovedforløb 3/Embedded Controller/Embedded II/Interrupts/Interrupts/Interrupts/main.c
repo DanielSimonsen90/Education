@@ -8,6 +8,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "UART.h"
+#include "MyTimer.h"
 
 #define setBit(reg, bit) (reg = reg | (1 << bit))
 #define clearBit(reg, bit) (reg = reg & ~(1 << bit))
