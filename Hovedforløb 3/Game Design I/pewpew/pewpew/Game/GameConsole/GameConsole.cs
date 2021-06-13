@@ -9,7 +9,7 @@ namespace pewpew
         public Position TopRight => new(Console.WindowWidth - 1, 1);
         public Position BottomLeft => new(1, Console.WindowHeight - 3);
         public Position BottomRight => new(Console.WindowWidth - 1, Console.WindowHeight - 3);
-        public Position Center => new(TopRight.X - TopLeft.X, BottomRight.Y - TopRight.Y);
+        public Position Center => new((TopRight.X - TopLeft.X) / 2, (BottomRight.Y - TopRight.Y) / 2);
         #endregion
 
         public GameConsole()
