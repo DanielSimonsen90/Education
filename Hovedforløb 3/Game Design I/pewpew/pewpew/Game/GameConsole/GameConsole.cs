@@ -24,7 +24,7 @@ namespace pewpew
             SetPosition(center, text);
         }
 
-        #region SetPosition(pos: GameConsolePositions | Position, text/c?: string/char
+        #region SetPosition(pos: GameConsolePositions | Position, text/c?: string | char
         //No 2nd argument
         public void SetPosition(GameConsolePositions pos) => SetPosition(GetPosition(pos));
         public void SetPosition(Position pos) => Console.SetCursorPosition(pos.X, pos.Y);
