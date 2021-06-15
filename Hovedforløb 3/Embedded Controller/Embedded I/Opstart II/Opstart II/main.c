@@ -8,7 +8,6 @@
 #define GREEN PD2
 
 #define BUTTON PD4
-
 #define TIME 0b01100100 //100
 
 #define ON(color) PORTD |= (1<<color)
