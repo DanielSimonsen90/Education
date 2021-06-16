@@ -9,20 +9,20 @@ namespace pewpew
         public string Name { get; set; } = "My Map";
         public int ObsticleCount { get; set; } = 0;
         public EnemyCollection Enemies { get; protected set; }
-        
+
         protected Dictionary<IPositionMe, Hitbox> Positions { get; set; }
         protected GameConsole GamingConsole { get; }
         protected Floor Floor { get; }
-        protected List<Obsticle> Obsticles { get; set; }
 
-        public Map(IPlayer player, GameConsole console)
+        private static readonly object Lock = new();
+
+        public Map(Player player, GameConsole console)
         {
             Positions = new Dictionary<IPositionMe, Hitbox>();
-
             Enemies = new EnemyCollection();
             Enemies.ListAdd += OnEnemiesAdded;
             Enemies.ListRemove += OnEnemiesRemoved;
-            
+
             GamingConsole = console;
             Floor = new Floor(
                 console.BottomRight.X - 1 +
@@ -34,12 +34,13 @@ namespace pewpew
             Draw(Floor, console.BottomLeft.X, console.BottomLeft.Y + 3);
             Draw(player, 0);
         }
-        public Map(string name, int obsticles, IPlayer player, GameConsole console) : this(player, console)
+        public Map(string name, int obsticles, Player player, GameConsole console) : this(player, console)
         {
             Name = name;
             ObsticleCount = obsticles;
         }
 
+        #region Drawing
         public virtual void MoveIPosition<IPosition>(IPosition item, Directions directionType, int direction) where IPosition : IPositionMe
         {
             bool isHorizontal = directionType == Directions.LEFT || directionType == Directions.RIGHT;
@@ -53,22 +54,25 @@ namespace pewpew
                     Hitbox shotByPos = Positions[shotBy];
                     Sprite shotBySprite = shotBy.Sprite;
 
-                    value = Draw(item, 
-                        shotBy.CurrentDirection == Directions.RIGHT ? 
-                            shotByPos.BottomRight.X + 1 : 
-                            shotByPos.TopLeft.X - 1, 
+                    value = Draw(item,
+                        shotBy.CurrentDirection == Directions.RIGHT ?
+                            shotByPos.BottomRight.X + 1 :
+                            shotByPos.TopLeft.X - 1,
                         shotBySprite.Height / 2
                     );
                 }
+                else return;
             }
 
             Position topLeft = value.TopLeft;
-            
-            Erase(item);
-            Draw(item, isHorizontal ? topLeft.X + direction : topLeft.X, isHorizontal ? 0 : direction);
+
+            lock (Lock)
+            {
+                Erase(item);
+                Draw(item, isHorizontal ? topLeft.X + direction : topLeft.X, isHorizontal ? 0 : direction);
+            }
         }
-        
-        #region Drawing
+
         protected virtual Hitbox Draw(IPositionMe item, int topX, int topY = 0)
         {
             //Modify Y when item isn't Floor
@@ -82,11 +86,11 @@ namespace pewpew
             );
 
             Positions.Set(item, itemHitbox);
-            
+
             //Draw sprite
             ModifyCanvas(item, topX, topY, true);
 
-            return Positions[item];
+            return itemHitbox;
         }
         protected virtual void Erase(IPositionMe item)
         {
@@ -106,7 +110,7 @@ namespace pewpew
                     char spriteItem = item.Sprite[height][width];
                     Position spriteItemPos = new(startPosition.X + width, startPosition.Y + height);
 
-                    if (Positions.Includes(spriteItemPos, out IPositionMe collided) && !HandleCollision(item, collided))
+                    if (Positions.Includes(spriteItemPos, out IPositionMe collided) && collided != null && !HandleCollision(item, collided))
                         return;
 
                     GamingConsole.SetPosition(spriteItemPos, draw ? spriteItem : ' ');
@@ -115,30 +119,61 @@ namespace pewpew
         }
         #endregion
 
+        public bool HasType<T>() where T : IPositionMe
+        {
+            foreach (var key in Positions.Keys)
+            {
+                if (key.GetType() == typeof(T))
+                    return true;
+            }
+            return false;
+        }
+        public void ClearBullets()
+        {
+            if (!HasType<Bullet>()) return;
+
+            List<IPositionMe> bulletKeys = new();
+            foreach (var kvp in Positions)
+            {
+                if (kvp.Key.GetType() != typeof(Bullet)) continue;
+                bulletKeys.Add(kvp.Key);
+            }
+
+            bulletKeys.ForEach(key => Erase(key));
+        }
+
         #region Collision
         protected virtual bool HandleCollision(IPositionMe collider, IPositionMe collided)
         {
+            if (collider == collided) return true;
+
             Player player = ConvertCollider<Player>(collider, collided);
             Enemy enemy = ConvertCollider<Enemy>(collider, collided);
             Bullet bullet = ConvertCollider<Bullet>(collider, collided);
 
             if (bullet != null) Positions.Remove(bullet);
-            
+
             if (player != null)
             {
-                if (bullet != null) player.BeShot(bullet.Damage);
+                if (bullet != null)
+                {
+                    player.BeShot(bullet.Damage);
+                    bullet.StopMoving();
+                }
                 else if (enemy != null) enemy.Die();
                 return player == collider;
             }
-            else if (enemy != null && bullet != null)
+            else if (enemy != null && bullet != null && bullet.ShotBy.GetType() != typeof(Enemy))
             {
                 enemy.BeShot(bullet.Damage);
+                bullet.StopMoving();
+
                 return enemy == collider;
             }
             return false;
         }
-        protected static T ConvertCollider<T>(IPositionMe collider, IPositionMe collided) where T : class => 
-            collider.GetType() == typeof(T) ? collider as T : 
+        protected static T ConvertCollider<T>(IPositionMe collider, IPositionMe collided) where T : class =>
+            collider.GetType() == typeof(T) ? collider as T :
             collided.GetType() == typeof(T) ? collided as T : null;
         #endregion
 
@@ -153,12 +188,16 @@ namespace pewpew
             int lastX = GamingConsole.Center.X;
 
             foreach (Enemy enemy in enemies)
-                Enemies.AddAndDraw(enemy, lastX -= enemy.Sprite.Width - 2);
+                Enemies.AddAndDraw(enemy, lastX += enemy.Sprite.Width + 2);
             return Enemies;
         }
 
         protected virtual void OnPlayerDead(Player player) => Erase(player);
         protected virtual void OnEnemiesAdded(Enemy enemy, int topX) => Draw(enemy, topX);
         protected virtual void OnEnemiesRemoved(Enemy enemy) => Erase(enemy);
+        public virtual void OnBulletsMoving(Bullet bullet)
+        {
+            MoveIPosition(bullet, bullet.Direction, bullet.Direction == Directions.RIGHT ? 1 : -1);
+        }
     }
 }

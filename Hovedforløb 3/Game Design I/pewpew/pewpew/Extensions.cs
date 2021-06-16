@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text;
 
 namespace pewpew
 {
@@ -32,7 +31,7 @@ namespace pewpew
         {
             foreach (var item in self)
             {
-                if (item.Value.Includes(pos))
+                if (item.Value != null && item.Value.Includes(pos))
                 {
                     result = item.Key;
                     return true;

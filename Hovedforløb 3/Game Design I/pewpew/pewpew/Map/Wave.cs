@@ -27,7 +27,7 @@ namespace pewpew
 
             for (int i = 0; i < EnemyCount; i++)
             {
-                var enemy = new Enemy(Health.Value, Damage.Value);
+                var enemy = new Enemy(Health.Value, Damage.Value, game.Player);
                 afterInitialize(enemy);
                 enemies.Add(enemy);
             }

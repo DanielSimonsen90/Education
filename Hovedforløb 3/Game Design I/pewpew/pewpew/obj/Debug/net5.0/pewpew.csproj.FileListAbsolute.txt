@@ -46,3 +46,51 @@ C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 3\Game D
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\ref\pewpew.dll
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.pdb
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 3\Game Design I\pewpew\pewpew\obj\Debug\net5.0\pewpew.genruntimeconfig.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.exe
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.deps.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.dev.json
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\bin\Debug\net5.0\ref\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfoInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfo.cs
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\ref\pewpew.dll
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.pdb
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.genruntimeconfig.cache
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\bin\Debug\net5.0\pewpew.exe
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\bin\Debug\net5.0\pewpew.deps.json
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\bin\Debug\net5.0\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\bin\Debug\net5.0\ref\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\bin\Debug\net5.0\pewpew.pdb
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\ref\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.pdb
+C:\Users\DanielSimonsen\source\repos\pewpew\pewpew\obj\Debug\net5.0\pewpew.genruntimeconfig.cache
+C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.csproj.AssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.exe
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.deps.json
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.json
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.runtimeconfig.dev.json
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\bin\Debug\net5.0\ref\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\bin\Debug\net5.0\pewpew.pdb
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.csprojAssemblyReference.cache
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfoInputs.cache
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.AssemblyInfo.cs
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.csproj.CoreCompileInputs.cache
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\ref\pewpew.dll
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.pdb
+C:\Users\DanielSimonsen\source\repos\Techcollege\pewpew\pewpew\obj\Debug\net5.0\pewpew.genruntimeconfig.cache

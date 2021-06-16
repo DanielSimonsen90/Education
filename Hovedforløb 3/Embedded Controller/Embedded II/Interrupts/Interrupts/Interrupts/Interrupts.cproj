@@ -148,6 +148,12 @@
     <Compile Include="MyTimer.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MyTimerCallbacks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MyTimerCallbacks.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="ProjectDefines.h">
       <SubType>compile</SubType>
     </Compile>

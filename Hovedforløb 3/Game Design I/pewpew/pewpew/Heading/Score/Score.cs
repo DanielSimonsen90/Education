@@ -24,9 +24,6 @@ namespace pewpew
             return this;
         }
 
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
+        public override string ToString() => Value.ToString();
     }
 }

@@ -39,7 +39,7 @@ namespace pewpew.Characters
 
         public override Bullet Shoot(Directions direction)
         {
-            var bullet = base.Shoot(direction);
+            Bullet bullet = base.Shoot(direction);
             BulletsShot++;
             PlayerUpdate.Invoke(this);
             

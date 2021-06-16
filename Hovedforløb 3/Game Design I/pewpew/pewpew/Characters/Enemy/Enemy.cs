@@ -1,12 +1,14 @@
-﻿using System;
+﻿using pewpew.Items;
+using System;
 using System.Collections.Generic;
-using System.Threading;
 
 namespace pewpew.Characters
 {
     public class Enemy : Character, IEnemy
     {
-        public Enemy(int health, int damage) : base(health, damage) 
+        private static readonly object Lock = new();
+
+        public Enemy(int health, int damage, IPlayer player) : base(health, damage)
         {
             SpriteDirections.Add(Directions.LEFT, new Sprite(new List<List<char>>()
                 {
@@ -20,21 +22,23 @@ namespace pewpew.Characters
                     new() { '(', '|', '-' },
                     new() { ' ', '|', '_' }
                 }));
+            CurrentDirection = player.CurrentDirection == Directions.RIGHT ? Directions.LEFT : Directions.RIGHT;
         }
 
         public int ShootTime { get; set; }
-        public void ShootCheck()
+        public Bullet ShootCheck()
         {
-            _ = new Thread(() =>
-              {
-                  if (ShootTime >= new Random().Next(2, 5))
-                  {
-                      Shoot(CurrentDirection);
-                      ShootTime = 0;
-                  }
+            Bullet bullet = null;
 
-                  ShootTime++;
-              });
+            if (ShootTime >= new Random().Next(2, 5))
+            {
+                bullet = Shoot(CurrentDirection);
+                ShootTime = 0;
+            }
+
+            ShootTime++;
+
+            return bullet;
         }
     }
 }

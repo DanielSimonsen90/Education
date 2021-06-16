@@ -7,9 +7,12 @@
 
 #include <avr/interrupt.h>
 #include "MyTimer.h"
+#include "MyTimerCallbacks.h"
 
-uint32_t Counter = 0;
 #define LED PB0 //digitalPin 8
+typedef void (*TimerCallback)(int);
+TimerCallback callbacks[3] = { TimerCallbackOne, TimerCallbackTwo, TimerCallbackThree };
+int Counter = 0;
 
 void SetupTimer() {
 	TCCR1B |= (1 << CS12); // Select pre-scaler 256, used to divide with the clock frequence
@@ -29,8 +32,14 @@ void DisableTimer() {
 
 ISR(TIMER1_COMPA_vect) {
 	Counter++;
-	printf("\n%ld", Counter);
-	LED ^= (1 << PB0);
+	PORTB ^= (1 << LED);
+	
+	int i;
+	for (i = 0; i < sizeof(callbacks)/sizeof(int); i++)
+	{
+		callbacks[i](Counter);
+	}
 	
 	sei();
 }
+

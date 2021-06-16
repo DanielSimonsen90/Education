@@ -50,7 +50,6 @@ namespace pewpew.Characters
             Shot += OnShot;
         }
 
-
         #region Events
 
         #region Move Event
@@ -104,6 +103,7 @@ namespace pewpew.Characters
                 if (character == this)
                     OnShot(bullet.Damage);
             };
+            bullet.StartMoving();
 
             return bullet;
         }
