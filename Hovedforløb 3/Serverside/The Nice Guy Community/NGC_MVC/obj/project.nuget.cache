@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vgAJtq5BtK2dFwvaeKSWTA6EhllNL2MP4cYyg/PxA8t8tJnttUQQezzwqsi3hvSG01xu2ng7MHgSoZ5zDgRsqA==",
+  "dgSpecHash": "S2ChEAc1Ypil2ewo4wzNdftpCEeBi3/MFGHBEM4t5LMiuaUHy0lfg2OYJIJyJ4xsBmTGN86tpULgle07TmNRfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj",
+  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_MVC\\NGC_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\DanielSimonsen\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

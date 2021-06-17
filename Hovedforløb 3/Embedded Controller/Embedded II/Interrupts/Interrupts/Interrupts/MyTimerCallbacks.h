@@ -5,12 +5,13 @@
  *  Author: dani146d
  */ 
 
+#include <avr/io.h>
 
 #ifndef MYTIMERCALLBACKS_H_
 #define MYTIMERCALLBACKS_H_
 
-extern void TimerCallbackOne();
-extern void TimerCallbackTwo();
-extern void TimerCallbackThree();
+extern uint32_t TimerCallbackOne();
+extern uint32_t TimerCallbackTwo();
+extern uint32_t TimerCallbackThree();
 
 #endif /* MYTIMERCALLBACKS_H_ */

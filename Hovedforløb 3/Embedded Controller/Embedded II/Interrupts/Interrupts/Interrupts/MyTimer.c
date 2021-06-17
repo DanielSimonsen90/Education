@@ -6,13 +6,30 @@
  */ 
 
 #include <avr/interrupt.h>
+
+#include "DanielTypes.h"
+#include "ProjectDefines.h"
 #include "MyTimer.h"
 #include "MyTimerCallbacks.h"
 
-#define LED PB0 //digitalPin 8
-typedef void (*TimerCallback)(int);
-TimerCallback callbacks[3] = { TimerCallbackOne, TimerCallbackTwo, TimerCallbackThree };
-int Counter = 0;
+Callbacking callbacks[3] = {
+	{ TimerCallbackOne, 0 },
+	{ TimerCallbackTwo, 0 },
+	{ TimerCallbackThree, 0 }
+};
+
+uint8_t ToggleOccured(uint8_t toggle) {	
+	return toggle == 1 ? 0 : 1;
+}
+void ConvertReceivedChar(char *ReceivedChar)
+{
+	if ( ((*ReceivedChar >= 0x41) && (*ReceivedChar <= 0x5D)) ||
+	     ((*ReceivedChar >= 0x61) && (*ReceivedChar <= 0x7D)))
+	{
+		*ReceivedChar = *ReceivedChar ^ Upper_Lower_Bit_Value;
+	}
+}
+
 
 void SetupTimer() {
 	TCCR1B |= (1 << CS12); // Select pre-scaler 256, used to divide with the clock frequence
@@ -31,13 +48,10 @@ void DisableTimer() {
 }
 
 ISR(TIMER1_COMPA_vect) {
-	Counter++;
-	PORTB ^= (1 << LED);
-	
-	int i;
-	for (i = 0; i < sizeof(callbacks)/sizeof(int); i++)
+	for (uint8_t i = 0; i < sizeof(callbacks)/sizeof(callbacks[0]); i++)
 	{
-		callbacks[i](Counter);
+		callbacks[i].result = callbacks[i].callback(callbacks[i]);
+		callbacks[i].toggle = ToggleOccured(callbacks[i].toggle);
 	}
 	
 	sei();

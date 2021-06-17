@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "deE6PVd2ugk+tg+i4yFI1NSxnmrEOqe85eNGxxqRKwYD8a2QXs9T0Kp6XM67YmZNbMDFRBpvVVmoMSTDuMIaNQ==",
+  "dgSpecHash": "UdofwvQf+qfNFMxw0EZi1H8Bpqk03m+r/g0T0AjPEQHlGx0N5t70akNcyNKaWobNtMcFnXWCSQl8wOvnSgKnMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Razor\\CortosoUniversity.csproj",
+  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Razor\\CortosoUniversity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DanielSimonsen\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DanielSimonsen\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -12,5 +12,8 @@
 extern void SetupTimer();
 extern void EnableTimer();
 extern void DisableTimer();
+extern uint8_t ToggleOccured(uint8_t toggle);
+
+extern Callbacking callbacks[3];
 
 #endif /* MYTIMER_H_ */

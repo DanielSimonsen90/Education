@@ -5,17 +5,26 @@
  *  Author: dani146d
  */ 
 
-void TimerCallbackOne(int counter)
+#include "DanielTypes.h"
+
+//int Counter = 0;
+static volatile uint32_t Counter = 0;
+#define LED PB0 //digitalPin 8
+
+uint32_t TimerCallbackOne(Callbacking cb)
 {
-	printf("We have reached the glorious number, %d\n", counter);
+	Counter++;
+	
+	return Counter;
 }
-void TimerCallbackTwo(int counter) 
+
+uint32_t TimerCallbackTwo(Callbacking cb) 
 {
-	if (counter == 18)
-		printf("And in my opinion, that is a very nice number!\n");
+	PORTB ^= (1 << LED);
+	return LED;
 }
-void TimerCallbackThree(int counter) 
+
+uint32_t TimerCallbackThree(Callbacking cb) 
 {
-	if (counter == 69)
-		printf("This is truly a *click* noice number\n");
+	return 0;
 }

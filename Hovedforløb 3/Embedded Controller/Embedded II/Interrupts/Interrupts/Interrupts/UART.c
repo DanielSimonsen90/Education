@@ -44,13 +44,11 @@ void SetupInputStreamToUart(void)
 	stdin = &uart_input;
 }
 
-
 int uart_getch(FILE* stream)
 {
 	while( !(UCSR0A & (1<<RXC0)))  ; // do nothing but wait
 	return( UDR0);
 }
-
 int uart_putch(char ch, FILE* stream)
 {
 	while( !(UCSR0A & (1<<UDRE0))) ;
@@ -62,7 +60,6 @@ void Enable_UART_Receive_Interrupt()
 {
 	UCSR0B |= (1 << RXCIE0); // Enable the USART Receive Complete interrupt (USART_RXC)
 }
-
 void Disable_UART_Receive_Interupt()
 {
 	UCSR0B &= ~(1 << RXCIE0); // Disable the USART Receive Complete interrupt (USART_RXC)
@@ -71,7 +68,7 @@ void Disable_UART_Receive_Interupt()
 ISR(USR0_Vect_Num)
 {
 	char ReceivedByte = UDR0;
-	//ConvertReceivedChar(&ReceivedByte);
+	ConvertReceivedChar(&ReceivedByte);
 	UDR0 = ReceivedByte; // Echo back the received byte converted to the computer
 	sei();
 }

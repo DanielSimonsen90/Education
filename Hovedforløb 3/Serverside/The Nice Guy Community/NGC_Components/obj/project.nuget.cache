@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MVnu4Ny1mN0PBbIQVF4kpRp8DtkqhVqv1SwlzVW8Pb4sNm89O9fpI0UQKsLl0PnfwvaA1aBzYoKrepFlzCLN6Q==",
+  "dgSpecHash": "FSsbT7nPgvR9LkdZwpvDkfWM4P+Z4CZ2l/pw9M5gtSBdP+3wZNZq0DzFQmbIlzwsNQ01s3JgyFSF7OnOA72jiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj",
+  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 3\\Serverside\\The Nice Guy Community\\NGC_Components\\NGC_Components.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DanielSimonsen\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DanielSimonsen\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
