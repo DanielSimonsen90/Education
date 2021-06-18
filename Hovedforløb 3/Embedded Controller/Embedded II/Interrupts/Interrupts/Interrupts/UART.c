@@ -10,6 +10,7 @@
 
 #include "ProjectDefines.h"
 #include "UART.h"
+#include "MyTimer.h"
 
 //static FILE mystdInOut = FDEV_SETUP_STREAM(uart_putch, uart_getch, _FDEV_SETUP_RW);
 // Hvis man fortrækker det, kan man også splitte sine streams op i en seperat stream i
@@ -68,6 +69,7 @@ void Disable_UART_Receive_Interupt()
 ISR(USR0_Vect_Num)
 {
 	char ReceivedByte = UDR0;
+	HandleCallbackChange(ReceivedByte);
 	ConvertReceivedChar(&ReceivedByte);
 	UDR0 = ReceivedByte; // Echo back the received byte converted to the computer
 	sei();

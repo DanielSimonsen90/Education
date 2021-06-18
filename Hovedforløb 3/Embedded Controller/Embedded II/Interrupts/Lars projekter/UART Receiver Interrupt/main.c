@@ -25,7 +25,6 @@ void ConvertReceivedChar(char *ReceivedChar)
 	}
 }
 
-
 int main(void)
 {
 	volatile uint8_t TestVariable;

@@ -11,8 +11,8 @@ MyTimer.d MyTimer.o: .././MyTimer.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- .././DanielTypes.h .././ProjectDefines.h .././MyTimer.h \
- .././MyTimerCallbacks.h
+ .././ProjectDefines.h .././MyTimerCallbacks.h .././MyTimer.h \
+ .././DanielTypes.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
 
@@ -38,10 +38,10 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-.././DanielTypes.h:
-
 .././ProjectDefines.h:
+
+.././MyTimerCallbacks.h:
 
 .././MyTimer.h:
 
-.././MyTimerCallbacks.h:
+.././DanielTypes.h:

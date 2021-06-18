@@ -8,7 +8,6 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#include "DanielTypes.h"
 #include "UART.h"
 #include "MyTimer.h"
 
@@ -25,7 +24,7 @@ int main(void)
 		for (uint8_t i = 0; i < sizeof(callbacks)/sizeof(callbacks[0]); i++)
 		{
 			if (callbacks[i].toggle == 1) {
-				printf("Callback%d true. Result: %d\n", i + 1, callbacks[i].result);
+				printf("Callback%d true. Result: %ld\n", i + 1, callbacks[i].result);
 				callbacks[i].toggle = ToggleOccured(callbacks[i].toggle);
 				newLine = 1;
 			}

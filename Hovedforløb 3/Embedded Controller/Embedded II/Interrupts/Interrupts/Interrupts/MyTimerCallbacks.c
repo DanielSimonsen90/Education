@@ -7,24 +7,20 @@
 
 #include "DanielTypes.h"
 
-//int Counter = 0;
-static volatile uint32_t Counter = 0;
 #define LED PB0 //digitalPin 8
 
-uint32_t TimerCallbackOne(Callbacking cb)
+uint32_t TimerCallbackOne(uint32_t counter)
 {
-	Counter++;
-	
-	return Counter;
+	return counter;
 }
 
-uint32_t TimerCallbackTwo(Callbacking cb) 
+uint32_t TimerCallbackTwo(uint32_t counter) 
 {
 	PORTB ^= (1 << LED);
 	return LED;
 }
 
-uint32_t TimerCallbackThree(Callbacking cb) 
+uint32_t TimerCallbackThree(uint32_t counter) 
 {
 	return 0;
 }
