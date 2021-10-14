@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.danielsimonsen90.firstapp">
+    package="com.example.firstapp">
 
     <application
         android:allowBackup="true"
@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

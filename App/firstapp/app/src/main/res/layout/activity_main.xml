@@ -6,38 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/type_message"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        tools:layout_editor_absoluteY="50dp" />
 
-        <EditText
-            android:id="@+id/textField"
-            android:layout_width="277dp"
-            android:layout_height="61dp"
-            android:ems="10"
-            android:hint="@string/edit_message"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="43dp" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="278dp"
-            android:layout_height="57dp"
-            android:onClick="sendMessage"
-            android:text="@string/button_send"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="#3EDF42"
-            app:iconTint="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textField" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="151dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="sendMessage"
+        android:text="@string/send_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="47dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
