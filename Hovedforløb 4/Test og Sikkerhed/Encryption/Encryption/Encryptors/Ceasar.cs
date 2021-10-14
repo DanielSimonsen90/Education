@@ -15,8 +15,8 @@ namespace Encryption
             {
                 int indexInAlphabet = Alphabet.IndexOf(chars[i]);
                 int index = encrypt ? indexInAlphabet - key : indexInAlphabet + key;
-                if (index < 0) index += Alphabet.Length;
-                else if (index >= Alphabet.Length) index -= Alphabet.Length;
+                if (index < 0) index -= Alphabet.Length;
+                else if (index >= Alphabet.Length) index += Alphabet.Length;
 
                 char value = char.IsWhiteSpace(chars[i]) ? chars[i] : Alphabet[index];
                 sb.Append(value);
