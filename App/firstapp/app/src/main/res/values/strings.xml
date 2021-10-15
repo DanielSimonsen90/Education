@@ -2,4 +2,11 @@
     <string name="app_name">First app</string>
     <string name="send_message">Send message</string>
     <string name="type_message">Type a message</string>
+
+    <string name="btnCount_text">Count</string>
+    <string name="btnNext_text">Next</string>
+    <string name="btnToast_text">Toast</string>
+
+    <string name="random_number_text">Here is a random number between 0 and %d</string>
+    <string name="random_number_content">0</string>
 </resources>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
         <activity
+            android:name=".RandomNumber"
+            android:exported="false" />
+        <activity
             android:name=".DisplayMessageActivity"
             android:exported="true" />
         <activity
