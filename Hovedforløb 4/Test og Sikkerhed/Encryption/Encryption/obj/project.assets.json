@@ -4429,19 +4429,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\": {}
+    "C:\\Users\\DanielSimonsen\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\Encryption\\Encryption\\Encryption.csproj",
+      "projectUniqueName": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\Encryption\\Encryption\\Encryption.csproj",
       "projectName": "Encryption",
-      "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\Encryption\\Encryption\\Encryption.csproj",
-      "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\Encryption\\Encryption\\obj\\",
+      "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\Encryption\\Encryption\\Encryption.csproj",
+      "packagesPath": "C:\\Users\\DanielSimonsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\Encryption\\Encryption\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DanielSimonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4487,7 +4491,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

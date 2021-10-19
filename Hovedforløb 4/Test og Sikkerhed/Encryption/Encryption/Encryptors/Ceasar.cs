@@ -22,9 +22,11 @@ namespace Encryption
                 sb.Append(value);
             }
 
-            MayWriteFile(encrypt, writeFile, sb.ToString());
+            string result = sb.ToString();
 
-            return sb.ToString();
+            MayWriteFile(encrypt, writeFile, result);
+
+            return result;
         }
     }
 }

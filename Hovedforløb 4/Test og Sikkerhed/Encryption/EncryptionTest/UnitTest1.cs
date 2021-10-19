@@ -11,7 +11,7 @@ namespace EncryptionTest
         {
             Assert.Equal("XZHHJXXKZQ ZSNY YJXY", Ceasar.Encrypt("Successful unit test", 5));
             Assert.Equal("SVANYYL QBAR", Ceasar.Encrypt("Finally done!", 13));
-
+            Assert.Equal("FCHXYL", Ceasar.Encrypt("Linder", 20));
         }
 
         [Fact]
@@ -25,7 +25,7 @@ namespace EncryptionTest
         public void EncryptVigenere()
         {
             Assert.Equal("TIKV MX G TFUW", Vigenere.Encrypt("This is a test", "abcdefg"));
-            Assert.Equal("KER GNCU HEM VPEUE TNR SH FBC VPAW CTN AINW ZM", Vigenere.Encrypt("Hey guys, are there any of you that can help me?", "datatechnician"));
+            Assert.Equal("KER GNCU HEM VPEEH AGY HJ AVH BJIT PDN AEET OL", Vigenere.Encrypt("Hey guys, are there any of you that can help me?", "datatechnician"));
         }
 
         [Fact]
