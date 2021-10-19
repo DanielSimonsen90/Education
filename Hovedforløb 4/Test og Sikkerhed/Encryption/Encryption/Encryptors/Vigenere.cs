@@ -32,7 +32,7 @@ namespace Encryption
                 }
 
                 int keyIndex = Alphabet.IndexOf(key);
-                sb.Append(HandleEncryption(c.ToString(), keyIndex, !encrypt, false));
+                sb.Append(HandleEncryption(c.ToString(), keyIndex, encrypt, false));
             }
 
             string result = sb.ToString();

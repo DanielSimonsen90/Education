@@ -15,6 +15,7 @@ namespace Encryption
         public static string FormatMessage(string message) => message
             .ToUpper()
             .ToCharArray()
+            .Filter(c => char.IsWhiteSpace(c) || char.IsLetterOrDigit(c))
             .Reduce((result, c) =>
                     result.Append(c),
                 new StringBuilder())

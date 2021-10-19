@@ -7,40 +7,32 @@ namespace EncryptionTest
     public class UnitTest1
     {
         [Fact]
-        public void Encrypt()
+        public void EncryptCeasar()
         {
-            Assert.Equal("XZHHJXXKZQ ZSNY YJXY", Vigenere.Encrypt("Successful unit test", 5));
-            Assert.Equal("SVANYYL QBAR", Vigenere.Encrypt("Finally done!", 13));
+            Assert.Equal("XZHHJXXKZQ ZSNY YJXY", Ceasar.Encrypt("Successful unit test", 5));
+            Assert.Equal("SVANYYL QBAR", Ceasar.Encrypt("Finally done!", 13));
 
-            Assert.Equal("TGGP DM Z QANN", Vigenere.Encrypt("This is a test", "abcdefg"));
         }
 
         [Fact]
-        public void Decrypt()
+        public void DecryptCeasar()
         {
-            Assert.Equal("SUCCESSFUL UNIT TEST", Vigenere.Decrypt("XZHHJXXKZQ ZSNY YJXY", 5));
-            Assert.Equal("FINALLY DONE", Vigenere.Decrypt("SVANYYL QBAR", 13));
+            Assert.Equal("SUCCESSFUL UNIT TEST", Ceasar.Decrypt("XZHHJXXKZQ ZSNY YJXY", 5));
+            Assert.Equal("FINALLY DONE", Ceasar.Decrypt("SVANYYL QBAR", 13));
         }
 
-        //[Fact]
-        //public void FindKey()
-        //{
-        //    Assert.Equal(5, Vigenere.FindKey("Successful unit test"));
-        //    Assert.Equal(13, Vigenere.FindKey("Finally done!"));
-        //}
+        [Fact]
+        public void EncryptVigenere()
+        {
+            Assert.Equal("TIKV MX G TFUW", Vigenere.Encrypt("This is a test", "abcdefg"));
+            Assert.Equal("KER GNCU HEM VPEUE TNR SH FBC VPAW CTN AINW ZM", Vigenere.Encrypt("Hey guys, are there any of you that can help me?", "datatechnician"));
+        }
 
-        //[Fact]
-        //public void EncryptNoKey()
-        //{
-        //    Assert.Equal("XZHHJXXKZQ ZSNY YJXY", Vigenere.Encrypt("Successful unit test"));
-        //    Assert.Equal("SVANYYL QBAR", Vigenere.Encrypt("Finally done!"));
-        //}
-
-        //[Fact]
-        //public void DecryptNoKey()
-        //{
-        //    Assert.Equal("SUCCESSFUL UNIT TEST", Vigenere.Decrypt("XZHHJXXKZQ ZSNY YJXY"));
-        //    Assert.Equal("FINALLY DONE", Vigenere.Decrypt("SVANYYL QBAR"));
-        //}
+        [Fact]
+        public void DecryptVigenere()
+        {
+            Assert.Equal("THIS IS THE CRAPPYPATTY SECRET FORMULAR", Vigenere.Decrypt("DYCK BQ DYE DBRJHRNKKTZ CVWJXR PFRNECUJ", "krustykrab"));
+            Assert.Equal("HAVE A WONDERFUL DAY", Vigenere.Decrypt("TUXL L KJRPYTMFZ YEK", "muchlove"));
+        }
     }
 }
