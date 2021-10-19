@@ -1,5 +1,4 @@
 using Encryption;
-using System;
 using Xunit;
 
 namespace EncryptionTest

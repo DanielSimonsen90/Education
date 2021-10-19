@@ -212,5 +212,3 @@ C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 4\T
 C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\EncryptionTest\obj\Debug\net5.0\ref\EncryptionTest.dll
 C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\EncryptionTest\obj\Debug\net5.0\EncryptionTest.pdb
 C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\EncryptionTest\obj\Debug\net5.0\EncryptionTest.genruntimeconfig.cache
-C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\EncryptionTest\bin\Debug\net5.0\DanhoLibrary.dll
-C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\EncryptionTest\bin\Debug\net5.0\DanhoLibrary.pdb

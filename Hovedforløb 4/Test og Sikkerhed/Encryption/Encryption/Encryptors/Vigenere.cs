@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DanhoLibrary.Extensions;
 
 namespace Encryption
 {
@@ -12,18 +11,24 @@ namespace Encryption
         public static string Decrypt(string message, string keys) => HandleEncryption(message, keys, false);
         protected static string HandleEncryption(string message, string keys, bool encrypt, bool writeFile = true)
         {
+            //Add key together with itself, until it matches or is above the message length
             while (keys.Length < message.Length)
                 keys += keys;
 
             char[] chars = FormatMessage(message).ToCharArray();
             keys = FormatMessage(keys);
             StringBuilder sb = new();
+            //When encoutering a space, the key index should not be affected
             int space = 0;
 
             for (int i = 0; i < chars.Length; i++)
             {
+                //current char
                 char c = chars[i];
+                //key for char
                 char key = keys[i - space];
+
+                //char is space, add 1 to space variable and continue loop
                 if (char.IsWhiteSpace(c))
                 {
                     sb.Append(c);
@@ -31,7 +36,9 @@ namespace Encryption
                     continue;
                 }
 
+                //Index of key, to treat as key from Ceasar encryption
                 int keyIndex = Alphabet.IndexOf(key);
+                
                 sb.Append(HandleEncryption(c.ToString(), keyIndex, encrypt, false));
             }
 
@@ -44,9 +51,13 @@ namespace Encryption
         
         public static Dictionary<int, string> FindKey(string message)
         {
-            return Alphabet.ToCharArray().Reduce((result, c, i, self) => 
-                result.Set(i, Encrypt(message, i))
-            , new Dictionary<int, string>());
+            char[] letters = Alphabet.ToCharArray();
+            Dictionary<int, string> result = new();
+
+            for (int i = 0; i < letters.Length; i++)
+                result.Add(i, Encrypt(message, i));
+
+            return result;
         }
         public static string FindKeys(string encrypted)
         {
@@ -81,26 +92,31 @@ namespace Encryption
             List<List<char>> DefineRows()
             {
                 char[] letters = encrypted.ToCharArray();
-                return letters.Reduce((result, c, i, self) => 
-                {
+                List<List<char>> result = new();
+
+                foreach (var letter in letters)
                     result.Add(new List<char>(letters));
-                    return result;
-                }, new List<List<char>>());
+
+                return result;
             }
             Dictionary<int, int> GetCoincidences() //Dictionary<row, coincidences>
             {
-                return DefineRows().Reduce((coincidences, row, i, self) =>
+                List<List<char>> rows = DefineRows();
+                Dictionary<int, int> coincidences = new();
+
+                for (int i = 0; i < rows.Count; i++)
                 {
+                    List<char> row = rows[i];
                     int value = 0;
 
-                    encrypted.ToCharArray().ForEach((_, j) =>
-                    {
+                    for (int j = 0; j < encrypted.ToCharArray().Length; j++)
                         if (encrypted[j + i] == row[j]) 
                             value++;
-                    });
+
                     coincidences.Add(i, value);
-                    return coincidences;
-                }, new Dictionary<int, int>());
+                }
+
+                return coincidences;
             }
         }
         public static string FindKeys(string encrypted, string decrypted)

@@ -16,8 +16,6 @@ C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test o
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\obj\Debug\net5.0\ref\Encryption.dll
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\obj\Debug\net5.0\Encryption.pdb
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\obj\Debug\net5.0\Encryption.genruntimeconfig.cache
-C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\bin\Debug\net5.0\DanhoLibrary.dll
-C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\bin\Debug\net5.0\DanhoLibrary.pdb
 C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\bin\Debug\net5.0\Encryption.exe
 C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\bin\Debug\net5.0\Encryption.deps.json
 C:\Users\Daniel Simonsen\Documents\GitHub\Techcollege\Education\Hovedforløb 4\Test og Sikkerhed\Encryption\Encryption\bin\Debug\net5.0\Encryption.runtimeconfig.json

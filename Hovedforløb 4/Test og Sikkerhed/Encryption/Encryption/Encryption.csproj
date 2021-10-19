@@ -9,10 +9,4 @@
     <PackageReference Include="xunit.assert" Version="2.4.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="DanhoLibrary">
-      <HintPath>..\..\..\..\..\..\Library\DanhoLibrary\DanhoLibrary\bin\Release\netstandard2.1\DanhoLibrary.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

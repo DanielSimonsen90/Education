@@ -1,6 +1,5 @@
-﻿using DanhoLibrary.Extensions;
-using System.IO;
-using System.Text;
+﻿using System.IO;
+using System.Linq;
 
 namespace Encryption
 {
@@ -12,14 +11,11 @@ namespace Encryption
         /// Converts <paramref name="message"/> to uppercase and removes any unnecessary characters
         /// </summary>
         /// <param name="message">Message to format</param>
-        public static string FormatMessage(string message) => message
+        public static string FormatMessage(string message) => new (message
             .ToUpper()
             .ToCharArray()
-            .Filter(c => char.IsWhiteSpace(c) || char.IsLetterOrDigit(c))
-            .Reduce((result, c) =>
-                    result.Append(c),
-                new StringBuilder())
-            .ToString();
+            .Where(c => char.IsWhiteSpace(c) || char.IsLetterOrDigit(c))
+            .ToArray());
 
         /// <summary>
         /// if <paramref name="encrypt"/> && <paramref name="write"/>, writes "encrypted.txt" file with <paramref name="content"/> as content
