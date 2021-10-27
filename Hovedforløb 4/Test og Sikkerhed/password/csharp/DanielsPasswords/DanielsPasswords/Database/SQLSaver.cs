@@ -25,8 +25,6 @@ namespace DanielsPasswords.Database
             InitialCatalog = initialCatalog;
             TableName = tableName;
             TrustedConnection = trustedConnection ? "true" : "false";
-
-            Cache = FetchData();
         }
 
         private T Connect<T>(string statement, Func<SqlCommand, T> cb)
@@ -70,7 +68,7 @@ namespace DanielsPasswords.Database
         {
             try
             {
-                return Cache = Query(
+                return Query(
                     $"SELECT * FROM {TableName} WHERE {(filter == string.Empty ? "1 = 1" : filter)}"
                 );
             }
@@ -91,15 +89,26 @@ namespace DanielsPasswords.Database
             }
         }
 
-        public override List<Login> AddData(Login login) => Cache = Query(
-            $"INSERT INTO {TableName} VALUES('{login.Username}', '{login.Password}')"
+        public override List<Login> AddData(Login login) => Query(
+            $"INSERT INTO {TableName} VALUES({ResolveInjection(login.Username)}, {ResolveInjection(login.Password)})"
         );
-        public override List<Login> DeleteData(Login login) => Cache = Query(
-            $"DELETE FROM {TableName} WHERE Username = {login.Username} AND Password = {login.Password}"
+        public override List<Login> DeleteData(Login login) => Query(
+            $"DELETE FROM {TableName} WHERE Username = {ResolveInjection(login.Username)} AND Password = {ResolveInjection(login.Password)}"
         );
 
-        public override void Die() => Cache = Query(
+        public override void Die() => Query(
             $"DROP TABLE {TableName}"
         );
+
+        public static string ResolveInjection(string value)
+        {
+            value = value
+                .Replace("-", "")
+                .Replace(";", "")
+                .Replace("=", "")
+                .Replace("'", "");
+
+            return $"'{value}'";
+        }
     }
 }

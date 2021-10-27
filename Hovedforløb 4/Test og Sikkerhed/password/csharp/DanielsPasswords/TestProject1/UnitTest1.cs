@@ -7,11 +7,6 @@ namespace TestProject1
 {
     public class UnitTest1
     {
-        public UnitTest1()
-        {
-            DanielsPasswords.Login.Saver.Die();
-        }
-
         [Fact]
         public void SignUp()
         {
@@ -36,6 +31,18 @@ namespace TestProject1
             Assert.Equal(404, Program.OnLogin(wrongUsername, false)); //Failed to log moderator in - no such username
             Assert.Equal(404, Program.OnLogin(wrongPassword, false)); //Failed to log admin in - invalid password
             Assert.Equal(200, Program.OnLogin(admin, false)); //Successfully logged user admin in
+        }
+        [Fact]
+        public void Injection()
+        {
+            string injection = "' OR 1=1; --";
+            Login username = new(injection, "1234");
+            Login password = new("1234", injection);
+            Login both = new(injection, injection);
+
+            Assert.Equal(404, Program.OnLogin(username, false)); //Failed to log moderator in - no user
+            Assert.Equal(404, Program.OnLogin(password, false)); //Failed to log moderator in - no user
+            Assert.Equal(404, Program.OnLogin(both, false)); //Failed to log moderator in - no user
         }
     }
 }

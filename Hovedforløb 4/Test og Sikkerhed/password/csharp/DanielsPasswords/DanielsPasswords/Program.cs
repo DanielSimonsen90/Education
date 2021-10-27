@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DanielsPasswords.Database;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -49,7 +50,7 @@ namespace DanielsPasswords
         public static int OnSignUp() => OnSignUp(GetLoginDetails());
         public static int OnSignUp(Login login, bool allowLogout = true)
         {
-            Login existing = Login.FindMatch(l => l.Username == login.Username);
+            Login existing = Login.FindMatch($"Username = {SQLSaver.ResolveInjection(login.Username)}");
             if (existing != null) return Login.Hash(login.Username, login.Password) == existing.Password ? OnLogin(login, allowLogout) : 404;
 
             try { Login.AddLogin(login.Username, login.Password); }

@@ -8,11 +8,7 @@ namespace DanielsPasswords.Database
     public class JsonSaver : DatabaseSaver<Login>
     {
         public string Path { get; set; }
-        public JsonSaver(string path)
-        {
-            Path = path;
-            Cache = FetchData();
-        }
+        public JsonSaver(string path) => Path = path;
 
         public override List<Login> FetchData()
         {
@@ -20,16 +16,18 @@ namespace DanielsPasswords.Database
             catch { File.WriteAllText(Path, JsonSerializer.Serialize(new List<Login>())); }
             return FetchData();
         }
-        public override List<Login> AddData(Login login) => OverrideData(Cache.Append(login).ToList());
+        public override List<Login> AddData(Login login) => OverrideData(FetchData().Append(login).ToList());
         protected List<Login> OverrideData(List<Login> logins)
         {
-            File.WriteAllText(Path, JsonSerializer.Serialize(logins ?? Cache));
-            return Cache = logins;
+            File.WriteAllText(Path, JsonSerializer.Serialize(logins ?? FetchData()));
+            return logins;
         }
-        public override List<Login> DeleteData(Login login) => 
-            !Cache.Contains(login) || !Cache.Remove(login) ? 
-                Cache : 
-                OverrideData(Cache);
+        public override List<Login> DeleteData(Login login)
+        {
+            List<Login> logins = FetchData();
+            Login match = logins.Find(l => l.Username == login.Username && l.Password == login.Password);
+            return match == null || !logins.Remove(match) ? logins : OverrideData(logins);
+        }
 
         public override void Die() => File.Delete(Path);
     }
