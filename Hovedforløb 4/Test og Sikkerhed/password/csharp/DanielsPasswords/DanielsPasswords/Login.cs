@@ -1,37 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Text.Json;
-using System.Collections;
 using System.Security.Cryptography;
+using DanielsPasswords.Database;
+using System.Linq;
 
 namespace DanielsPasswords
 {
     public class Login
     {
         private static readonly SHA256 _hash = SHA256.Create();
+        public static readonly SQLSaver Saver = new(
+            "DANIEL-SIMONSEN\\MASTERRUNEUWU",
+            "H4HashStash", true, "Logins"
+        );
 
         public static readonly string LoginsPath = "../../logins.json";
-        public static List<Login> Logins => GetLogins();
         public static List<Login> AddLogin(string username, string password)
         {
-            if (Logins.Find(l => l.Username == username) != null) throw new Exception("Username already exists");
-            return SaveLogins(GetLogins().Append(new(username, Hash(username, password))).ToList());
+            string filter = $"Username = {SQLSaver.ResolveInjection(username)}";
+            bool exists = Saver.FetchData(filter).FirstOrDefault() != null;
+            if (exists) throw new Exception("Username already exists");
+            else if (username.Length > 50 || password.Length > 50) throw new Exception($"Username or password are too long! Max characters are {SQLSaver.MaxChars}");
+            
+            return Saver.AddData(new(username, Hash(username, password)));
         }
-        private static List<Login> GetLogins()
-        {
-            try { return JsonSerializer.Deserialize<List<Login>>(File.ReadAllText(LoginsPath)); }
-            catch { File.WriteAllText(LoginsPath, JsonSerializer.Serialize(new List<Login>())); }
-            return GetLogins();
-        }
-        public static List<Login> SaveLogins(List<Login> logins)
-        {
-            File.WriteAllText(LoginsPath, JsonSerializer.Serialize(logins));
-            return logins.ToList();
-        }
+        
+        public static bool TryLogin(Login login) => FindMatch(login) != null;
+        public static Login FindMatch(string query) => Saver.FetchData(query).FirstOrDefault();
+        public static Login FindMatch(Login login) => FindMatch(
+            $"Username = {SQLSaver.ResolveInjection(login.Username)} AND " + 
+            $"Password = '{Hash(login.Username, login.Password)}'");
 
         public static string Hash(string username, string password) => Hash(Hash(username) + Hash(password));
         private static string Hash(string value) => Convert.ToBase64String(_hash.ComputeHash(Encoding.ASCII.GetBytes(value)));

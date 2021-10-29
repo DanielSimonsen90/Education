@@ -1,8 +1,7 @@
-﻿using System;
+﻿using DanielsPasswords.Database;
+using System;
 using System.Collections.Generic;
 using System.Threading;
-using System.Security.Cryptography;
-using System.Collections;
 
 namespace DanielsPasswords
 {
@@ -40,9 +39,8 @@ namespace DanielsPasswords
         public static int OnLogin() => OnLogin(GetLoginDetails());
         public static int OnLogin(Login login, bool allowLogout = true)
         {
-            Login match = Login.Logins.Find(l => l.Username == login.Username && Login.Hash(login.Username, login.Password) == l.Password);
-            if (match == null) return FinalMessage("Invalid username or password...", 404);
-
+            bool loggedIn = Login.TryLogin(login);
+            if (!loggedIn) return FinalMessage("Invalid username or password...", 404);
             if (!allowLogout) return 200;
 
             Console.WriteLine($"Welcome back, {login.Username!}\n\nClick any key  to log out");
@@ -52,10 +50,8 @@ namespace DanielsPasswords
         public static int OnSignUp() => OnSignUp(GetLoginDetails());
         public static int OnSignUp(Login login, bool allowLogout = true)
         {
-            List<Login> logins = Login.Logins;
-            Login existing = logins.Find(l => l.Username == login.Username);
-
-            if (existing != null) return Login.Hash(login.Username, login.Password) == existing.Password ? OnLogin(login, allowLogout) : 0;
+            Login existing = Login.FindMatch($"Username = {SQLSaver.ResolveInjection(login.Username)}");
+            if (existing != null) return Login.Hash(login.Username, login.Password) == existing.Password ? OnLogin(login, allowLogout) : 404;
 
             try { Login.AddLogin(login.Username, login.Password); }
             catch (Exception e) { return FinalMessage(e.Message, 404); }
