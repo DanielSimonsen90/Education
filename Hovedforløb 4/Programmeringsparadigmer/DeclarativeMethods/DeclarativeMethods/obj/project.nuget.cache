@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eEJnwaxbtHZAzxXDTf1b56Xu58W5e7mia0DUL1siEGfwTM3Q+eIw5zEmQ7iuov7c1eW5OVNXDNae7S09J/WpcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Programmeringsparadigmer\\DeclarativeMethods\\DeclarativeMethods\\DeclarativeMethods.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DanielSimonsen\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
