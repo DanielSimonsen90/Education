@@ -15,6 +15,10 @@ def filter_data_by_spam_type(spam_type): return data[data["Category"] == spam_ty
 def get_percentage(spam_type): return str(int(filter_data_by_spam_type(spam_type).size / data.size * 100))
 
 
+#def addBinaryColumn(combined):
+#    combined["Binary"] = 
+
+
 def combine_equally():
     ham = filter_data_by_spam_type("ham")
     spam = filter_data_by_spam_type("spam")
@@ -24,13 +28,13 @@ def combine_equally():
     ham_cut = ham.sample(minimum)
     spam_cut = spam.sample(minimum)
 
-    combined = panda.concat([spam_cut, ham_cut])
-
     print(
         f"Ham Size: {ham_cut.shape[0]}\n"
         f"Spam Size: {spam_cut.shape[0]}\n"
         f"Minimum: {minimum}"
     )
+
+    return panda.DataFrame([spam_cut, ham_cut])
 
 
 def get_percentage_between_data():
@@ -47,4 +51,7 @@ def get_percentage_between_data():
 if __name__ == '__main__':
     #run_file_conversion()
     get_percentage_between_data()
-    combine_equally()
+    combined = combine_equally()
+    #combined["Binary"] = combined["Category"].
+    
+
