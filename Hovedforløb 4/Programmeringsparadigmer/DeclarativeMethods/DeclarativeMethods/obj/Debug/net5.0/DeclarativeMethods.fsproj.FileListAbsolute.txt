@@ -18,7 +18,6 @@ C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Progra
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Programmeringsparadigmer\DeclarativeMethods\DeclarativeMethods\bin\Debug\net5.0\tr\FSharp.Core.resources.dll
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Programmeringsparadigmer\DeclarativeMethods\DeclarativeMethods\bin\Debug\net5.0\zh-Hans\FSharp.Core.resources.dll
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Programmeringsparadigmer\DeclarativeMethods\DeclarativeMethods\bin\Debug\net5.0\zh-Hant\FSharp.Core.resources.dll
-C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Programmeringsparadigmer\DeclarativeMethods\DeclarativeMethods\obj\Debug\net5.0\DeclarativeMethods.fsprojAssemblyReference.cache
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Programmeringsparadigmer\DeclarativeMethods\DeclarativeMethods\obj\Debug\net5.0\DeclarativeMethods.AssemblyInfoInputs.cache
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Programmeringsparadigmer\DeclarativeMethods\DeclarativeMethods\obj\Debug\net5.0\DeclarativeMethods.AssemblyInfo.fs
 C:\Users\DanielSimonsen\source\repos\Techcollege\Education\Hovedforløb 4\Programmeringsparadigmer\DeclarativeMethods\DeclarativeMethods\obj\Debug\net5.0\DeclarativeMethods.fsproj.CopyComplete
