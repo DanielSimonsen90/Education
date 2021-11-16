@@ -1,35 +1,47 @@
-from matplotlib.pyplot import axis
 import pandas as pd
 from pandas.core.frame import DataFrame
 import seaborn as sns
 import matplotlib.pylab as plt
 
 
-def drop_dumb_columns(data: DataFrame):
-    columns = ["Unnamed: 0", "matchId", "redDragonKills", "blueDragonKills"]
-    return data.drop(columns, axis=1)
+def drop_dumb_columns(data: DataFrame): 
+    return data.drop([
+        "Unnamed: 0", "matchId",                # Serve no purpose
+        "redDragonKills", "blueDragonKills",    # colorDragonKills have no data
+        "blueAvgLevel", "redAvgLevel"           # colorAvgLevel is useless with the numbers received
+    ], axis=1)
 
 
 def get_color_data(data: DataFrame, color: str):
     # colornt = color == red ? "blue" : "red";
     colornt = "blue" if color == 'red' else "red"
     towers_destroyed = f"{colornt}TowersDestroyed"
+    color_data = data.filter(regex=color).drop(f"{color}TowersDestroyed", axis=1)
 
-    color_data = data.filter(regex=color)
-    color_data = color_data.drop(f"{color}TowersDestroyed", axis=1)
-    color_data = pd.concat([color_data, data[towers_destroyed]], axis=1)
-    return color_data
+    return pd.concat([color_data, data[towers_destroyed]], axis=1)
 
 
-#Drops: Unamed: 0, matchId, bluedragonKills, redDragonKills
-data = drop_dumb_columns(pd.read_csv("MatchTimelinesFirst15.csv", sep=","))
+def get_data(color: str, type: str, filter: str):
+    # Drops: Unamed: 0, matchId, bluedragonKills, redDragonKills, blueAvgLevel, redAvgLevel
+    data = drop_dumb_columns(pd.read_csv("MatchTimelinesFirst15.csv", sep=","))
 
-blue_data = get_color_data(data, "blue")
-red_data = get_color_data(data, "red")
+    # Filter "data" to match color restraint, if any 
+    if color == 'red': data = get_color_data(data, "red")
+    elif color == 'blue': data = get_color_data(data, "blue")
 
-# blue_data.heatmap = sns.heatmap(blue_data.corr(), vmin=-1, vmax=1, annot=True, fmt=".2f")
-# red_data.heatmap = sns.heatmap(red_data.corr(), vmin=-1, vmax=1, annot=True, fmt=".2f")
-heatmap = sns.heatmap(data.corr(), vmin=-1, vmax=1, annot=True, fmt=".2f")
+    # Filter data by "filter" param
+    if filter != "": data = data.filter(regex=filter)
 
-# plt.figure(figsize=(blue_data.shape[1], blue_data.shape[1]))
-plt.show()
+    # Show specific diagram type - heatmap is default
+    if type == 'boxplot': sns.boxplot(data=data)
+    elif type == 'histogram': data.hist()
+    else: sns.heatmap(data.corr(), vmin=-1, vmax=1, annot=True, fmt=".2f")
+
+    # Show selected diagram
+    return plt.show()
+
+get_data(
+    color="all",        # red | blue - all
+    type="histogram",   # boxplot | histogram - heatmap
+    filter="",          # regex filter
+)
