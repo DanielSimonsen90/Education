@@ -45,10 +45,10 @@ let say_hi whomst times =
     times
 
 let my_map mapping list =
-    let rec helper (remains, result) =
-        match remains with
-        | [] -> result
-        | head::tail -> helper(tail, result @ [mapping head])
+    let rec helper (rest, acc) =
+        match rest with
+        | [] -> acc
+        | head::tail -> helper(tail, acc @ [mapping head])
     helper(list, [])
 
       
