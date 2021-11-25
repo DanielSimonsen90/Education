@@ -41,7 +41,7 @@ def get_data(color: str, type: str, filter: str):
     return plt.show()
 
 get_data(
-    color="all",        # red | blue - all
-    type="histogram",   # boxplot | histogram - heatmap
+    color="",           # red | blue - all
+    type="",            # boxplot | histogram - heatmap
     filter="",          # regex filter
 )

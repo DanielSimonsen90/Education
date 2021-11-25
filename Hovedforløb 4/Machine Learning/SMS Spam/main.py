@@ -1,4 +1,5 @@
 import pandas as panda
+from pandas.core.frame import DataFrame
 
 
 data = panda.read_csv("smsspamcollection/SMSSpamCollection.csv", sep=",")
@@ -15,9 +16,9 @@ def filter_data_by_spam_type(spam_type): return data[data["Category"] == spam_ty
 def get_percentage(spam_type): return str(int(filter_data_by_spam_type(spam_type).size / data.size * 100))
 
 
-#def addBinaryColumn(combined):
-#    combined["Binary"] = 
-
+def add_binary_column(combined: DataFrame):
+    combined["Binary"] = combined["Category"].map(lambda c: 1 if c == 'spam' else 0)
+    return combined
 
 def combine_equally():
     ham = filter_data_by_spam_type("ham")
@@ -34,7 +35,7 @@ def combine_equally():
         f"Minimum: {minimum}"
     )
 
-    return panda.DataFrame([spam_cut, ham_cut])
+    return panda.concat([spam_cut, ham_cut])
 
 
 def get_percentage_between_data():
@@ -52,6 +53,5 @@ if __name__ == '__main__':
     #run_file_conversion()
     get_percentage_between_data()
     combined = combine_equally()
-    #combined["Binary"] = combined["Category"].
-    
-
+    combined = add_binary_column(combined)
+    print(combined)
