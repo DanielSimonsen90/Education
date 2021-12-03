@@ -1,6 +1,14 @@
-import pandas as panda
-from pandas.core.frame import DataFrame
+# Supervised Classification
 
+import pandas as panda
+import matplotlib.pyplot as plt
+
+from pandas.core.frame import DataFrame
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.naive_bayes import MultinomialNB
 
 data = panda.read_csv("smsspamcollection/SMSSpamCollection.csv", sep=",")
 
@@ -32,7 +40,7 @@ def combine_equally():
     print(
         f"Ham Size: {ham_cut.shape[0]}\n"
         f"Spam Size: {spam_cut.shape[0]}\n"
-        f"Minimum: {minimum}"
+        f"Minimum: {minimum}\n"
     )
 
     return panda.concat([spam_cut, ham_cut])
@@ -45,8 +53,24 @@ def get_percentage_between_data():
     print(
         f"Ham Percent: {percent_ham}%\n" +
         f"Spam Percent: {percent_spam}%\n" +
-        f"Total Percent: {total}%"
+        f"Total Percent: {total}%\n"
     )
+
+def machine_learning_moment(combined: DataFrame):
+    model = MultinomialNB()
+    text, category = [combined['Text'], combined['Category']]
+    x_train, x_test, y_train, y_test = train_test_split(text, category, test_size=.25, random_state=42, shuffle=True, stratify=category)
+    pipeline_model = Pipeline([
+        ('vect', CountVectorizer()), 
+        ('tfidf', TfidfTransformer()),
+        ('clf', model)
+    ])
+
+    pipeline_model.fit(x_train, y_train)
+    print(f"Accuracy: {str(pipeline_model.score(x_test, y_test) * 100)}")
+
+    y_predict = pipeline_model.predict(x_test)
+    print(classification_report(y_test, y_predict))
 
 
 if __name__ == '__main__':
@@ -54,4 +78,5 @@ if __name__ == '__main__':
     get_percentage_between_data()
     combined = combine_equally()
     combined = add_binary_column(combined)
-    print(combined)
+    # print(combined)
+    machine_learning_moment(combined)
