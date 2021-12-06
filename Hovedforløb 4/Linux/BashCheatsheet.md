@@ -1,4 +1,11 @@
-# Variables
+# Bash Cheatsheet
+
+## Variables
+
+```sh
+my_variable='Hello, World!'
+```
+
 * **$0** - The name of the Bash script.
 * **$1 - $9** - The first 9 arguments to the Bash script. (As mentioned above.)
 * **$#** - How many arguments were passed to the Bash script.
@@ -11,18 +18,22 @@
 * **$RANDOM** - Returns a different random number each time is it referred to.
 * **$LINENO** - Returns the current line number in the Bash script.
 
-# Simple Calculation
+## Simple Calculation
+
 ```sh
 let "my_variable = 1 + 1"
 my_variable=$( expr 1 + 1 )
 my_variable=$(( 1 + 1 ))
 ```
 
-# String Modification
+## String Modification
+
 * **Length** - ${#my_variable}
 
-# Conditions
-## if, else if, else
+## Conditions
+
+### if, else if, else
+
 ```sh
 if [condition]
 then
@@ -34,7 +45,9 @@ else
     #do something completely else
 fi
 ```
-## switch/case
+
+### switch/case
+
 ```sh
 case my_variable in
     1)
@@ -55,22 +68,28 @@ case my_variable in
 esac
 ```
 
-# Loops
-## While Loops
+## Loops
+
+### While Loops
+
 ```sh
 while [condition]
 do
     #something
 done
 ```
-## Until Loops (do-while)
+
+### Until Loops (do-while)
+
 ```sh
 until [condition]
 do
     #something
 done
 ```
-## For Loops
+
+### For Loops
+
 ```sh
 sentence='This is a list'
 for word in $sentence 
@@ -90,7 +109,9 @@ do
     fi
 done
 ```
-# Select
+
+## Select
+
 ```sh
 items='choice1 choice2 choice3'
 PS3='Select option: '
