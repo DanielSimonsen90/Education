@@ -1,9 +1,8 @@
 # Supervised Classification
 
 import pandas as panda
-import matplotlib.pyplot as plt
-
 from pandas.core.frame import DataFrame
+
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
