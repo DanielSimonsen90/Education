@@ -1,6 +1,6 @@
-﻿using DanielsPasswords.Database;
+﻿using LoginLibrary;
+using LoginLibrary.Database;
 using System;
-using System.Collections.Generic;
 using System.Threading;
 
 namespace DanielsPasswords

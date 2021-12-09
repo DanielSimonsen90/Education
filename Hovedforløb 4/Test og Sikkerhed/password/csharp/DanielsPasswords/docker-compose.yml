@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  danielspasswordsasp:
+    image: ${DOCKER_REGISTRY-}danielspasswordsasp
+    build:
+      context: .
+      dockerfile: DanielsPasswordsASP/Dockerfile

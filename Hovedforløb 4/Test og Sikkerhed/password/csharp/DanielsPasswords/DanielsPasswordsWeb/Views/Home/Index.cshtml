@@ -1,0 +1,30 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div>
+            <div class="form-group">
+                <label>
+                    Username:
+                    @Html.EditorFor(m => m.Username)
+                    @Html.ValidationMessageFor(m => m.Username)
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Password:
+                    @Html.EditorFor(m => m.Password)
+                    @Html.ValidationMessageFor(m => m.Password)
+                </label>
+            </div>
+            <input type="submit" value="Login" />
+        </div>
+    }
+</div>
