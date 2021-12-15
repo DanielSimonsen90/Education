@@ -1,20 +1,11 @@
-extends KinematicBody
+extends BasePlayer
+class_name Player
+#extends load("res://models/Daniel/BasePlayer.gd")
 
-# https://www.youtube.com/watch?v=ickZ_Genr7A&list=PLsk-HSGFjnaFwmOFrfD4gQQqvgvEUielY&index=3
-
-const base_speed = 4.0;
-const jump_speed = 6;
-const gravity_strength = 25;
-const gravity = Vector3.DOWN * 15;
-
-var Bullet = preload("res://models/Daniel/Bullet.tscn");
 var mouse_sensitivity = 0.002 # radians/pixel
-var speed = base_speed;
-var jumping = false;
-var velocity = Vector3();
-var crouching_transform = transform.translated(Vector3(0, -.25, 0));
 
-onready var POV = $Pivot/Camera
+onready var Pivot = $MeshInstance/Eye/Pivot;
+onready var POV = $MeshInstance/Eye/Pivot/Camera;
 
 func _physics_process(delta):
 	velocity += gravity * delta;
@@ -56,19 +47,17 @@ func handle_movement():
 	velocity += direction * speed;
 
 func handle_movement_speed():
-	if Input.is_action_pressed("sprint"):
-		speed *= 2;
-	if Input.is_action_pressed("crouch"):
-		speed /= 2;
+	if Input.is_action_pressed("sprint"): speed *= 2;
+	if Input.is_action_pressed("crouch"): speed /= 2;
 
 # Mouse movement & shooting
 func _unhandled_input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		rotate_y(-event.relative.x * mouse_sensitivity); # View Left/Right
-		$Pivot.rotate_z(-event.relative.y * mouse_sensitivity); # View Up/Down
-		$Pivot.rotation.z = clamp($Pivot.rotation.z, -1.75, 1.75) # Don't break your neck
+		on_mouse_move(event);
 	
-	if event.is_action_pressed("shoot"):
-		var bullet = Bullet.instance();
-		bullet.start($"Pivot/Bullet Position".global_transform);
-		get_parent().add_child(bullet);
+	if event.is_action_pressed("shoot"): shoot();
+
+func on_mouse_move(event):
+		rotate_y(-event.relative.x * mouse_sensitivity); # View Left/Right
+		Pivot.rotate_x(-event.relative.y * mouse_sensitivity); # View Up/Down
+		Pivot.rotation.x = clamp(Pivot.rotation.x, -1.75, 1.75) # Don't break your neck

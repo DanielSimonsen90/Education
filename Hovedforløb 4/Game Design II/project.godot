@@ -8,9 +8,26 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "BasePlayer",
+"language": "GDScript",
+"path": "res://models/Daniel/BasePlayer.gd"
+}, {
+"base": "BasePlayer",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://models/Daniel/Enemy.gd"
+}, {
+"base": "BasePlayer",
+"class": "Player",
+"language": "GDScript",
+"path": "res://models/Daniel/Player.gd"
+} ]
 _global_script_class_icons={
-
+"BasePlayer": "",
+"Enemy": "",
+"Player": ""
 }
 
 [application]

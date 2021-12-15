@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://models/Daniel/Enemy.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
-albedo_color = Color( 0.227451, 0.396078, 0.843137, 1 )
+albedo_color = Color( 0.843137, 0.227451, 0.227451, 1 )
 
 [sub_resource type="SphereMesh" id=2]
 material = SubResource( 1 )
@@ -21,8 +21,11 @@ height = 0.5
 [sub_resource type="BoxShape" id=5]
 extents = Vector3( 0.633607, 0.985573, 0.593562 )
 
-[node name="Player" type="KinematicBody" groups=[
-"Player",
+[sub_resource type="SphereShape" id=6]
+radius = 5.0
+
+[node name="Enemy" type="KinematicBody" groups=[
+"Enemy",
 ]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0 )
 script = ExtResource( 1 )
@@ -39,13 +42,22 @@ material/0 = null
 
 [node name="Pivot" type="Spatial" parent="MeshInstance/Eye"]
 
-[node name="Camera" type="Camera" parent="MeshInstance/Eye/Pivot"]
-current = true
-
 [node name="BulletPosition" type="Position3D" parent="MeshInstance/Eye/Pivot"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.873881 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.294808 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.82003, 0 )
 shape = SubResource( 5 )
 
+[node name="SightRange" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="SightRange"]
+shape = SubResource( 6 )
+
+[node name="Eyes" type="Spatial" parent="."]
+
+[node name="ShootTimer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="SightRange" to="." method="_on_SightRange_body_entered"]
+[connection signal="body_exited" from="SightRange" to="." method="_on_SightRange_body_exited"]
+[connection signal="timeout" from="ShootTimer" to="." method="_on_ShootTimer_timeout"]
