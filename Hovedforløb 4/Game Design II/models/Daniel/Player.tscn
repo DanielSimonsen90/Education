@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://models/Daniel/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://Crosshair.png" type="Texture" id=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.227451, 0.396078, 0.843137, 1 )
@@ -18,11 +19,14 @@ material = SubResource( 3 )
 radius = 0.25
 height = 0.5
 
-[sub_resource type="BoxShape" id=5]
-extents = Vector3( 0.633607, 0.985573, 0.593562 )
+[sub_resource type="CapsuleShape" id=5]
+margin = 0.001
+radius = 0.6
+height = 0.6
 
 [node name="Player" type="KinematicBody" groups=[
 "Player",
+"BasePlayer",
 ]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0 )
 script = ExtResource( 1 )
@@ -45,7 +49,16 @@ current = true
 [node name="BulletPosition" type="Position3D" parent="MeshInstance/Eye/Pivot"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.873881 )
 
+[node name="TextureRect" type="TextureRect" parent="MeshInstance/Eye/Pivot"]
+visible = false
+margin_left = 511.0
+margin_top = 300.0
+margin_right = 516.0
+margin_bottom = 305.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.82003, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0.8, 0 )
 shape = SubResource( 5 )
 
