@@ -92,5 +92,6 @@ func take_damage(damage: int):
 func shoot():
 	var bullet = Bullet.instance();
 	bullet.set_parent(self);
+#	print(str(name, ": ", BulletPos.global_transform))
 	bullet.start(BulletPos.global_transform);
 	get_parent().add_child(bullet);

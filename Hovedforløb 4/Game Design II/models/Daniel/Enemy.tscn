@@ -26,15 +26,11 @@ height = 0.6
 [sub_resource type="SphereShape" id=6]
 radius = 25.0
 
-[node name="Enemy" type="KinematicBody" groups=[
-"Enemy",
-"BasePlayer",
-]]
+[node name="Enemy" type="KinematicBody" groups=["BasePlayer", "Enemy"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0 )
 script = ExtResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0 )
 mesh = SubResource( 2 )
 material/0 = null
@@ -50,7 +46,7 @@ material/0 = null
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.294808 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0.8, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.8, 0 )
 shape = SubResource( 5 )
 
 [node name="SightRange" type="Area" parent="."]

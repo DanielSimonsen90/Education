@@ -13,10 +13,7 @@ mid_height = 0.3
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.278094, 0.170093, 0.385651 )
 
-[node name="Bullet" type="Area" groups=[
-"Bullet",
-"Damagable",
-]]
+[node name="Bullet" type="Area" groups=["Bullet", "Damagable"]]
 script = ExtResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]

@@ -5,7 +5,7 @@ var max_players = 1;
 var player_cap = 2;
 var alive_players = max_players;
 
-onready var SpawnArea: Area = $Safezone;
+onready var SpawnArea: CollisionShape = $Safezone;
 
 func _ready():
 	spawn_players();

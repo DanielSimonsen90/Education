@@ -14,7 +14,6 @@ script = ExtResource( 1 )
 [node name="Ground" parent="." instance=ExtResource( 2 )]
 
 [node name="Grass Patches" type="Spatial" parent="."]
-editor/display_folded = true
 
 [node name="Grass Patch 1" parent="Grass Patches" instance=ExtResource( 3 )]
 
@@ -36,9 +35,8 @@ script = ExtResource( 5 )
 [node name="AllySpawnTimer" type="Timer" parent="Team1"]
 
 [node name="Team2" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 26 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 23.9612 )
 script = ExtResource( 7 )
 
 [node name="Spectator Cam" type="Camera" parent="."]
-transform = Transform( -4.10753e-008, 0.819152, -0.573576, 1.49502e-008, 0.573576, 0.819152, 1, 2.50718e-008, -3.58063e-008, -21, 19, 0 )
-
+transform = Transform( -4.10753e-08, 0.819152, -0.573576, 1.49502e-08, 0.573576, 0.819152, 1, 2.50718e-08, -3.58063e-08, -21, 19, 0 )
