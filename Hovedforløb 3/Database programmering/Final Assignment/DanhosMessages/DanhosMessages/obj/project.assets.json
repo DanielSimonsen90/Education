@@ -5797,19 +5797,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\": {}
+    "C:\\Users\\dani146d\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosMessages\\DanhosMessages.csproj",
+      "projectUniqueName": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosMessages\\DanhosMessages.csproj",
       "projectName": "DanhosMessages",
-      "projectPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosMessages\\DanhosMessages.csproj",
-      "packagesPath": "C:\\Users\\Daniel Simonsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel Simonsen\\Documents\\GitHub\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosMessages\\obj\\",
+      "projectPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosMessages\\DanhosMessages.csproj",
+      "packagesPath": "C:\\Users\\dani146d\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 3\\Database programmering\\Final Assignment\\DanhosMessages\\DanhosMessages\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Daniel Simonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dani146d\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5868,7 +5868,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

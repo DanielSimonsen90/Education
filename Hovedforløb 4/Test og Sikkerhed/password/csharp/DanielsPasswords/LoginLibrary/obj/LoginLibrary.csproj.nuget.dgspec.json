@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj": {}
+    "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj": {
+    "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj",
         "projectName": "LoginLibrary",
-        "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj",
-        "packagesPath": "C:\\Users\\DanielSimonsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\obj\\",
+        "projectPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj",
+        "packagesPath": "C:\\Users\\dani146d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DanielSimonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dani146d\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

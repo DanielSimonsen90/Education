@@ -556,23 +556,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DanielSimonsen\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\dani146d\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\DanielsPasswordsWeb\\DanielsPasswordsWeb.csproj",
+      "projectUniqueName": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\DanielsPasswordsWeb\\DanielsPasswordsWeb.csproj",
       "projectName": "DanielsPasswordsWeb",
-      "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\DanielsPasswordsWeb\\DanielsPasswordsWeb.csproj",
-      "packagesPath": "C:\\Users\\DanielSimonsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\DanielsPasswordsWeb\\obj\\",
+      "projectPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\DanielsPasswordsWeb\\DanielsPasswordsWeb.csproj",
+      "packagesPath": "C:\\Users\\dani146d\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\DanielsPasswordsWeb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\DanielSimonsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dani146d\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -586,8 +582,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj": {
-              "projectPath": "C:\\Users\\DanielSimonsen\\source\\repos\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj"
+            "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj": {
+              "projectPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 4\\Test og Sikkerhed\\password\\csharp\\DanielsPasswords\\LoginLibrary\\LoginLibrary.csproj"
             }
           }
         }
@@ -625,7 +621,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
