@@ -19,10 +19,15 @@ Idéen er registrering, da vægten skal registrere dataen, og appen kun skal læ
 
 ## Case Beskrivelse
 
-### Hvad er baggunden for projektet?
+### Hvad er baggrunden for projektet?
 
-Noget af det sværeste for at tabe sig, er at holde sig motivieret og se, at det man
+Noget af det sværeste for at tabe sig, er at holde sig motivieret og se, at det man gør faktisk giver en forskel. Der er mange måder at holde styr på sin progression på, men projektet kan bl.a. hjælpe med at se progressionen.
+Ved at måle sin vægt pr. interval (evt. ugentligt), kan man via app se en tabel over ens målinger. At se vægten ændre sig, kan være med til at booste motivationen til at fortsætte eller abejde hårdere.
 
-### Hvad er interessant for projektet? Hivlken værdi har det?
+### Hvad er interessant for projektet? Hvilken værdi har det?
+
+Det kan hjælpe andre med at få en visuel repræsentation af deres progression, og derfor være med til, at give dem motivation til at fortsætte deres vægttab.
 
 ### Hvem er målgruppen?
+
+Målgruppen er mennesker, der gerne vil tabe sig eller evt. tage på. Mennesker der gerne vil følge en udvikling via vægttal.

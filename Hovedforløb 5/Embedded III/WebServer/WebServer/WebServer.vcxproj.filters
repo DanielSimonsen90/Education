@@ -21,5 +21,11 @@
     <ClInclude Include="__vm\.WebServer.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WebServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WebServerConfig.c" />
   </ItemGroup>
 </Project>

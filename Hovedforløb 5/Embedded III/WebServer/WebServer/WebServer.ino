@@ -1,12 +1,6 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-/* Put your SSID & Password */
-const char* ssid = "reeee";  // Enter SSID here
-const char* password = "12345678";  //Enter Password here
-uint8_t max_connections = 8;//Maximum Connection Limit for AP
-int current_stations = 0, new_stations = 0;
-
 ESP8266WebServer server(80);
 
 uint8_t LED1pin = D7;
@@ -66,7 +60,11 @@ void onLedOff(bool* led, String name) {
     Serial.println(name + ": OFF");
     server.send(200, "text/html", SendHTML(LED1status, LED2status));
 }
-
+void onLedToggle(bool* led, String name) {
+	*led = !*led;
+	Serial.println(name + ": " + (*led ? "ON" : "OFF"));
+	server.send(200, "text/html", SendHTML(LED1status, LED2status));
+}
 String SendHTML(uint8_t led1stat, uint8_t led2stat) {
     String ptr = "<!DOCTYPE html> <html>\n";
     ptr += "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
@@ -94,5 +92,6 @@ String SendHTML(uint8_t led1stat, uint8_t led2stat) {
 
     ptr += "</body>\n";
     ptr += "</html>\n";
+
     return ptr;
 }
