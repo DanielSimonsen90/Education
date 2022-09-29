@@ -143,5 +143,6 @@ public:
 #define noInterrupts() cli()
 
 #include "WebServer.ino"
+#include "WebServerConfig.ino"
 #endif
 #endif
