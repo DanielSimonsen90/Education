@@ -111,17 +111,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WebServer.h" />
+    <ClInclude Include="WebServerConfig.h" />
     <ClInclude Include="__vm\.WebServer.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WebServerConfig.ino" />
+    <ClCompile Include="WebServerConfig.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties arduino.upload.port="COM4" config.Debug.customdebug_esp8266_nodemcuv2_debugger_type="universal" />
+      <UserProperties arduino.upload.port="COM5" config.Debug.customdebug_esp8266_nodemcuv2_debugger_type="universal" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

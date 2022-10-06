@@ -24,9 +24,12 @@
     <ClInclude Include="WebServer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WebServerConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WebServerConfig.ino">
+    <ClCompile Include="WebServerConfig.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

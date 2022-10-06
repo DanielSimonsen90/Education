@@ -1,23 +1,11 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
-#include "WebServer.h"
+#include <Ticker.h>
 
-const char* ssid = "DanielNode";  // Enter SSID here
-const char* password = "12345678";  //Enter Password here
-uint8_t max_connections = 8; //Maximum Connection Limit for AP
-enum LED_STATES { OFF, ON, BLINK };
-struct LED {
-    uint8_t pin; 
-	uint8_t state;
-    String name;
-};
+#include "WebServer.h"
+#include "WebServerConfig.h"
 
 #define SizeOfArray(arr)  (sizeof(arr)/sizeof(arr[0]))
-
-ESP8266WebServer server(80);
-
-LED Red = { D7, OFF, "Red" };
-LED Green = { D6, OFF, "Green" };
 
 void setup() {
     Serial.begin(115200);
@@ -48,6 +36,7 @@ void setup() {
 	
     server.onNotFound([]() { server.send(404, "text/plain", "Not found"); });
 
+
     server.begin();
     Serial.println("HTTP server started");
 }
@@ -61,8 +50,6 @@ void loop() {
 }
 
 void onConnect() {
-    Red.state = ON;
-    Green.state = BLINK;
     Serial.println("Red: OFF | Green: OFF");
     server.send(200, "text/html", SendHTML());
 }
@@ -70,9 +57,8 @@ void onConnect() {
 bool getLedState(LED led) {
     switch (led.state)
     {
-	    case ON: return true;
-	    case OFF: return false;
-	    case BLINK: return digitalRead(led.pin) == 0;
+	    case BLINK: return digitalRead(led.pin) == OFF; // If off, returns true = ON
+        default: return led.state == ON; // ON || OFF
     }
     return false;
 }
@@ -92,6 +78,7 @@ void onLedBlink(LED *led) {
 	Serial.println(led->name + ": BLINK");
 	server.send(200, "text/html", SendHTML());
 }
+
 String SendHTML() {
     String ptr = "<!DOCTYPE html> <html>\n";
     ptr += "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
@@ -129,7 +116,7 @@ String SendHTML() {
         stringState.toLowerCase();
         for (uint8_t stateIndex = 0; stateIndex < SizeOfArray(states); stateIndex++)
         {
-            ptr += GetLEDButton(led, stringState, states[stateIndex]);
+            ptr += getLedButton(led, stringState, states[stateIndex]);
         }
 		
 		ptr += "</div>";
@@ -141,7 +128,7 @@ String SendHTML() {
 
     return ptr;
 }
-String GetLEDButton(LED led, String stringStateLower, String clickState) {
+String getLedButton(LED led, String stringStateLower, String clickState) {
     String clickStateLower = String(clickState);
     
     clickState.toUpperCase();
