@@ -1,4 +1,6 @@
-﻿#nullable disable
+﻿using StartupLib.Models.People;
+using StartupLib.Models.People.Students;
+#nullable disable
 
 namespace StartupLib.Models
 {

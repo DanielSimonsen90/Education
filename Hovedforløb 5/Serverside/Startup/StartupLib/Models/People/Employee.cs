@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StartupLib.Models
+namespace StartupLib.Models.People
 {
     public class Employee : Person
     {
