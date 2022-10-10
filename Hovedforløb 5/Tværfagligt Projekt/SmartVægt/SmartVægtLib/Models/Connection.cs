@@ -11,5 +11,12 @@ namespace SmartWeightLib.Models
         public int Id { get; set; }
         public int UserId { get; set; }
         public int WeightId { get; set; }
+
+        public Connection() {}
+        public Connection(int userId, int weightId)
+        {
+            UserId = userId;
+            WeightId = weightId;
+        }
     }
 }

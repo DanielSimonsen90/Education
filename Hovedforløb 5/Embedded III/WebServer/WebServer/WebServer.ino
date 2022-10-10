@@ -101,15 +101,20 @@ String SendHTML() {
     ptr += "<main>";
 
     LED leds[2] = { //&Red, &Green };
-        Red.pin, Red.state, Red.name, 
-        Green.pin, Green.state, Green.name 
+        Red.pin, Red.state, Red.name, Red.timer, 
+		Green.pin, Green.state, Green.name, Green.timer
     };
     String states[] = { "ON", "BLINK", "OFF" };
 
     for (uint8_t ledIndex = 0; ledIndex < SizeOfArray(leds); ledIndex++)
     {
-        LED led = leds[ledIndex];
-        String stringState = led.state == ON ? "ON" : led.state == OFF ? "OFF" : "BLINK";
+        LED led = &leds[ledIndex];
+		leds[ledIndex].timer.attach_ms(TIMER_MS, &led.timer_tick);
+        String stringState = 
+            led.state == ON ? "ON" : 
+            led.state == OFF ? "OFF" : 
+            "BLINK";
+		
         ptr += "<div class=\"container\">";
         ptr += "<p>" + led.name + " Status: " + stringState + "</p>\n";
 		

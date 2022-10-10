@@ -4,6 +4,7 @@ using SmartWeightLib.Database;
 using SmartWeightLib.Models;
 using System.Data;
 using System.Data.Entity.Validation;
+using System.Net;
 
 namespace SmartWeightAPI.Controllers
 {

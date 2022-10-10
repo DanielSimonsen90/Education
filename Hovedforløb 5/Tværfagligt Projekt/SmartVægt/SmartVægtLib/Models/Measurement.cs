@@ -1,12 +1,11 @@
 ﻿namespace SmartWeightLib.Models
 {
-    public class Measurement : PartialMeasurement, IDbItem
+    public class Measurement : PartialMeasurement
     {
-        public int Id { get; set; }
         public int UserId { get; set; }
 
-        public Measurement(int userId, double weight, DateTime? date) : 
-            base(weight, date)
+        public Measurement(int userId, int weightId, double weight, DateTime? date) : 
+            base(weightId, weight, date)
         {
             UserId = userId;
         }
