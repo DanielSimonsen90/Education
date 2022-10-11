@@ -1,9 +1,11 @@
 ﻿using StartupLib.Models.People;
 using StartupLib.Models.People.Students;
+using System.ComponentModel.DataAnnotations.Schema;
 #nullable disable
 
 namespace StartupLib.Models
 {
+    [Table("Schools")]
     public class School : Base
     {
         public ICollection<Person> People { get; set; }

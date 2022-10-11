@@ -1,9 +1,14 @@
-﻿namespace StartupLib.Models.People.Students
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace StartupLib.Models.People.Students
 {
     public abstract class Student : Person
     {
-        public int MainTeacherId { get; set; }
+        [Required]
+        [ForeignKey("MainTeacherId")]
         public Employee MainTeacher { get; set; }
+        public int MainTeacherId { get; set; }
 
         public Student(string name, School school, DateTime startTime, Employee mainTeacher) :
             base(name, school, startTime)

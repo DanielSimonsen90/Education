@@ -1,9 +1,14 @@
-﻿namespace StartupLib.Models.People
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+
+namespace StartupLib.Models.People
 {
     public abstract class Person : Base
     {
-        public int SchoolId { get; set; } = -1;
-        public School? School { get; set; }
+        public int SchoolId { get; set; }
+        [ForeignKey("SchoolId")]
+        public School School { get; set; } = new();
         public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
 
         public DateTime StartTime { get; set; } = DateTime.Now;

@@ -1,21 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StartupLib.Models.People.Students;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StartupLib.Models.People
 {
+    [Table("Employee")]
     public class Employee : Person
     {
-        public int BossId { get; set; } = -1;
+        [Required]
+        [ForeignKey("BossId")]
         public Employee? Boss { get; set; }
+        public int BossId { get; set; }
 
-        public Employee(string name, School school, DateTime startTime, Employee boss) : 
+        [Required]
+        public ICollection<Student> Students { get; set; } = new List<Student>();
+
+        public Employee() {}
+        public Employee(string name, School school, DateTime startTime, Employee boss, params Student[] students) : 
             base(name, school, startTime)
         {
             Boss = boss;
             BossId = boss.Id;
+            Students = students;
         }
     }
 }
