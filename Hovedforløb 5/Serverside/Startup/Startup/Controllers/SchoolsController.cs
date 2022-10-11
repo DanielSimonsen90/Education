@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StartupLib.Models;
 using System.Data.Entity;
 
 namespace Startup.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/schools")]
     [ApiController]
     public class SchoolsController : BaseController<School>
     {
