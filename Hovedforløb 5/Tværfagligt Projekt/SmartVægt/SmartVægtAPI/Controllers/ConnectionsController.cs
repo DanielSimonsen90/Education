@@ -7,13 +7,12 @@ namespace SmartWeightAPI.Controllers
 {
     [Route("api/[controller]/{userId}")]
     [ApiController]
-    public class ConnectionsController : Controller
+    public class ConnectionsController : BaseController
     {
-        private readonly SmartWeightDbContext _context;
-        public ConnectionsController(SmartWeightDbContext context) => _context = context;
+        public ConnectionsController(SmartWeightDbContext context) : base(context) {}
 
         [HttpPost("{weightId}")]
-        public ActionResult<string> Connect(int weightId, int userId)
+        public IActionResult Connect(int weightId, int userId)
         {
             // Arguments provided are existing entities
             bool weightExists = _context.Weights.Any(w => w.Id == weightId);
@@ -37,12 +36,11 @@ namespace SmartWeightAPI.Controllers
             _context.SaveChangesAsync();
 
             CreatedResult result = Created("connections/userId/weightId", conn);
-            //return HandleMeasurement(userId, MeasurementPartialTypes.USER, result);
-            return result;
+            return HandleMeasurement(userId, MeasurementPartialTypes.USER, result);
         }
 
         [HttpGet]
-        public ActionResult<Connection> GetConnection(int userId, bool fromApp)
+        public IActionResult GetConnection(int userId, bool fromApp)
         {
             if (!fromApp) return Forbid("You are not allowed to view this information.");
 
@@ -53,7 +51,7 @@ namespace SmartWeightAPI.Controllers
         }
 
         [HttpDelete]
-        public ActionResult<string> Disconnect(int userId, bool fromApp)
+        public IActionResult Disconnect(int userId, bool fromApp)
         {
             if (!fromApp) return Forbid("You are not allowed to delete this connection.");
 

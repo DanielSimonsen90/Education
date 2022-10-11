@@ -24,7 +24,7 @@ namespace SmartWeightAPI.Controllers
                     .ToList();
                 
                 // Partials saved are less than 10 minutes old, and therefore don't need to be removed just yet
-                if (partials.Count == 0) return;
+                if (partials.Count == 0) return;                
 
                 // Remove all partials, that exceed limit
                 _context.PartialMeasurements.RemoveRange(partials);
@@ -34,9 +34,7 @@ namespace SmartWeightAPI.Controllers
         }
 
         protected override void AddEntity(PartialMeasurement entity) => _context.PartialMeasurements.Add(entity);
-
         protected override List<PartialMeasurement> GetEntities() => _context.PartialMeasurements.ToList();
-
         protected override PartialMeasurement? GetEntity(int id) => _context.PartialMeasurements.First(m => m.Id == id);
         protected override void DeleteEntity(PartialMeasurement entity) => _context.PartialMeasurements.Remove(entity);
 
@@ -44,9 +42,10 @@ namespace SmartWeightAPI.Controllers
         {
             // Use base create method. If it fails, return error
             IActionResult result = base.Create(entity);
-            if (result is not OkObjectResult) return result;
 
-            return HandleMeasurement(entity.Id, MeasurementPartialTypes.PARTIAL_MEASUREMENT, result);
+            return result is OkObjectResult ?
+                HandleMeasurement(entity.WeightId, MeasurementPartialTypes.PARTIAL_MEASUREMENT, result) :
+                result;
         }
     }
 }
