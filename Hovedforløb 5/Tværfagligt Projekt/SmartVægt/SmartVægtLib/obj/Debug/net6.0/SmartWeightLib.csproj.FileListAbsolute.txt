@@ -12,3 +12,5 @@ C:\Users\dani146d\Documents\GitHub\Techcollege\Education\Hovedforløb 5\Tværfag
 C:\Users\dani146d\Documents\GitHub\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.pdb
 C:\Users\dani146d\Documents\GitHub\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.genruntimeconfig.cache
 C:\Users\dani146d\Documents\GitHub\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\ref\SmartWeightLib.dll
+C:\Users\dani146d\Documents\GitHub\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.Migrations.Initial.resources
+C:\Users\dani146d\Documents\GitHub\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.csproj.GenerateResource.cache

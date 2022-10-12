@@ -1,13 +1,27 @@
-﻿namespace SmartWeightLib.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SmartWeightLib.Models
 {
+    /// <summary>
+    /// Full measurement
+    /// </summary>
     public class Measurement : PartialMeasurement
     {
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
+        [ForeignKey("UserId")]
+        public User? User { get; set; }
 
-        public Measurement(int userId, int weightId, double weight, DateTime? date) : 
-            base(weightId, weight, date)
+        public Measurement(User user, Weight weight, double value, DateTime? date) : 
+            base(weight, value, date)
         {
-            UserId = userId;
+            User = user;
+            UserId = user.Id;
+        }
+        public Measurement(PartialMeasurement partial, User? user) : 
+            base(partial.Weight, partial.Value, partial.Date) 
+        {
+            User = user;
+            UserId = user?.Id;
         }
     }
 }

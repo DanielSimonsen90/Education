@@ -4,6 +4,7 @@ using SmartWeightLib.Models;
 
 namespace SmartWeightAPI.Controllers
 {
+    [Route("api/measurements")]
     public class MeasurementsController : BaseModelController<Measurement>
     {
         public MeasurementsController(SmartWeightDbContext context) : base(context)

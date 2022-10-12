@@ -1,22 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+#nullable disable
 
 namespace SmartWeightLib.Models
 {
+    /// <summary>
+    /// Connection between user and weight, to bind weight's partial measurement into a full measurement
+    /// </summary>
     public class Connection : IDbItem
     {
         public int Id { get; set; }
         public int UserId { get; set; }
+        [ForeignKey("UserId")]
+        public User User { get; set; }
         public int WeightId { get; set; }
+        [ForeignKey("WeightId")]
+        public Weight Weight { get; set; }
 
         public Connection() {}
-        public Connection(int userId, int weightId)
+        public Connection(User user, Weight weight)
         {
-            UserId = userId;
-            WeightId = weightId;
+            User = user;
+            UserId = user.Id;
+            Weight = weight;
+            WeightId = weight.Id;
         }
     }
 }

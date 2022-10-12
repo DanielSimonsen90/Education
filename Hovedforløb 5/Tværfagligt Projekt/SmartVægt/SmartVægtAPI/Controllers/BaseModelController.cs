@@ -4,7 +4,7 @@ using SmartWeightLib.Models;
 
 namespace SmartWeightAPI.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     [ApiController]
     public abstract class BaseModelController<Entity> : BaseController where Entity : IDbItem
     {
@@ -18,18 +18,18 @@ namespace SmartWeightAPI.Controllers
         [HttpPost]
         public virtual IActionResult Create([FromBody] Entity entity)
         {
-            if (!ModelState.IsValid) return BadRequest("Provided entity is invalid.");
+            if (!ModelState.IsValid) return BadRequest($"Provided entity {nameof(entity)} is invalid.");
 
             AddEntity(entity);
-            _context.SaveChanges();
+            _context.SaveChangesAsync();
 
-            return Created("Entity created", entity);
+            return Created($"{nameof(entity)} created", entity);
         }
 
         [HttpGet]
-        public virtual ActionResult<List<Entity>> GetAll(bool fromPostman = false)
+        public virtual ActionResult<List<Entity>> GetAll(bool fromSwagger = false)
         {
-            return !fromPostman ? 
+            return !fromSwagger ? 
                 Unauthorized("You do not have permission to view this information.") : 
                 Ok(GetEntities());
         }
@@ -48,7 +48,7 @@ namespace SmartWeightAPI.Controllers
         [HttpPut("{id}")]
         public virtual IActionResult Update(int id, [FromBody] Entity entity)
         {
-            if (!ModelState.IsValid) return BadRequest("Invalid model state");
+            if (!ModelState.IsValid) return BadRequest($"Provided entity {nameof(entity)} is invalid.");
 
             Entity? oldEntity = GetEntity(id);
 

@@ -5,7 +5,7 @@ using SmartWeightLib.Models;
 
 namespace SmartWeightAPI.Controllers
 {
-    [Route("api/[controller]/{userId}")]
+    [Route("api/connections/{userId}")]
     [ApiController]
     public class ConnectionsController : BaseController
     {
@@ -15,9 +15,9 @@ namespace SmartWeightAPI.Controllers
         public IActionResult Connect(int weightId, int userId)
         {
             // Arguments provided are existing entities
-            bool weightExists = _context.Weights.Any(w => w.Id == weightId);
-            bool userExists = _context.Users.Any(u => u.Id == userId);
-            if (!weightExists || !userExists) return NotFound("One or more entities not found");
+            Weight weight = _context.Weights.First(w => w.Id == weightId);
+            User user = _context.Users.First(u => u.Id == userId);
+            if (weight is null || user is null) return NotFound("One or more entities not found");
 
             // Get previous connections
             var userConnection = _context.Connections.First(c => c.UserId == userId);
@@ -31,7 +31,7 @@ namespace SmartWeightAPI.Controllers
             if (weightConnection is not null) _context.Connections.Remove(weightConnection);
 
             // Create connection and save
-            var conn = new Connection(userId, weightId);
+            var conn = new Connection(user, weight);
             _context.Connections.Add(conn);
             _context.SaveChangesAsync();
 

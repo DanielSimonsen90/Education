@@ -36,7 +36,7 @@ namespace SmartWeightAPI.Controllers
             if (conn is null) return result;
 
             // Get partial measurement, if any
-            PartialMeasurement? partialMeasurement = _context.PartialMeasurements.First(p => p.WeightId == conn.WeightId);
+            PartialMeasurement? partialMeasurement = _context.Measurements.First(p => p is PartialMeasurement && p.WeightId == conn.WeightId);
             if (partialMeasurement is null) return result;
 
             // Delete connection regardless of what happens next
@@ -49,9 +49,9 @@ namespace SmartWeightAPI.Controllers
 
             // Save measurement
             var measurement = new Measurement(
-                conn.UserId, 
-                partialMeasurement.WeightId, 
+                conn.User, 
                 partialMeasurement.Weight, 
+                partialMeasurement.Value, 
                 partialMeasurement.Date);
             HttpResponseMessage? posted = client.PostAsync($"{_endpoints[Endpoints.MEASUREMENTS]}", new JsonContent(measurement)).Result;
 
