@@ -1,10 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SmartWeightLib.Database;
 using SmartWeightLib.Models;
-using System.Data;
-using System.Data.Entity.Validation;
-using System.Net;
 
 namespace SmartWeightAPI.Controllers
 {

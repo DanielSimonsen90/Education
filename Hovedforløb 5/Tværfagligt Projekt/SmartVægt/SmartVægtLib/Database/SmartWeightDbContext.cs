@@ -13,12 +13,5 @@ namespace SmartWeightLib.Database
         public DbSet<Measurement> Measurements { get; set; }
         public DbSet<Connection> Connections { get; set; }
         public DbSet<Weight> Weights { get; set; }
-
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    base.OnModelCreating(modelBuilder);
-
-        //    modelBuilder.Entity<Measurement>().ToTable("Measurements");
-        //}
     }
 }

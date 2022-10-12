@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SmartWeightLib.Models
+﻿namespace SmartWeightLib.Models
 {
     /// <summary>
     /// Weight class to represent a weight
@@ -12,5 +6,11 @@ namespace SmartWeightLib.Models
     public class Weight : IDbItem
     {
         public int Id { get; set; }
+        public string Name { get; set; }
+
+        public Weight(string name)
+        {
+            Name = name;
+        }
     }
 }

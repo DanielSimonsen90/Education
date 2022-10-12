@@ -44,7 +44,7 @@ namespace SmartWeightAPI.Controllers
         {
             if (!fromApp) return Forbid("You are not allowed to view this information.");
 
-            Connection conn = _context.Connections.First(c => c.UserId == userId);
+            Connection conn = _context.Connections.Find(userId);
             if (conn is null) return NotFound("User is not connected to any weight.");
 
             return Ok(conn);
