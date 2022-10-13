@@ -28,8 +28,18 @@ namespace SmartWeightAPI.Controllers
 
         protected override void AddEntity(Measurement entity) => _context.Measurements.Add(entity);
         protected override List<Measurement> GetEntities() => _context.Measurements.ToList();
-        protected override Measurement? GetEntity(int id) => _context.Measurements.First(m => m.Id == id);
+        protected override Measurement? GetEntity(int id) => _context.Measurements.Find(id);
         protected override void DeleteEntity(Measurement entity) => _context.Measurements.Remove(entity);
 
+        [HttpGet("fitler")]
+        public ActionResult<List<Measurement>> GetAll(MeasurementFilter filter = MeasurementFilter.ALL)
+        {
+            return Ok(GetEntities().Where(measurement => filter switch
+            {
+                MeasurementFilter.FULL => measurement.User is not null,
+                MeasurementFilter.PARTIALS => measurement.User is null,
+                _ => true
+            }));
+        }
     }
 }

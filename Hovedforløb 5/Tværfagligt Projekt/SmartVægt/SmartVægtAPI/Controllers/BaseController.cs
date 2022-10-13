@@ -5,7 +5,7 @@ using System.Net;
 
 namespace SmartWeightAPI.Controllers
 {
-    public class BaseController : ControllerBase
+    public abstract class BaseController : ControllerBase
     {
         protected readonly SmartWeightDbContext _context;
         protected readonly Dictionary<Endpoints, string> _endpoints = new()
@@ -30,13 +30,13 @@ namespace SmartWeightAPI.Controllers
         {
             // Is weight connected to a user, if not, then maybe user connects after weight was used
             Connection? conn =
-                type == MeasurementPartialTypes.USER ? _context.Connections.First(c => c.UserId == id) :
-                type == MeasurementPartialTypes.PARTIAL_MEASUREMENT ? _context.Connections.First(c => c.WeightId == id) :
+                type == MeasurementPartialTypes.USER ? _context.Connections.Find(id) :
+                type == MeasurementPartialTypes.PARTIAL_MEASUREMENT ? _context.Connections.Find(id) :
                 null;
             if (conn is null) return result;
 
             // Get partial measurement, if any
-            PartialMeasurement? partialMeasurement = _context.Measurements.First(p => p is PartialMeasurement && p.WeightId == conn.WeightId);
+            PartialMeasurement? partialMeasurement = _context.Measurements.First(p => p.UserId == null && p.WeightId == conn.WeightId);
             if (partialMeasurement is null) return result;
 
             // Delete connection regardless of what happens next

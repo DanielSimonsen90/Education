@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NuGet.Protocol;
 using SmartWeightLib.Database;
 using SmartWeightLib.Models;
 
@@ -9,19 +8,23 @@ namespace SmartWeightAPI.Controllers
     [ApiController]
     public class ConnectionsController : BaseController
     {
-        public ConnectionsController(SmartWeightDbContext context) : base(context) {}
+        public ConnectionsController(SmartWeightDbContext context) : base(context) 
+        {
+            // Remove all connections on restart
+            _context.Connections.RemoveRange(_context.Connections.ToList());
+        }
 
         [HttpPost("{weightId}")]
         public IActionResult Connect(int weightId, int userId)
         {
             // Arguments provided are existing entities
-            Weight weight = _context.Weights.First(w => w.Id == weightId);
-            User user = _context.Users.First(u => u.Id == userId);
+            Weight? weight = _context.Weights.Find(weightId);
+            User? user = _context.Users.Find(userId);
             if (weight is null || user is null) return NotFound("One or more entities not found");
 
             // Get previous connections
-            var userConnection = _context.Connections.First(c => c.UserId == userId);
-            var weightConnection = _context.Connections.First(c => c.WeightId == weightId);
+            Connection? userConnection = _context.Connections.Find(userId);
+            Connection? weightConnection = _context.Connections.Find(weightId);
 
             // Connections exist between entities
             if (userConnection == weightConnection && userConnection is not null) return Ok("Connection was already established.");
@@ -33,10 +36,16 @@ namespace SmartWeightAPI.Controllers
             // Create connection and save
             var conn = new Connection(user, weight);
             _context.Connections.Add(conn);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
 
             CreatedResult result = Created("connections/userId/weightId", conn);
             return HandleMeasurement(userId, MeasurementPartialTypes.USER, result);
+        }
+
+        [HttpGet("all")]
+        public IActionResult GetAllConnections(int userId = -1)
+        {
+            return Ok(_context.Connections.ToList());
         }
 
         [HttpGet]
@@ -44,7 +53,7 @@ namespace SmartWeightAPI.Controllers
         {
             if (!fromApp) return Forbid("You are not allowed to view this information.");
 
-            Connection conn = _context.Connections.Find(userId);
+            Connection? conn = _context.Connections.Find(userId);
             if (conn is null) return NotFound("User is not connected to any weight.");
 
             return Ok(conn);
@@ -55,7 +64,7 @@ namespace SmartWeightAPI.Controllers
         {
             if (!fromApp) return Forbid("You are not allowed to delete this connection.");
 
-            Connection conn = _context.Connections.First(c => c.UserId == userId);
+            Connection? conn = _context.Connections.ToList().Find(c => c.UserId == userId);
             if (conn is null) return Ok("Connection already deleted");
 
             _context.Connections.Remove(conn);

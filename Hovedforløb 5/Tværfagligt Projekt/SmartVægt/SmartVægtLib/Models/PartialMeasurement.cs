@@ -15,7 +15,7 @@ namespace SmartWeightLib.Models
         public double Value { get; set; }
         public DateTime Date { get; set; }
 
-        public PartialMeasurement() { }
+        public PartialMeasurement() {}
         public PartialMeasurement(Weight weight, double value, DateTime? date)
         {
             Weight = weight;

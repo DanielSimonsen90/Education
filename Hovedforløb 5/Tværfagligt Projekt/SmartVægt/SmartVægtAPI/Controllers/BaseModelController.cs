@@ -8,6 +8,8 @@ namespace SmartWeightAPI.Controllers
     [ApiController]
     public abstract class BaseModelController<Entity> : BaseController where Entity : IDbItem
     {
+        private readonly string entityName = nameof(Entity).ToLower();
+
         protected BaseModelController(SmartWeightDbContext context) : base(context) {}
 
         protected abstract void AddEntity(Entity entity);
@@ -18,21 +20,16 @@ namespace SmartWeightAPI.Controllers
         [HttpPost]
         public virtual IActionResult Create([FromBody] Entity entity)
         {
-            if (!ModelState.IsValid) return BadRequest($"Provided entity {nameof(entity)} is invalid.");
+            if (!ModelState.IsValid) return BadRequest($"Provided {entityName} {nameof(entity)} is invalid.");
 
             AddEntity(entity);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
 
             return Created($"{nameof(entity)} created", entity);
         }
 
         [HttpGet]
-        public virtual ActionResult<List<Entity>> GetAll(bool fromSwagger = false)
-        {
-            return !fromSwagger ? 
-                Unauthorized("You do not have permission to view this information.") : 
-                Ok(GetEntities());
-        }
+        public virtual ActionResult<List<Entity>> GetAll() => Ok(GetEntities());
 
         [HttpGet("{id}")]
         public virtual IActionResult GetOne(int id)
@@ -40,7 +37,7 @@ namespace SmartWeightAPI.Controllers
             Entity? entity = GetEntity(id);
 
             return entity is null ? 
-                NotFound($"No entity found with id {id}") :
+                NotFound($"No {entityName} found with id {id}") :
                 Ok(entity);
         }
 
@@ -48,16 +45,17 @@ namespace SmartWeightAPI.Controllers
         [HttpPut("{id}")]
         public virtual IActionResult Update(int id, [FromBody] Entity entity)
         {
-            if (!ModelState.IsValid) return BadRequest($"Provided entity {nameof(entity)} is invalid.");
+            if (!ModelState.IsValid) return BadRequest($"Provided {entityName} {nameof(entity)} is invalid.");
+            else if (entity.Id != id) return BadRequest($"Id mismatch between {entityName} {entity.Id} and parameter {id}.");
 
             Entity? oldEntity = GetEntity(id);
 
-            if (oldEntity is null) return NotFound("No entity with that id");
+            if (oldEntity is null) return NotFound($"No {entityName} with that id");
 
             _context.Entry(oldEntity).CurrentValues.SetValues(entity);
             _context.SaveChanges();
 
-            return Ok("Entity updated.");
+            return Ok($"{entityName} updated.");
         }
 
         [HttpDelete("{id}")]
@@ -65,12 +63,12 @@ namespace SmartWeightAPI.Controllers
         {
             Entity? entity = GetEntity(id);
 
-            if (entity is null) return NotFound("No entity with that id");
+            if (entity is null) return NotFound($"No {entityName} with that id");
 
             DeleteEntity(entity);
             _context.SaveChanges();
 
-            return Ok("Entity deleted.");
+            return Ok($"{entityName} deleted.");
         }
     }
 }

@@ -13,4 +13,11 @@
         USER,
         PARTIAL_MEASUREMENT
     }
+
+    public enum MeasurementFilter
+    {
+        ALL,
+        FULL,
+        PARTIALS
+    }
 }

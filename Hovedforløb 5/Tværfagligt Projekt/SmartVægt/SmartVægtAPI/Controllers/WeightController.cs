@@ -4,7 +4,7 @@ using SmartWeightLib.Models;
 
 namespace SmartWeightAPI.Controllers
 {
-    [Route("api/weight")]
+    [Route("api/weights")]
     public class WeightController : BaseModelController<Weight>
     {
         public WeightController(SmartWeightDbContext context) : base(context) {}

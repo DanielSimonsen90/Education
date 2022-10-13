@@ -11,6 +11,7 @@ namespace SmartWeightLib.Models
         [ForeignKey("UserId")]
         public User? User { get; set; }
 
+        public Measurement() {}
         public Measurement(User user, Weight weight, double value, DateTime? date) : 
             base(weight, value, date)
         {

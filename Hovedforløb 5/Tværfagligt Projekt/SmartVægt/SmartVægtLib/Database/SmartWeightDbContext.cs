@@ -6,7 +6,7 @@ namespace SmartWeightLib.Database
 {
     public class SmartWeightDbContext : DbContext
     {
-        public SmartWeightDbContext() : base() {}
+        public SmartWeightDbContext() : base("Server=(localdb)\\MSSqlLocalDb;Database=SmartWeightDB;Trusted_Connection=True;MultipleActiveResultSets=true") {}
         public SmartWeightDbContext(string connectionString) : base(connectionString) { }
 
         public DbSet<User> Users { get; set; }
