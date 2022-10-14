@@ -2,7 +2,7 @@
 using SmartWeightLib.Database;
 using SmartWeightLib.Models;
 
-namespace SmartWeightAPI.Controllers
+namespace SmartWeightAPI.Controllers.Base
 {
     //[Route("api/[controller]")]
     [ApiController]
@@ -10,7 +10,7 @@ namespace SmartWeightAPI.Controllers
     {
         private readonly string entityName = nameof(Entity).ToLower();
 
-        protected BaseModelController(SmartWeightDbContext context) : base(context) {}
+        protected BaseModelController(SmartWeightDbContext context) : base(context) { }
 
         protected abstract void AddEntity(Entity entity);
         protected abstract Entity? GetEntity(int id);
@@ -18,12 +18,12 @@ namespace SmartWeightAPI.Controllers
         protected abstract void DeleteEntity(Entity entity);
 
         [HttpPost]
-        public virtual IActionResult Create([FromBody] Entity entity)
+        public async virtual Task<IActionResult> Create([FromBody] Entity entity)
         {
             if (!ModelState.IsValid) return BadRequest($"Provided {entityName} {nameof(entity)} is invalid.");
 
             AddEntity(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Created($"{nameof(entity)} created", entity);
         }
@@ -36,7 +36,7 @@ namespace SmartWeightAPI.Controllers
         {
             Entity? entity = GetEntity(id);
 
-            return entity is null ? 
+            return entity is null ?
                 NotFound($"No {entityName} found with id {id}") :
                 Ok(entity);
         }

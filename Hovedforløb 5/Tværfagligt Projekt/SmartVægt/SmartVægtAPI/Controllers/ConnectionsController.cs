@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SmartWeightAPI.Controllers.Base;
 using SmartWeightLib.Database;
 using SmartWeightLib.Models;
 
@@ -12,10 +13,11 @@ namespace SmartWeightAPI.Controllers
         {
             // Remove all connections on restart
             _context.Connections.RemoveRange(_context.Connections.ToList());
+            _context.SaveChanges();
         }
 
         [HttpPost("{weightId}")]
-        public IActionResult Connect(int weightId, int userId)
+        public async Task<IActionResult> Connect(int weightId, int userId)
         {
             // Arguments provided are existing entities
             Weight? weight = _context.Weights.Find(weightId);
@@ -36,10 +38,10 @@ namespace SmartWeightAPI.Controllers
             // Create connection and save
             var conn = new Connection(user, weight);
             _context.Connections.Add(conn);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             CreatedResult result = Created("connections/userId/weightId", conn);
-            return HandleMeasurement(userId, MeasurementPartialTypes.USER, result);
+            return await HandleMeasurement(userId, MeasurementPartialTypes.USER, result);
         }
 
         [HttpGet("all")]

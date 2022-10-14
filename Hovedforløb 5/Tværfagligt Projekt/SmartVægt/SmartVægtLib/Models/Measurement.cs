@@ -8,21 +8,17 @@ namespace SmartWeightLib.Models
     public class Measurement : PartialMeasurement
     {
         public int? UserId { get; set; }
-        [ForeignKey("UserId")]
-        public User? User { get; set; }
 
         public Measurement() {}
-        public Measurement(User user, Weight weight, double value, DateTime? date) : 
-            base(weight, value, date)
+        public Measurement(int userId, int weightId, double value, DateTime? date) : 
+            base(weightId, value, date)
         {
-            User = user;
-            UserId = user.Id;
+            UserId = userId;
         }
-        public Measurement(PartialMeasurement partial, User? user) : 
-            base(partial.Weight, partial.Value, partial.Date) 
+        public Measurement(PartialMeasurement partial, int? userId) : 
+            base(partial.WeightId, partial.Value, partial.Date) 
         {
-            User = user;
-            UserId = user?.Id;
+            UserId = userId;
         }
     }
 }

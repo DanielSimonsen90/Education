@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SmartWeightAPI.Controllers.Base;
 using SmartWeightLib.Database;
 using SmartWeightLib.Models;
 

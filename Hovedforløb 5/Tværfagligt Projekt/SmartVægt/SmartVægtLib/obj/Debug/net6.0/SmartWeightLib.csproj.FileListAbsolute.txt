@@ -32,3 +32,5 @@ C:\Users\Ejer\Documents\Github\Techcollege\Education\Hovedforløb 5\Tværfagligt
 C:\Users\Ejer\Documents\Github\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\ref\SmartWeightLib.dll
 C:\Users\Ejer\Documents\Github\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.Migrations.WeightName.resources
 C:\Users\dani146d\Documents\GitHub\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.Migrations.WeightName.resources
+C:\Users\Ejer\Documents\Github\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.Migrations.RemoveWeightFromPartialMeasurement.resources
+C:\Users\Ejer\Documents\Github\Techcollege\Education\Hovedforløb 5\Tværfagligt Projekt\SmartVægt\SmartVægtLib\obj\Debug\net6.0\SmartWeightLib.Migrations.RemoveUserFromMeasurement.resources

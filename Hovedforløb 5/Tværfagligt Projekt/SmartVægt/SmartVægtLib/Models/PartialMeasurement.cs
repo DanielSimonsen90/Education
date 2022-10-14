@@ -10,16 +10,13 @@ namespace SmartWeightLib.Models
     {
         public int Id { get; set; }
         public int WeightId { get; set; }
-        [ForeignKey("WeightId")]
-        public Weight Weight { get; set; }
         public double Value { get; set; }
         public DateTime Date { get; set; }
 
         public PartialMeasurement() {}
-        public PartialMeasurement(Weight weight, double value, DateTime? date)
+        public PartialMeasurement(int weightId, double value, DateTime? date)
         {
-            Weight = weight;
-            WeightId = weight.Id;
+            WeightId = weightId;
             Value = value;
             Date = date ?? DateTime.Now;
         }
