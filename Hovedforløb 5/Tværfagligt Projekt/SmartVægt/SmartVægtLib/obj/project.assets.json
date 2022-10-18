@@ -1079,23 +1079,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ejer\\.nuget\\packages\\": {},
+    "C:\\Users\\dani146d\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ejer\\Documents\\Github\\Techcollege\\Education\\Hovedforløb 5\\Tværfagligt Projekt\\SmartVægt\\SmartVægtLib\\SmartWeightLib.csproj",
+      "projectUniqueName": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 5\\Tværfagligt Projekt\\SmartVægt\\SmartVægtLib\\SmartWeightLib.csproj",
       "projectName": "SmartWeightLib",
-      "projectPath": "C:\\Users\\Ejer\\Documents\\Github\\Techcollege\\Education\\Hovedforløb 5\\Tværfagligt Projekt\\SmartVægt\\SmartVægtLib\\SmartWeightLib.csproj",
-      "packagesPath": "C:\\Users\\Ejer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ejer\\Documents\\Github\\Techcollege\\Education\\Hovedforløb 5\\Tværfagligt Projekt\\SmartVægt\\SmartVægtLib\\obj\\",
+      "projectPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 5\\Tværfagligt Projekt\\SmartVægt\\SmartVægtLib\\SmartWeightLib.csproj",
+      "packagesPath": "C:\\Users\\dani146d\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dani146d\\Documents\\GitHub\\Techcollege\\Education\\Hovedforløb 5\\Tværfagligt Projekt\\SmartVægt\\SmartVægtLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ejer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dani146d\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1144,7 +1144,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
