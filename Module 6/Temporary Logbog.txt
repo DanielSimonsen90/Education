@@ -2,4 +2,7 @@
 Ringede til mor ang. patienttaxa ide og fik nogle svar besvaret. Brugte dog dagen på at brainstorme pakkeleg ideen.
 
 # 07/11
-Jeg fik brainstormet ideen til patienttaxa og satte de 2 brainstorms op mod hinanden. Efter vejledning konkluderede jeg, at patienttaxa ville vise mine evner bedst.
+Fik brainstormet patienttaxa idéen og efter vejledning konkluderede, at det var det mest fyldegørende projekt af de to. Jeg lavede derefter mine kravsspecs.
+
+# 08/11
+Jeg brugte hele dagen på frontend design i Figma, så jeg har et bedre overblik over projektet, og hvad jeg skal have lavet og tænkt over. Her kom mange nye idéer til properties men også bl.a. integration med Google Maps.
